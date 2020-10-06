@@ -75,9 +75,10 @@ body {
             color:  black;
             width: 100%;
             margin-top: 30px;
+            padding-bottom: 20px;
             font-size: 25px;
             font-family: 'Barlow Condensed', sans-serif;
-
+            border-bottom: 3px solid black;
         }
             .links > a {
                 color: inherit;
@@ -115,39 +116,51 @@ body {
         .form1 {
             display: inline-block;
             /* background-color: red; */
-            text-align: center;
+            /* text-align: center; */
             width: 100%;
             padding-bottom: 40px;
         }
             .about {
                 display: inline-block;
-                width: 30%;
+                width: 33%;
                 /* margin-left: 30px;
                 margin-right: 20px;
                 padding: 10px; */
                 /* background-color: gold; */
                 text-align: initial;
                 font-size: 25px;
+                padding: 0px 100px 0px 100px;
+                /* background-color: darkgoldenrod; */
+                min-width: 200px;
+                margin-top: 40px;
             }
             .contacts {
                 display: inline-block;
-                width: 30%;
+                width: 33%;
                 /* margin-left: 30px;
                 margin-right: 20px; */
                 /* padding: 10px; */
                 /* background-color: gold; */
                 text-align: initial;
                 font-size: 25px;
+                padding: 0px 100px 0px 100px;
+                /* background-color: rgb(11, 184, 103); */
+                min-width: 200px;
+                margin-top: 40px;
             }
             .help {
                 display: inline-block;
-                width: 30%;
+                width: 33%;
                 /* margin-left: 30px;
                 margin-right: 20px;
                 padding: 10px; */
                 /* background-color: gold; */
                 text-align: initial;
                 font-size: 25px;
+                padding: 0px 100px 0px 100px;
+                /* background-color: rgb(149, 11, 184); */
+                min-width: 200px;
+                margin-top: 40px;
             }
                 .about > a {
                     display: inline-block;
@@ -186,17 +199,21 @@ body {
             display: inline-block;
             width: 100%;
             border-top: 3px solid black;
+            padding-bottom: 40px;
         }
             .payment {
                 display: inline-block;
-                width: 30%;
+                width: 33%;
                 font-size: 25px;
-                margin-left: 20px;
                 margin-top: 40px;
+                /* background-color: lightgreen; */
+                padding: 0px 100px 0px 100px;
+                /* background-color: rgb(30, 47, 49); */
+                min-width: 200px;
             }
                 .payment > h3 {
                     display: inline-block;
-                    background-color: red;
+                    /* background-color: red; */
                     width: 100%;
                 }
                 .payment  .fa {
@@ -208,14 +225,17 @@ body {
                 }
             .shipping {
                 display: inline-block;
-                width: 30%;
+                width: 33%;
                 font-size: 25px;
-                margin-left: 20px;
                 margin-top: 40px;
+                /* background-color: lightcoral; */
+                padding: 0px 100px 0px 100px;
+                /* background-color: rgb(126, 113, 82); */
+                min-width: 200px;
             }
                 .shipping > h3 {
                     display: inline-block;
-                    background-color: blue;
+                    /* background-color: blue; */
                     width: 100%;                
                 }
                 .dhl {
@@ -226,19 +246,22 @@ body {
                 .ups {
                     display: inline-block;
                     width: 4rem;
-                    color:blue;
+                    /* color:blue; */
                     padding: 8px 0px 0px 3px
                 }
             .socials {
                 display: inline-block;
-                width: 30%;
+                width: 33%;
                 font-size: 25px;
-                margin-left: 20px;
                 margin-top: 40px;
+                /* background-color: lightsalmon; */
+                padding: 0px 100px 0px 100px;
+                /* background-color: darkgoldenrod; */
+                min-width: 200px;
             }
                 .socials > h3 {
                     display: inline-block;
-                    background-color: green;
+                    /* background-color: green; */
                     width: 100%;   
                 }
                 .socials > .fa {
@@ -246,4 +269,36 @@ body {
                     font-size: 40px;
                     color: black;
                     padding: 7px 12px 0px 0px;
+                }
+        .form3 {
+            display: inline-block;
+            width: 100%;
+            border-top: 3px solid black;
+            padding-top: 40px;
+            /* background-color: red; */
+            height: 260px;
+        }
+            .brandlist {
+                display: inline-block;
+                width: 100%;
+                text-align: initial;
+                font-size: 25px;
+                padding: 0px 100px 0px 100px;
+                /* background-color: rgb(177, 104, 104); */
+            }
+                .brandlist > h3 {
+                display: inline-block;
+                /* background-color: blue; */
+                width: 100%;   
+                }
+                .brandlist > a {
+                display: inline-block;
+                width: 30%;
+                text-decoration: none;
+                padding: 0px 15px 0px 0px;
+                margin-top: 20px;
+                font-size: 25px;
+                /* background-color: green; */
+                text-align: start;
+                color: inherit;
                 }
