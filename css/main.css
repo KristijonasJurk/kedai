@@ -12,7 +12,7 @@ body {
     grid-template-columns: 2fr 5fr 5fr 5fr 2fr;
     font-family: 'Barlow Condensed', sans-serif;
     color: black;
-    background: radial-gradient(circle, rgba(128,128,128,1) 21%, rgba(80,80,80,1) 96%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 58%, rgba(128,128,128,1) 100%);
 }
     header {
         grid-column: 1/6;
@@ -95,35 +95,135 @@ body {
         display: grid;
         grid-template-columns: 1fr 5fr 1fr;
         /* background-color: blueviolet; */
+        transition: 1s linear;
+        position: relative;
     }
         .slide1 {
             display: flex;
-            /* overflow: hidden; */
-            width: 90vh;
+            overflow: hidden;
+            width: 110vh;
             grid-column: 2/3;
             margin: 0 auto;
-    }
+            /* background-color: blanchedalmond; */
+            position: relative;
+        }
+        .slide1 button {
+            position: absolute;
+            background-color: transparent;
+            border: none;
+            width: 4vh;
+            height: 4vh;
+            border-radius: 35%;
+            font-size: 4vh;
+            z-index: 1;
+        }
+        .slide1 button:hover {
+            background-color: rgba(231, 230, 230, 0.521);
+        }
+        .slide1 button:first-of-type {
+            top: 50%;
+        }
+        .slide1 button:last-of-type {
+            top: 50%;
+            right: 0%;
+        }
         .bigSlide {
-
+        }
+        .bigSlide1 {
+            position: relative;
+        }
+        .bigSlide1photo {
+            position: absolute;
+            color: #47CBD8;
+            top: 16%;
+            left: 7%;
+            font-size: 35px;
+            transform: rotate(6.8deg);
+        }
+        .bigSlide2 {
+            position: relative;
+        }
+        .bigSlide2photo {
+            position: absolute;
+            color: #3f1e1e;
+            width: 190px;
+            top: 47%;
+            left: 3%;
+            font-size: 35px;
+            transform: rotate(-15deg);
+            font-weight: 900;
+        }
+        .bigSlide3 {
+            position: relative;
+        }
+        .bigSlide3photo {
+            position: absolute;
+            width: 300px;
+            top: 90%;
+            left: 5%;
+            font-size: 35px;
+            transform: rotate(0deg);
+            font-weight: lighter;
+        }
+        .bigSlide4 {
+            position: relative;
+        }
+        .bigSlide4photo {
+            position: absolute;
+            color:#d41d35;
+            width: 190px;
+            top: 18%;
+            left: 5%;
+            font-size: 35px;
+            transform: rotate(-14deg);
+            font-weight: 700;
         }
         .bigPhoto {
-            width: 90vh;
+            width: 110vh;
         }
         .slide2 {
             grid-column: 2/3;
             margin-top: 30px;
             font-size: 25px;
         }
-            .maintext {
-                background-color: red;
+        .maintext {
+            
+        }
+        .allSmallSlides {
+            display: flex;
+            width: 1100px;
+            margin: 0 auto;
+            overflow: hidden;
+            transition: 1s;
             }
-            .allSmallSlides {
+            .slide2area {
                 display: flex;
+                width: 1100px;
+                margin: 0 auto;
+                transition: 1s;
             }
             .smallSlide {
+                padding: 10px 10px 30px 10px;
             }
+            /* .smallSlide:first-of-type {
+                padding: 10px 10px 30px 10px;
+            } */
             .smallPhoto {
-                width: 30vh;
+                width: 252px;
+            }
+            .slide2 .slide2nav {
+                position: absolute;
+                bottom: 5%;
+                left: 44%;
+            }
+            .slide2 .slide2nav .fa {
+                margin: 0px 5px;
+                font-size: 30px;
+                color: rgba(128, 128, 128, 0.521);
+            }
+            .slide2 .slide2nav .fa:hover {
+                transform: scale(1.2);
+                color: rgba(92, 92, 92, 0.884);
             }
 
         .hyperlink {
