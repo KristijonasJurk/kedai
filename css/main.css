@@ -252,7 +252,7 @@ body {
             "box2 box3 box1"
             "box4 box4 box5"
             "box4 box4 box5";
-            background-color: red;
+            /* background-color: red; */
             justify-items: center;
         }
             .lightbox1 {
@@ -283,6 +283,12 @@ body {
                 background-size: cover;
                 margin: 0 auto;
                 border-radius: 5%;
+                transition: 1s;
+            }
+            .lightbox:hover{
+            }
+            .lightbox i {
+                
             }
 
     footer {
