@@ -44,6 +44,7 @@ body {
             text-align: center;
             width: 100%;
             font-size: 60px;
+            letter-spacing: 10px;
             /* background-color: green; */
         }
         .rightside {
@@ -104,6 +105,11 @@ body {
                 padding-left: 50px;
                 text-decoration: none;
             }
+
+
+
+
+
     .mainbody {
         grid-column: 2/5;
         text-align: center;
@@ -144,65 +150,36 @@ body {
         }
         .bigSlide {
         }
-        .bigSlide1 {
-            position: relative;
-        }
-        .bigSlide1photo {
-            position: absolute;
-            color: #47CBD8;
-            top: 16%;
-            left: 7%;
-            font-size: 35px;
-            transform: rotate(6.8deg);
-        }
-        .bigSlide2 {
-            position: relative;
-        }
-        .bigSlide2photo {
-            position: absolute;
-            color: #3f1e1e;
-            width: 190px;
-            top: 47%;
-            left: 3%;
-            font-size: 35px;
-            transform: rotate(-15deg);
-            font-weight: 900;
-        }
-        .bigSlide3 {
-            position: relative;
-        }
-        .bigSlide3photo {
-            position: absolute;
-            width: 300px;
-            top: 90%;
-            left: 5%;
-            font-size: 35px;
-            transform: rotate(0deg);
-            font-weight: lighter;
-        }
-        .bigSlide4 {
-            position: relative;
-        }
-        .bigSlide4photo {
-            position: absolute;
-            color:#d41d35;
-            width: 190px;
-            top: 18%;
-            left: 5%;
-            font-size: 35px;
-            transform: rotate(-14deg);
-            font-weight: 700;
-        }
+    
         .bigPhoto {
             width: 110vh;
+            min-height: 73.34vh;
         }
+
+
+
+
+
+
+
+
         .slide2 {
             grid-column: 2/3;
             margin-top: 30px;
             font-size: 25px;
         }
         .maintext {
-            
+            position: relative;
+            height: auto;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 35px;
+            letter-spacing: 5px;
+            background-color:rgba(0, 0, 0, 0.1);
+            border-left: 5px solid gray;
+            border-right: 5px solid gray;
         }
         .allSmallSlides {
             display: flex;
@@ -242,101 +219,138 @@ body {
                 color: rgba(92, 92, 92, 0.884);
             }
 
+
+
+
+
+
+
+            
         .lightboxBox {
             grid-column: 2/3;
+            position: relative;
+            height: auto;
+            width: 90%;
+            height: 1000px;
+            margin: auto;
+            padding: 40px 0px;
+            margin-top: 100px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-gap: 10px;
-            grid-template-areas: 
-            "box2 box3 box1"
-            "box4 box4 box5"
-            "box4 box4 box5";
-            /* background-color: red; */
-            justify-items: center;
+            grid-template-columns: auto auto auto;
+            grid-gap: 2vh;
+            grid-auto-flow:dense;
         }
-            .lightbox1 {
-                grid-area: box1;
-                background-image: url("/img/lightbox/vertical1.jpg");
-            }
-            .lightbox2 {
-                grid-area: box2;
-                background-image: url("/img/lightbox/square1.jpg");
-            }
-            .lightbox3 {
-                grid-area: box3;
-                background-image: url('/img/lightbox/square2.jpg');
-            }
-            .lightbox4 {
-                grid-area: box4;
-                background-image: url('/img/lightbox/rectangular1.jpg');
-            }
-            .lightbox5 {
-                grid-area: box5;
-                background-image: url('/img/lightbox/square3.jpg');
-            }
             .lightbox{
+                height: 100%;
                 width: 100%;
-                height: 25rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                margin: 0 auto;
-                border-radius: 5%;
-                transition: 1s;
+                overflow: hidden;
             }
-            .lightbox:hover{
+            .lightbox1{
+                grid-column-start: span 1;
+                grid-row-start: span 2;
             }
-            .lightbox i {
-                
+            .lightbox6 {
+                grid-column-start: span 2;
             }
-
-    footer {
-        grid-column: 2/5;
-        margin-top: 30px;
-        /* background-color: salmon; */
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 200px 120px 120px;
-    }  
-    .form1 {
-        grid-column: 1/4;
-        grid-row: 1/2;
-        display: grid;
-        grid-template-columns: 6fr 5fr 3fr;
+            .lightbox10{
+                grid-column-start: span 1;
+                grid-row-start: span 2;
+            }
+            .lightbox img:hover{
+                filter: brightness(1) grayscale(0);
+            }
+            .lightbox img {
+                filter: brightness(0.75) grayscale(1);
+                transition: 0.2s linear;
+            }
+            .lightbox1 img, .lightbox2 img, .lightbox3 img, .lightbox5 img, .lightbox6 img, .lightbox7 img, .lightbox8 img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .lightbox2 img, .lightbox10 img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: bottom;
+            }
+            .lightbox9 img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: 0px -170px;
+            }
+            .lightboxText {
+                position: absolute;
+                height: auto;
+                width: 111%;
+                left: 50%;
+                top: -70px;
+                transform: translateX(-50%);
+                text-align: center;
+                font-size: 35px;
+                letter-spacing: 5px;
+                background-color:rgba(0, 0, 0, 0.1);
+                border-left: 5px solid gray;
+                border-right: 5px solid gray;
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            footer {
+                grid-column: 2/5;
+                margin-top: 30px;
+                /* background-color: salmon; */
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 200px 120px 120px;
+            }  
+            .form1 {
+                grid-column: 1/4;
+                grid-row: 1/2;
+                display: grid;
+                grid-template-columns: 6fr 5fr 3fr;
         padding-bottom: 40px;
         padding-left: 50px;
         border-top: 3px double black;
-
-        }
-            .about {
-                grid-column: 1/2;
-                font-size: 24px;
-                margin-top: 10px;
-                /* background-color: red; */
-            }
-            .help {
-                grid-column: 2/3;
-                font-size: 24px;
-                margin-top: 10px;
-            }
-            .contacts {
-                grid-column: 3/4;
-                font-size: 24px;
-                margin-top: 10px;
-            }
-                .about > a {
-                    display: flex;
-                    flex-direction: column;
-                    text-decoration: none;
-                    margin-top: 20px;
-                    font-size: 24px;
-                    color: black;
-                }
-                .contacts > a {
-                    display: flex;
-                    flex-direction: column;
-                    text-decoration: none;
+        
+    }
+    .about {
+        grid-column: 1/2;
+        font-size: 24px;
+        margin-top: 10px;
+        /* background-color: red; */
+    }
+    .help {
+        grid-column: 2/3;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    .contacts {
+        grid-column: 3/4;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    .about > a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        margin-top: 20px;
+        font-size: 24px;
+        color: black;
+    }
+    .contacts > a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
                     margin-top: 20px;
                     font-size: 24px;
                     color: black;
@@ -349,21 +363,21 @@ body {
                     font-size: 24px;
                     color: black;
                 }
-        .form2 {
-            grid-column: 1/4;
-            grid-row: 2/3;
-            display: grid;
-            grid-template-columns: 6fr 5fr 3fr;
-            /* background-color: green; */
-            padding-bottom: 40px;
-            padding-left: 50px;
-            border-top: 3px double black;
-        }
-            .payment {
-                grid-column: 1/2;
-                font-size: 24px;
-                margin-top: 10px;
-            }
+                .form2 {
+                    grid-column: 1/4;
+                    grid-row: 2/3;
+                    display: grid;
+                    grid-template-columns: 6fr 5fr 3fr;
+                    /* background-color: green; */
+                    padding-bottom: 40px;
+                    padding-left: 50px;
+                    border-top: 3px double black;
+                }
+                .payment {
+                    grid-column: 1/2;
+                    font-size: 24px;
+                    margin-top: 10px;
+                }
                 .payment > h3 {
                     display: inline-block;
                     /* background-color: red; */
@@ -376,11 +390,11 @@ body {
                     margin-top: 10px;
                     padding: 2px 4px 0px 0px;
                 }
-            .shipping {
-                grid-column: 2/3;
-                font-size: 24px;
-                margin-top: 10px;
-            }
+                .shipping {
+                    grid-column: 2/3;
+                    font-size: 24px;
+                    margin-top: 10px;
+                }
                 .shipping > h3 {
                     display: inline-block;
                     /* background-color: blue; */
@@ -402,48 +416,73 @@ body {
                 font-size: 24px;
                 margin-top: 10px;
             }
-                .socials > h3 {
-                    display: inline-block;
-                    /* background-color: green; */
-                    width: 100%;   
-                }
+            .socials > h3 {
+                display: inline-block;
+                /* background-color: green; */
+                width: 100%;   
+            }
                 .socials > .fa {
                     display: inline-block;
                     font-size: 40px;
                     color: black;
                     padding: 7px 12px 0px 0px;
                 }
-        .form3 {
-            grid-column: 1/4;
-            grid-row: 3/4;
-            display: grid;
-            grid-template-columns: 1fr 12fr 10fr 3fr;
-            border-top: 3px double black;
-        }
-            .brandlist {
-                grid-column: 2/4;
-                font-size: 24px;
-                flex-wrap: wrap;
-            }
-            .brandlist > h3 {    
-                margin-top: 10px;
-            }
+                .form3 {
+                    grid-column: 1/4;
+                    grid-row: 3/4;
+                    display: grid;
+                    grid-template-columns: 1fr 12fr 10fr 3fr;
+                    border-top: 3px double black;
+                }
+                .brandlist {
+                    grid-column: 2/4;
+                    font-size: 24px;
+                    flex-wrap: wrap;
+                }
+                .brandlist > h3 {    
+                    margin-top: 10px;
+                }
                 .brands {
                     display: flex;
                     justify-content: space-between;
                 }
-                    .brandlist a {
-                        display: inline-block;
-                        /* background-color: red; */
-                        text-decoration: none;
-                        margin-top: 20px;
-                        font-size: 24px;
-                        color: black;
-                    }
-    a:hover {
-        transform: scale(1.05);
-    }
+                .brandlist a {
+                    display: inline-block;
+                    /* background-color: red; */
+                    text-decoration: none;
+                    margin-top: 20px;
+                    font-size: 24px;
+                    color: black;
+                }
+                a:hover {
+                    transform: scale(1.05);
+                }
     .shipping>a>img:hover {
         transform: scale(1.05);
     }
-                    
+    
+
+
+
+
+
+
+
+
+
+
+    
+    @media only screen and (max-width: 1200px) {
+        .lightboxBox {
+            display: grid;
+            grid-template-columns: 320px 320px 320px;
+            height: 1000px;
+        }
+        .lightbox9 img {
+            object-position: 0px -110px;
+        }
+        body {
+            display: grid;
+            grid-template-columns: 0.1fr 5fr 5fr 5fr 0.1fr;
+        }
+    }
