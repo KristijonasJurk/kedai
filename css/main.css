@@ -56,21 +56,36 @@ body {
             margin-top: 30px;
             line-height: 40px;
         }
-            .rightside > a {
+        .login {
+            width: 100%;
+        }
+            .rightside a {
                 display: inline-block;
                 color: black;
                 text-decoration: none;
-                width: 100%;
+                width: 42%;
                 font-size: 22px;
+                /* background-color: red; */
             }
             .rightside > input {
                 display: inline-block;
                 font-size: 20px;
+                background-color: transparent;
+                border: 1px solid rgba(0, 0, 0, 0.452)
+            }
+            .rightside > input:hover {
+                border: 1px solid black;
+                background-color: white;;
+            
             }
             .rightside > .box {
                 display: inline-block;
                 /* background-color: yellow; */
                 max-width: 50px;
+            }
+            .rightside > .box:hover {
+                transform: scale(1.1);
+                cursor: pointer;
             }
         .links {
             display: flex;  
@@ -195,6 +210,7 @@ body {
             margin: 0 auto;
             overflow: hidden;
             transition: 1s;
+            position: relative;
             }
             .slide2area {
                 display: flex;
@@ -213,7 +229,7 @@ body {
             }
             .slide2 .slide2nav {
                 position: absolute;
-                bottom: 5%;
+                bottom: 8%;
                 left: 44%;
             }
             .slide2 .slide2nav .fa {
@@ -226,9 +242,49 @@ body {
                 color: rgba(92, 92, 92, 0.884);
             }
 
-        .hyperlink {
+        .lightboxBox {
             grid-column: 2/3;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            grid-template-areas: 
+            "box2 box3 box1"
+            "box4 box4 box5"
+            "box4 box4 box5";
+            background-color: red;
+            justify-items: center;
         }
+            .lightbox1 {
+                grid-area: box1;
+                background-image: url("/img/lightbox/vertical1.jpg");
+            }
+            .lightbox2 {
+                grid-area: box2;
+                background-image: url("/img/lightbox/square1.jpg");
+            }
+            .lightbox3 {
+                grid-area: box3;
+                background-image: url('/img/lightbox/square2.jpg');
+            }
+            .lightbox4 {
+                grid-area: box4;
+                background-image: url('/img/lightbox/rectangular1.jpg');
+            }
+            .lightbox5 {
+                grid-area: box5;
+                background-image: url('/img/lightbox/square3.jpg');
+            }
+            .lightbox{
+                width: 100%;
+                height: 25rem;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0 auto;
+                border-radius: 5%;
+            }
+
     footer {
         grid-column: 2/5;
         margin-top: 30px;
@@ -379,6 +435,9 @@ body {
                         color: black;
                     }
     a:hover {
+        transform: scale(1.05);
+    }
+    .shipping>a>img:hover {
         transform: scale(1.05);
     }
                     
