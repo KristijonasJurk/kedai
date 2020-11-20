@@ -40,10 +40,10 @@ body {
             }
         .title {
             display: inline-block;
-            font-family: 'Press Start 2P', cursive;
+            font-family: 'Goldman', cursive;
             text-align: center;
             width: 100%;
-            font-size: 60px;
+            font-size: 80px;
             letter-spacing: 10px;
             /* background-color: green; */
         }
@@ -178,6 +178,7 @@ body {
         .slide2 {
             grid-column: 2/3;
             margin-top: 30px;
+            margin-bottom: 30px;
             font-size: 25px;
         }
         .maintext {
@@ -208,7 +209,10 @@ body {
                 transition: 1s;
             }
             .smallSlide {
-                padding: 10px 10px 30px 10px;
+                padding: 60px 10px 50px 10px;
+            }
+            .smallSlide:hover {
+                transform: scale(1);
             }
             /* .smallSlide:first-of-type {
                 padding: 10px 10px 30px 10px;
@@ -216,9 +220,12 @@ body {
             .smallPhoto {
                 width: 252px;
             }
+            .smallPhoto:hover {
+                transform: scale(1.1);
+            }
             .slide2 .slide2nav {
                 position: absolute;
-                bottom: 8%;
+                bottom: 0%;
                 left: 44%;
             }
             .slide2 .slide2nav .fa {
@@ -273,7 +280,7 @@ body {
             }
             .lightbox img {
                 filter: brightness(0.75) grayscale(1);
-                transition: 0.2s linear;
+                transition: 0.5s;
             }
             .lightbox1 img, .lightbox2 img, .lightbox3 img, .lightbox5 img, .lightbox6 img, .lightbox7 img, .lightbox8 img {
                 height: 100%;
@@ -353,6 +360,7 @@ body {
     }
     .about > a {
         display: flex;
+        width: 50%;
         flex-direction: column;
         text-decoration: none;
         margin-top: 20px;
@@ -361,20 +369,22 @@ body {
     }
     .contacts > a {
         display: flex;
+        width: 50%;
         flex-direction: column;
         text-decoration: none;
         margin-top: 20px;
         font-size: 24px;
         color: black;
                 }
-                .help > a {
-                    display: flex;
-                    flex-direction: column;
-                    text-decoration: none;
-                    margin-top: 20px;
-                    font-size: 24px;
-                    color: black;
-                }
+    .help > a {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        text-decoration: none;
+        margin-top: 20px;
+        font-size: 24px;
+        color: black;
+    }
                 .form2 {
                     grid-column: 1/4;
                     grid-row: 2/3;
@@ -534,7 +544,7 @@ body {
             position: absolute;
             top: 20px;
             left: 50px;
-            font-family: 'Press Start 2P', cursive;
+            font-family: 'Goldman', cursive;
             text-align: center;
             /* width: 100%; */
             font-size: 60px;
@@ -590,8 +600,6 @@ body {
         }
 
     }
-    /* TODO susitraukus ekranui reikia padaryti mygtuka sone, kuris rodytu visus linkus. */
-    /* TODO fix slide2 on 900px width */
     
     @media only screen and (max-width: 900px) {
         .slide1 {
@@ -612,7 +620,7 @@ body {
             display: block;
             position: absolute;
             top: 20px;
-            font-family: 'Press Start 2P', cursive;
+            font-family: 'Goldman', cursive;
             text-align: center;
             width: 80%;
             font-size: 50px;
@@ -678,7 +686,7 @@ body {
             top: 20px;
             width: 100%;
             left: 0;
-            font-family: 'Press Start 2P', cursive;
+            font-family: 'Goldman', cursive;
             text-align: center;
             /* width: 100%; */
             font-size: 35px;
