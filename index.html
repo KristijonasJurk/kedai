@@ -10,6 +10,7 @@
     <!--Styles-->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slide.css">
     <!--Fonts-->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -64,9 +65,10 @@
                 <!-- <div class="bigSlide4photo">Puma Classics LFS</div> -->
             </div>
             <button class="fa fa-angle-right" onclick="plusSlides1(1)"></button>
+            <div class="slide1nav"></div>
         </div>
         <div class="slide2">
-            <h2 class="maintext">NEW PRODUCTS</h2>
+            <h2 class="maintext">OUR PRODUCTS</h2>
             <div class="allSmallSlides">
                 <div class="slide2area">
                     <a class="smallSlide">
@@ -95,106 +97,123 @@
                     </a>
                 </div>
                 <div class="slide2nav"></div>
+                <!-- <div class="slidecontainer">
+                    <p>Default range slider:</p>
+                    <input type="range" min="1" max="100" value="50">
+                </div> -->
             </div>
-        </div>
-        <div class="lightboxBox">
-            <h2 class="lightboxText">NEW COLLECTION</h2>
-            <div class="lightbox lightbox1">
-                <img src="./img/lightbox/vertical1.jpg" alt="">
-            </div>
-            <div class="lightbox lightbox2">
-                <img src="./img/lightbox/square1.jpg" alt="">
-            </div>
-            <div class="lightbox lightbox3">
-                <img src="./img/lightbox/square2.jpg" alt="">
-            </div>
-            <div class="lightbox lightbox5">
-                <img src="./img/lightbox/square3.jpg" alt="">
-            </div>
-            <div class="lightbox lightbox6">
-                <img src="./img/lightbox/rectangular2.jpg" alt="">
-            </div>
-            <div class="lightbox lightbox10">
-                <img src="./img/lightbox/vertical4.jpg" alt="">
-            </div>
-            <div class="lightbox lightbox7">
-                <img src="./img/lightbox/rectangular3.jpg" alt="">
-            </div>
-            <div class="lightbox lightbox8">
-                <img src="./img/lightbox/vertical2.jpg" alt="">
-            </div>
-            <div class="lightbox lightbox9">
-                <img src="./img/lightbox/vertical3.jpg" alt="">
-            </div>
-        </div>
-    </div>
-    <footer>
-        <section class="form1">
-            <div class="about">
-                <h3>ABOUT KEDAI</h3>
-                <a class="hyperlink" href="#">How we got started?</a>
-                <a class="hyperlink" href="#">Our partners</a>
-                <a class="hyperlink" href="#">Personnel</a>
-            </div>
-            <div class="help">
-                <h3>HELP</h3>
-                <a class="hyperlink" href="#">Returns</a>
-                <a class="hyperlink" href="#">Shipping to non-EU countries</a>
-                <a class="hyperlink" href="#">Career</a>
-            </div>
-            <div class="contacts">
-                <h3>CONTACTS</h3>
-                <a class="hyperlink" href="#">Shops</a>
-                <a class="hyperlink" href="#">FAQ</a>
-                <a class="hyperlink" href="#">Tours</a>
-            </div>
-        </section>
-        <section class="form2">
-            <div class="payment">
-                <h3>PAYMENTS</h3>
-                <a class="fa fa-cc-visa" href="#"></a>
-                <a class="fa fa-cc-mastercard" href="#"></a>
-                <a class="fa fa-paypal" href="#"></a>
-                <a class="fa fa-btc" href="#"></a>
-                <a class="fa fa-cc-amex" href="#"></a>
-            </div>
-            <div class="shipping">
-                <h3>SHIPPING</h3>
-                <a href="#">
-                    <img class="dhl" src="./img/dhl-logo.png" alt="dhl-logo">
-                </a>
-                <a href="#">
-                    <img class="ups" src="./img/ups-logo.png" alt="ups-logo">
-                </a>
-            </div>
-            <div class="socials">
-                <h3>FOLLOW US</h3>
-                <a class="fa fa-facebook-square" href="https://www.facebook.com/kristijonas.jurksas"></a>
-                <a class="fa fa-instagram" href="https://www.instagram.com/kristijonasjurk/"></a>
-                <a class="fa fa-github" href="https://github.com/KristijonasJurk"></a>
-            </div>
-        </section>
-        <section class="form3">
-            <div class="brandlist">
-                <h3>BRANDS AND CATEGORIES</h3>
-                <div class="brands">
-                    <a class="hyperlink" href="#">Nike</a>
-                    <a class="hyperlink" href="#">Adidas</a>
-                    <a class="hyperlink" href="#">New Balance</a>
-                    <a class="hyperlink" href="#">Puma</a>
-                    <a class="hyperlink" href="#">Reebook</a>
-                    <a class="hyperlink" href="#">Jordan</a>
-                    <a class="hyperlink" href="#">Vans</a>
-                    <a class="hyperlink" href="#">Asics</a>
-                    <a class="hyperlink" href="#">Accessories</a>
+            <div class="nikeSlide">
+                <h2 class="maintext">NEW NIKE ARRIVALS</h2>
+                <div class="slider">
+                    <img src="./img/shoes/more-shoes/20.jpg" class="slide" id="slide-1"></img>
+                    <img src="./img/shoes/more-shoes/21.jpg" class="slide" id="slide-2"></img>
+                    <img src="./img/shoes/more-shoes/22.jpg" class="slide" id="slide-3"></img>
+                    <img src="./img/shoes/more-shoes/23.jpg" class="slide" id="slide-4"></img>
+                    <img src="./img/shoes/more-shoes/24.jpg" class="slide" id="slide-5"></img>
+                    <img src="./img/shoes/more-shoes/25.jpg" class="slide" id="slide-6"></img>
+                    <img src="./img/shoes/more-shoes/26.jpg" class="slide" id="slide-7"></img>
+                    <img src="./img/shoes/more-shoes/27.jpg" class="slide" id="slide-8"></img>
+                    <img src="./img/shoes/more-shoes/28.jpg" class="slide" id="slide-9"></img>
                 </div>
             </div>
-        </section>
-    </footer>
-    <script src="./js/main.js" type="module"></script>
-    <script src="./js/slide2.js"></script>
-    <script src="./js/slide1.js"></script>
-    <script src="./js/header.js"></script>
+            <div class="lightboxBox">
+                <h2 class="lightboxText">LATEST TRENDS</h2>
+                <div class="lightbox lightbox1">
+                    <img src="./img/lightbox/vertical1.jpg" alt="">
+                </div>
+                <div class="lightbox lightbox2">
+                    <img src="./img/lightbox/square1.jpg" alt="">
+                </div>
+                <div class="lightbox lightbox3">
+                    <img src="./img/lightbox/square2.jpg" alt="">
+                </div>
+                <div class="lightbox lightbox5">
+                    <img src="./img/lightbox/square3.jpg" alt="">
+                </div>
+                <div class="lightbox lightbox6">
+                    <img src="./img/lightbox/rectangular2.jpg" alt="">
+                </div>
+                <div class="lightbox lightbox10">
+                    <img src="./img/lightbox/vertical4.jpg" alt="">
+                </div>
+                <div class="lightbox lightbox7">
+                    <img src="./img/lightbox/rectangular3.jpg" alt="">
+                </div>
+                <div class="lightbox lightbox8">
+                    <img src="./img/lightbox/vertical2.jpg" alt="">
+                </div>
+                <div class="lightbox lightbox9">
+                    <img src="./img/lightbox/vertical3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <section class="form1">
+                <div class="about">
+                    <h3>ABOUT KEDAI</h3>
+                    <a class="hyperlink" href="#">How we got started?</a>
+                    <a class="hyperlink" href="#">Our partners</a>
+                    <a class="hyperlink" href="#">Personnel</a>
+                </div>
+                <div class="help">
+                    <h3>HELP</h3>
+                    <a class="hyperlink" href="#">Returns</a>
+                    <a class="hyperlink" href="#">Shipping to non-EU countries</a>
+                    <a class="hyperlink" href="#">Career</a>
+                </div>
+                <div class="contacts">
+                    <h3>CONTACTS</h3>
+                    <a class="hyperlink" href="#">Shops</a>
+                    <a class="hyperlink" href="#">FAQ</a>
+                    <a class="hyperlink" href="#">Tours</a>
+                </div>
+            </section>
+            <section class="form2">
+                <div class="payment">
+                    <h3>PAYMENTS</h3>
+                    <a class="fa fa-cc-visa" href="#"></a>
+                    <a class="fa fa-cc-mastercard" href="#"></a>
+                    <a class="fa fa-paypal" href="#"></a>
+                    <a class="fa fa-btc" href="#"></a>
+                    <a class="fa fa-cc-amex" href="#"></a>
+                </div>
+                <div class="shipping">
+                    <h3>SHIPPING</h3>
+                    <a href="#">
+                        <img class="dhl" src="./img/dhl-logo.png" alt="dhl-logo">
+                    </a>
+                    <a href="#">
+                        <img class="ups" src="./img/ups-logo.png" alt="ups-logo">
+                    </a>
+                </div>
+                <div class="socials">
+                    <h3>FOLLOW US</h3>
+                    <a class="fa fa-facebook-square" href="https://www.facebook.com/kristijonas.jurksas"></a>
+                    <a class="fa fa-instagram" href="https://www.instagram.com/kristijonasjurk/"></a>
+                    <a class="fa fa-github" href="https://github.com/KristijonasJurk"></a>
+                </div>
+            </section>
+            <section class="form3">
+                <div class="brandlist">
+                    <h3>BRANDS AND CATEGORIES</h3>
+                    <div class="brands">
+                        <a class="hyperlink" href="#">Nike</a>
+                        <a class="hyperlink" href="#">Adidas</a>
+                        <a class="hyperlink" href="#">New Balance</a>
+                        <a class="hyperlink" href="#">Puma</a>
+                        <a class="hyperlink" href="#">Reebook</a>
+                        <a class="hyperlink" href="#">Jordan</a>
+                        <a class="hyperlink" href="#">Vans</a>
+                        <a class="hyperlink" href="#">Asics</a>
+                        <a class="hyperlink" href="#">Accessories</a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <script src="./js/main.js" type="module"></script>
+        <script src="./js/slide2.js"></script>
+        <script src="./js/slide1.js"></script>
+        <script src="./js/header.js"></script>
 </body>
 
 </html>

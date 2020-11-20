@@ -12,7 +12,8 @@ body {
     grid-template-columns: 2fr 5fr 5fr 5fr 2fr;
     font-family: 'Barlow Condensed', sans-serif;
     color: black;
-    background: radial-gradient(circle, rgba(255,255,255,1) 58%, rgba(128,128,128,1) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 63%, rgba(221,220,220,1) 84%, rgba(177,177,177,1) 100%);
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-4/sym347.cur), auto !important;
 }
     header {
         grid-column: 1/6;
@@ -54,7 +55,7 @@ body {
             /* background-color: greenyellow; */
             font-size: 20px;
             margin-right: 50px;
-            margin-top: 30px;
+            margin-top: 5px;
             line-height: 40px;
         }
         .login {
@@ -105,7 +106,7 @@ body {
             line-height: 20px;
             /* background-color: rosybrown; */
             color:  black;
-            margin-top: 30px;
+            margin-top: 20px;
             padding: 10px 0px;
             font-size: 24px;
             font-family: 'Barlow Condensed', sans-serif;
@@ -124,7 +125,7 @@ body {
 
     .mainbody {
         grid-column: 2/5;
-        text-align: center;
+        /* text-align: center; */
         display: grid;
         grid-template-columns: 1fr 5fr 1fr;
         /* background-color: blueviolet; */
@@ -167,6 +168,23 @@ body {
             width: 110vh;
             min-height: 73.34vh;
         }
+        .slide1nav {
+            position: absolute;
+            bottom: 2%;
+            left: 40%;
+            transition: 0s;
+        }
+        .slide1nav .fa {
+            margin: 10px;
+            font-size: 40px;
+            color: red;
+            cursor: pointer;
+            color: rgba(128, 128, 128, 0.315);
+        }
+        .slide1nav .fa:hover {
+            transform: scale(1.2);
+            color: rgb(92, 92, 92);
+        }
 
 
 
@@ -201,6 +219,7 @@ body {
             overflow: hidden;
             transition: 1s;
             position: relative;
+            margin-bottom: 50px;
             }
             .slide2area {
                 display: flex;
@@ -277,6 +296,7 @@ body {
             }
             .lightbox img:hover{
                 filter: brightness(1) grayscale(0);
+                transform: scale(1.02);
             }
             .lightbox img {
                 filter: brightness(0.75) grayscale(1);
@@ -455,7 +475,7 @@ body {
                     display: grid;
                     grid-template-columns: 1fr 12fr 10fr 3fr;
                     border-top: 3px double black;
-                    padding-left: 5px;
+                    padding-left: 0px;
                 }
                 .brandlist {
                     grid-column: 2/4;
