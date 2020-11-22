@@ -18,13 +18,19 @@ body {
     header {
         grid-column: 1/6;
         /* background-color: red; */
-        color: black;        
+        color: black;
+        background-color: white;        
     }
         .kalba {
             display: inline-block;
             /* background-color: hotpink; */
             margin-left: 50px;
             margin-top:20px;
+            color: #999;
+        }
+        .kalba:hover {
+            color: black;
+            transition: 0.2s;
         }
             .kalba > .LT {
                 color: inherit;
@@ -39,6 +45,8 @@ body {
                 font-size: 30px;
                 line-height: 30px;
             }
+
+
         .title {
             display: inline-block;
             font-family: 'Goldman', cursive;
@@ -47,47 +55,64 @@ body {
             font-size: 80px;
             letter-spacing: 10px;
             /* background-color: green; */
+            line-height: 20px;
         }
+
+
         .rightside {
             display: inline-block;
             float: right;
             width: 23%;
             /* background-color: greenyellow; */
             font-size: 20px;
-            margin-right: 50px;
             margin-top: 5px;
-            line-height: 40px;
+            line-height: 30px;
         }
         .login {
         }
             .rightside a {
                 display: inline-block;
-                color: black;
+                color: #999;
                 text-decoration: none;
                 width: 50%;
                 font-size: 22px;
                 /* background-color: red; */
             }
+            .rightside a:hover {
+                color: #000;
+                transform: scale(1);
+            }
             .rightside > input {
                 display: inline-block;
                 font-size: 20px;
                 background-color: transparent;
-                border: 1px solid rgba(0, 0, 0, 0.452)
+                border: 1px solid #999
             }
             .rightside > input:hover {
                 border: 1px solid black;
-                background-color: white;;
+                background-color: white;
+            }
+            .rightside .fa {
+                color: #999;
+            }
+            .rightside .fa:hover {
+                color: black;
+                cursor: pointer;
             }
             .rightside > .box {
                 display: inline-block;
                 /* background-color: yellow; */
                 width: 50px;
                 height: 30px;
+                opacity: 0.5;
             }
             .rightside > .box:hover {
-                transform: scale(1.1);
                 cursor: pointer;
+                transition: 0.3s;
+                opacity: 1;
             }
+
+
         .linksButton {
             display: none;
             font-size: 35px;
@@ -95,11 +120,15 @@ body {
             position: absolute;
             top: 15px;
             left: 15px;
-            color: black;
+            color: #999;
             cursor: pointer;
             padding: 5px;
-            border: 5px ridge rgba(0, 0, 0, 0.1);
+            border: 4px double #999;
             border-radius: 30%;
+        }
+        .linksButton:hover {
+            color: black;
+            border: 4px double black;
         }
         .links {
             display: flex;  
@@ -114,10 +143,20 @@ body {
             justify-content: center;
         }
             .links > a {
-                color: black;
+                color: #999;
                 padding-left: 50px;
                 text-decoration: none;
             }
+            .links > a:hover {
+                color: black;
+                transform: scale(1);
+                transition: 0.2s;
+            }
+
+
+
+
+
 
 
 
@@ -143,6 +182,7 @@ body {
         }
         .slide1 button {
             position: absolute;
+            color: #999;
             background-color: transparent;
             border: none;
             width: 6vh;
@@ -153,6 +193,7 @@ body {
         }
         .slide1 button:hover {
             background-color: rgba(231, 230, 230, 0.521);
+            color: #000;
         }
         .slide1 button:first-of-type {
             top: 50%;
@@ -168,6 +209,10 @@ body {
             width: 150vh;
             min-height: 73.34vh;
         }
+
+
+
+
         .slide1nav {
             position: absolute;
             bottom: 0%;
@@ -179,7 +224,7 @@ body {
             font-size: 40px;
             color: red;
             cursor: pointer;
-            color: rgba(128, 128, 128, 0.315);
+            color: #999;
         }
         .slide1nav .fa:hover {
             transform: scale(1.2);
@@ -238,10 +283,41 @@ body {
             } */
             .smallPhoto {
                 width: 252px;
+                height: 126px;
             }
             .smallPhoto:hover {
                 transform: scale(1.1);
             }
+            .productInfoContainer {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                font-weight: 100;
+                font-size: 18px;
+            }
+            .productInfo1 a, .productInfo2 a, .productInfo3 a, .productInfo4 a {
+                text-decoration: none;
+                color: #000;
+            }
+            .productInfo1 a {
+                font-size: 14px;
+                color: #999;
+            }
+            .productInfo3 {
+                margin-bottom: 8px;
+            }
+            .productInfo3 a {
+                color: #999;
+            }
+            .productInfo3 a:hover {
+                color: black;
+            }
+            
+
+
+
+
+
             .slide2 .slide2nav {
                 position: absolute;
                 bottom: 0%;
@@ -250,7 +326,7 @@ body {
             .slide2 .slide2nav .fa {
                 margin: 0px 5px;
                 font-size: 30px;
-                color: rgba(128, 128, 128, 0.521);
+                color: #999;
             }
             .slide2 .slide2nav .fa:hover {
                 transform: scale(1.2);
@@ -300,7 +376,7 @@ body {
             }
             .lightbox img {
                 filter: brightness(0.75) grayscale(1);
-                transition: 0.5s;
+                transition: 0.3s;
             }
             .lightbox1 img, .lightbox2 img, .lightbox3 img, .lightbox5 img, .lightbox6 img, .lightbox7 img, .lightbox8 img {
                 height: 100%;
@@ -351,7 +427,10 @@ body {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 200px 120px 120px;
+                transition:0.3s;
             }  
+
+
             .form1 {
                 grid-column: 1/4;
                 grid-row: 1/2;
@@ -360,7 +439,11 @@ body {
                 padding-bottom: 40px;
                 padding-left: 40px;
                 border-top: 3px double black;
-        
+            }
+            footer a:hover {
+                color: black;
+                transform: scale(1);
+                transition: 0.3s;
             }
     .about {
         grid-column: 1/2;
@@ -385,7 +468,7 @@ body {
         text-decoration: none;
         margin-top: 20px;
         font-size: 24px;
-        color: black;
+        color: #999;
     }
     .contacts > a {
         display: flex;
@@ -394,8 +477,8 @@ body {
         text-decoration: none;
         margin-top: 20px;
         font-size: 24px;
-        color: black;
-                }
+        color: #999;
+    }
     .help > a {
         display: flex;
         width: 80%;
@@ -403,8 +486,10 @@ body {
         text-decoration: none;
         margin-top: 20px;
         font-size: 24px;
-        color: black;
+        color: #999;
     }
+
+
                 .form2 {
                     grid-column: 1/4;
                     grid-row: 2/3;
@@ -469,14 +554,16 @@ body {
                     color: black;
                     padding: 7px 12px 0px 0px;
                 }
-                .form3 {
-                    grid-column: 1/4;
-                    grid-row: 3/4;
-                    display: grid;
-                    grid-template-columns: 1fr 12fr 10fr 3fr;
-                    border-top: 3px double black;
-                    padding-left: 0px;
-                }
+
+
+        .form3 {
+            grid-column: 1/4;
+            grid-row: 3/4;
+            display: grid;
+            grid-template-columns: 1fr 14fr 14fr 1fr;
+            border-top: 3px double black;
+            padding-left: 0px;
+        }
                 .brandlist {
                     grid-column: 2/4;
                     font-size: 24px;
@@ -493,12 +580,12 @@ body {
                     display: inline-block;
                     /* background-color: red; */
                     text-decoration: none;
-                    margin: 20px 20px 0px 0px;
+                    margin: 20px 40px 0px 0px;
                     font-size: 24px;
-                    color: black;
+                    color: rgb(99, 98, 98);
                 }
                 a:hover {
-                    transform: scale(1.05);
+                    color: #000;
                 }
     .shipping>a>img:hover {
         transform: scale(1.05);
@@ -560,7 +647,6 @@ body {
         }
         .rightside i:hover {
             cursor: pointer;
-            transform: scale(1.2);
         }
         .kalba {
             margin-left: 10px;
@@ -588,7 +674,7 @@ body {
         .rightside{
             grid-column: 3/4;
             justify-self: end;
-            padding-right: 0px;
+            margin: 5px 55px;
             display: flex;
         }
         .linksButton {
@@ -633,6 +719,9 @@ body {
             border-bottom-right-radius: 20px;
             border-bottom-left-radius: 20px;
         }
+        footer {
+            grid-template-rows: 240px 160px 160px;
+        }  
 
     }
     
@@ -690,6 +779,7 @@ body {
         }
         .smallPhoto {
             width: 200px;
+            height: 100px;
         }
         .slide2 {
             width: 100%;
@@ -709,8 +799,11 @@ body {
                 left: 30%;
             }
         .rightside{
-            justify-self: left;
+            margin: 5px 80px;
         }    
+        .form3 {
+            grid-template-columns:1fr 10fr 10fr 1fr;
+        }
         
     }
 
@@ -750,8 +843,8 @@ body {
             width: 23%;
             /* background-color: greenyellow; */
             font-size: 20px;
-            margin-right: 40px;
-            margin-top: 25px;
+            margin-right: 70px;
+            margin-top: 20px;
             line-height: 0px;
         }
         .rightside .box {
@@ -780,6 +873,7 @@ body {
         }
         .smallPhoto {
             width: 130px;
+            height: 65px;
         }
         .allSmallSlides {
             width: 450px;
@@ -805,6 +899,9 @@ body {
             .lightbox {
                 margin: 20px;
             }
+        .form3 {
+            grid-template-columns:1fr 6fr 6fr 1fr;
+        }
     }
 
     @media only screen and (max-width: 770px) {

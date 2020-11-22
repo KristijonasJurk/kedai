@@ -36,7 +36,7 @@
         width: 830px;
     }
 }
-/* TODO padaryti visas batu ft i png */
+
 @media only screen and (max-width: 900px) {
     .slide {
         height: 110px;
