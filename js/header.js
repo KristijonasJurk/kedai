@@ -20,3 +20,4 @@ document.querySelector('.linksButton').addEventListener("click", function () {
         document.querySelector("nav").style.left = `0px`;
     }
 });
+
