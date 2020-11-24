@@ -32,6 +32,8 @@
         width: 10rem !important;
         height: 10rem !important;
     }
+    /* popout effect */
+
 
 }
 
@@ -54,6 +56,10 @@
     }
     .sneakerContainer {
         width: 70% !important;
+    }
+    /* popout effect */
+    .card {
+        transform: rotateY(4.5deg) rotateX(7deg);
     }
 }
 

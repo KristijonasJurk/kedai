@@ -15,10 +15,10 @@ const containerHeight = container[0].offsetHeight;
 const containerHeight1 = container[0].offsetTop;
 const containerHeight2 = container[1].offsetTop;
 const containerHeight3 = container[2].offsetTop;
-// zodziu reik keisti transform parametra priklausomai nuo window nes tas offsettop aukstis atsinaujin tik refreshinus psl
-const heightToSneakers1 = mainbodyOffset + slide2Offset + sliderOffset + containerHeight1 + (containerHeight / 2);
-const heightToSneakers2 = mainbodyOffset + slide2Offset + sliderOffset + containerHeight2 + (containerHeight / 2);
-const heightToSneakers3 = mainbodyOffset + slide2Offset + sliderOffset + containerHeight3 + (containerHeight / 2);
+// offset
+const heightToSneakers1 = mainbodyOffset - 800 + slide2Offset + sliderOffset + containerHeight1 + (containerHeight / 2);
+const heightToSneakers2 = mainbodyOffset - 800 + slide2Offset + sliderOffset + containerHeight2 + (containerHeight / 2);
+const heightToSneakers3 = mainbodyOffset - 800 + slide2Offset + sliderOffset + containerHeight3 + (containerHeight / 2);
 // width of element
 const container0Width = container[0].offsetLeft + 400;
 const container1Width = container[1].offsetLeft + 200;
@@ -28,19 +28,50 @@ const containerWidth = container[0].offsetLeft;
 container.forEach(function (elem) {
     elem.addEventListener('mousemove', (e) => {
         if (elem === container[0]) {
-            let yAxis = (heightToSneakers1 - e.pageY) / 25;
-            let xAxis0 = (container0Width + (containerWidth / 2) - e.pageX) / 25;
+            const yAngle = heightToSneakers1 + 100 - e.pageY
+            const xAngle = container0Width + (containerWidth / 2) - e.pageX;
+            let yAxis = yAngle / 25;
+            let xAxis0 = xAngle / 25;
             card[0].style.transform = `rotateY(${xAxis0}deg) rotateX(${yAxis}deg)`;
+            if (window.innerWidth < 900 && window.innerWidth > 600) {
+                let yAxis = (yAngle + 300) / 25;
+                let xAxis0 = (xAngle - 200) / 25;
+                card[0].style.transform = `rotateY(${xAxis0}deg) rotateX(${yAxis}deg)`;
+            } if (window.innerWidth < 600) {
+                let yAxis = (yAngle + 350) / 25;
+                let xAxis0 = (xAngle - 300) / 25;
+                card[0].style.transform = `rotateY(${xAxis0}deg) rotateX(${yAxis}deg)`;
+            }
         }
         if (elem === container[1]) {
-            let yAxis = (heightToSneakers2 - e.pageY) / 25;
-            let xAxis1 = (container1Width + (containerWidth / 2) - e.pageX) / 25;
+            const yAngle = heightToSneakers2 + 100 - e.pageY
+            const xAngle = container1Width + (containerWidth / 2) - e.pageX;
+            let yAxis = yAngle / 25;
+            let xAxis1 = xAngle / 25;
             card[1].style.transform = `rotateY(${xAxis1}deg) rotateX(${yAxis}deg)`;
+            if (window.innerWidth < 900 && window.innerWidth > 600) {
+                let yAxis = (yAngle + 300) / 25;
+                card[1].style.transform = `rotateY(${xAxis1}deg) rotateX(${yAxis}deg)`;
+            } if (window.innerWidth < 600) {
+                let yAxis = (yAngle + 700) / 25;
+                card[1].style.transform = `rotateY(${xAxis1}deg) rotateX(${yAxis}deg)`;
+            }
         }
         if (elem === container[2]) {
-            let yAxis = (heightToSneakers3 - e.pageY) / 25;
-            let xAxis2 = (container2Width + (containerWidth / 2) - e.pageX) / 25;
+            const yAngle = heightToSneakers3 - e.pageY;
+            const xAngle = container2Width + (containerWidth / 2) - e.pageX;
+            let yAxis = (yAngle + 100) / 25;
+            let xAxis2 = xAngle / 25;
             card[2].style.transform = `rotateY(${xAxis2}deg) rotateX(${yAxis}deg)`;
+            if (window.innerWidth < 900 && window.innerWidth > 600) {
+                let yAxis = (yAngle + 620) / 25;
+                let xAxis2 = (xAngle + 200) / 25;
+                card[2].style.transform = `rotateY(${xAxis2}deg) rotateX(${yAxis}deg)`;
+            } if (window.innerWidth < 600) {
+                let yAxis = (yAngle + 900) / 25;
+                let xAxis2 = (xAngle + 150) / 25;
+                card[2].style.transform = `rotateY(${xAxis2}deg) rotateX(${yAxis}deg)`;
+            }
         }
     });
 });
