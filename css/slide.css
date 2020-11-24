@@ -3,7 +3,7 @@
     grid-column: 2/5;
     margin: 0 auto;
     width: auto;
-    height: 640px;
+    height: 610px;
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -13,48 +13,47 @@
     transition: 0.5s;
 }
 
-.slide {
-    /* width: 600px; */
-    flex-shrink: 0;
-    height: 140px;
-  }
-.slider > img {
-    scroll-snap-align: start;
-    margin: 0px 5px;
-}
-.slider > img:hover {
-    transform: scale(1.08);
-}
-.nikeslide h2{
-    padding-top: 500px;
-}
 @media only screen and (max-width: 1200px) {
-    .slide {
-        height: 140px;
+    .sneakerContainer {
+        padding: 30px 0px;
     }
     .slider {
-        width: 830px;
     }
+    .card {
+        width: 270px !important;
+    }
+    .sneakerContainer {
+        width: 34% !important;
+    }
+    .sneaker img {
+        width: 200px !important;
+    }
+    .circle {
+        width: 10rem !important;
+        height: 10rem !important;
+    }
+
 }
 
 @media only screen and (max-width: 900px) {
-    .slide {
-        height: 110px;
-    }
     .slider {
-        width: 650px;
-        height: 200px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 270px !important;
+    }
+    .sneakerContainer {
+        width: 50% !important;
     }
 }
 @media only screen and (max-width: 600px) {
-    .slide {
-        height: 75px;
-    }
     .slider {
-        width: 450px;
         margin-bottom: 100px;
-        height: 120px;
         padding-top: 15px;
+    }
+    .sneakerContainer {
+        width: 70% !important;
     }
 }
 
@@ -70,17 +69,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: lightblue;
 }
 .card {
     transform-style: preserve-3d;
-    min-height: 500px;
+    height: 500px;
     width: 350px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     padding: 0rem 10px;
 }
 .sneaker {
-    min-height: 35vh;
+    height: 35vh;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +102,7 @@
     text-align: center;
 }
 .sneakerInfo h1 {
-    font-size: 3rem;
+    font-size: 32px;
     transition: all 0.75s ease-out;
 }
 .sneakerInfo h3 {
@@ -127,6 +127,9 @@
     font-weight: bold;
     color: #999;
 }
+.sneakerSizes button:hover {
+    color: rgb(17, 14, 14);
+}
 .sneakerSizes button.active {
     background: #999;
     color: white;
@@ -148,5 +151,5 @@
     transition: all 0.75s ease-out;
 }
 .sneakerBuyNow button:hover {
-    background-color:#ce3040;
+    color: rgb(17, 14, 14);
 }

@@ -618,9 +618,14 @@ body {
         .lightboxBox {
             display: grid;
             width: 100%;
-            /* grid-template-columns: 320px 320px 320px; */
+            grid-template-columns: 270px 270px 270px;
             height: 1200px;
             margin: 0 0px;
+        }
+        .lightboxText {
+            width: 850px;
+            left: 0%;
+            transform: translateX(0%);
         }
         .lightbox img{
         }
@@ -650,6 +655,11 @@ body {
             .slide2area {
                 width: 810px;
             }
+        .slide2 .slide2nav {
+            position: absolute;
+            bottom: 0%;
+            left: 40%;
+        }
         .rightside input, .rightside a {
             display: none;
         }
@@ -808,7 +818,7 @@ body {
             }
             .slide2 .slide2nav {
                 bottom: 2%;
-                left: 40%;
+                left: 37%;
             }
             .slide1 .slide1nav {
                 left: 30%;
@@ -903,7 +913,7 @@ body {
             .slide2 .slide2nav {
                 position: absolute;
                 bottom: 0%;
-                left: 28.5%;
+                left: 30%;
             }
             .lightboxBox {
                 display: block;
