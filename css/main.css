@@ -253,7 +253,6 @@ body {
         .slide2 {
             grid-column: 2/3;
             margin-top: 30px;
-            margin-bottom: 30px;
             font-size: 25px;
         }
         .maintext {
@@ -366,10 +365,47 @@ body {
             grid-gap: 2vh;
             grid-auto-flow:dense;
         }
-            .lightbox{
+            .lightbox {
                 height: 100%;
                 width: 100%;
                 overflow: hidden;
+                position: relative;
+            }
+            .lightboxButton {
+                position: absolute;
+                z-index: 1;
+                bottom: 10%;
+                left: 36.5%
+            }
+            .lightboxButton a {
+                padding: .375rem 2rem;
+                line-height: 1.375rem;
+                min-height: 2.5rem;
+                border: 2px solid rgba(0,0,0,0);
+                background-color: #fff;
+                color: #000;
+                border-radius: 5px;
+                font-size: 20px;
+                font-weight: lighter;
+                text-decoration: none;
+                opacity: 0.8;
+            }
+
+            .lightboxButton a:hover {
+                background-color: transparent;
+                color: white;
+                border: 3px solid white;
+                transition: 0.3s;
+                opacity: 1;
+            }
+            .lightbox5 .lightboxButton {
+                left: 30%;
+            }
+            .lightbox6 .lightboxButton {
+                left: 43%;
+            }
+            .lightbox10 .lightboxButton {
+                left: 38%;
             }
             .lightbox1{
                 grid-column-start: span 1;
@@ -383,12 +419,13 @@ body {
                 grid-row-start: span 2;
             }
             .lightbox img:hover{
-                filter: brightness(1) grayscale(0);
-                transform: scale(1.02);
+                /* filter: brightness(0.8) grayscale(0);
+                transform: scale(1.02); */
             }
             .lightbox img {
-                filter: brightness(0.75) grayscale(1);
-                transition: 0.3s;
+                filter: brightness(1) grayscale(0);
+                transition: 0.5s;
+                cursor: pointer;
             }
             .lightbox1 img, .lightbox2 img, .lightbox3 img, .lightbox5 img, .lightbox6 img, .lightbox7 img, .lightbox8 img {
                 height: 100%;
@@ -480,7 +517,7 @@ body {
         text-decoration: none;
         margin-top: 20px;
         font-size: 24px;
-        color: #999;
+        color: rgb(99, 98, 98);
     }
     .contacts > a {
         display: flex;
@@ -489,7 +526,7 @@ body {
         text-decoration: none;
         margin-top: 20px;
         font-size: 24px;
-        color: #999;
+        color: rgb(99, 98, 98);
     }
     .help > a {
         display: flex;
@@ -498,7 +535,7 @@ body {
         text-decoration: none;
         margin-top: 20px;
         font-size: 24px;
-        color: #999;
+        color: rgb(99, 98, 98);
     }
 
 

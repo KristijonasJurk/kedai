@@ -24,7 +24,7 @@ const container0Width = container[0].offsetLeft + 400;
 const container1Width = container[1].offsetLeft + 200;
 const container2Width = container[2].offsetLeft;
 const containerWidth = container[0].offsetLeft;
-
+// centering the width and height in the center of the card
 container.forEach(function (elem) {
     elem.addEventListener('mousemove', (e) => {
         if (elem === container[0]) {
@@ -38,7 +38,7 @@ container.forEach(function (elem) {
                 let xAxis0 = (xAngle - 200) / 25;
                 card[0].style.transform = `rotateY(${xAxis0}deg) rotateX(${yAxis}deg)`;
             } if (window.innerWidth < 600) {
-                let yAxis = (yAngle + 350) / 25;
+                let yAxis = (yAngle + 100) / 25;
                 let xAxis0 = (xAngle - 300) / 25;
                 card[0].style.transform = `rotateY(${xAxis0}deg) rotateX(${yAxis}deg)`;
             }
@@ -53,7 +53,7 @@ container.forEach(function (elem) {
                 let yAxis = (yAngle + 300) / 25;
                 card[1].style.transform = `rotateY(${xAxis1}deg) rotateX(${yAxis}deg)`;
             } if (window.innerWidth < 600) {
-                let yAxis = (yAngle + 700) / 25;
+                let yAxis = (yAngle + 500) / 25;
                 card[1].style.transform = `rotateY(${xAxis1}deg) rotateX(${yAxis}deg)`;
             }
         }
@@ -139,7 +139,6 @@ container.forEach(function (elem3) {
     });
 });
 const sizesBtn = document.querySelectorAll('.sneakerSizes button');
-
 // remove and add active class to size buttons
 function activeClass() {
     sizesBtn.forEach(function (count) {
