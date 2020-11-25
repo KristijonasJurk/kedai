@@ -1,0 +1,94 @@
+.brandsMain {
+    grid-column: 2/3;
+    grid-template-rows: auto auto auto;
+}
+
+.brandsSearchContainer {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px double black;
+}
+.brandsSearchContainer h3 {
+    grid-column: 2/3;
+    text-align: center;
+    font-size: 30px;
+}
+.brandsSearchContainer>.brandsSearch {
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+}   
+    .brandsSearchContainer>.brandsSearch>select {
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        color: #999;
+        transition: 0.3s;
+        border-radius: 3px;
+    }   
+    .brandsSearchContainer>.brandsSearch>select:hover {
+        color: black;
+    }   
+        .brandsSearch>select>option {
+            font-size: 20px;
+        }   
+
+
+
+
+.brandsABCcontainer {
+    grid-row: 2/3;
+    margin-top: 30px;
+    border-bottom: 3px double black;
+    padding: 0px 100px 30px;
+}
+    .brandsABCcontainer>.brandsABClist {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+        .brandsABCcontainer>.brandsABClist>div {
+            border: 1px solid #999;
+            color: #999;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        .brandsABCcontainer>.brandsABClist>div:hover {
+            color: black;
+            border: 1px solid black;
+            transform: scale(1.01);
+        }        
+    
+
+
+
+.brandscontainer  {
+    grid-row: 3/4;
+}
+    .brandsList  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 30px 50px;
+        justify-content: space-between;
+    }
+        .brandsList>div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+            .brandsList>div>img{
+                width: 250px;
+            }
+            .brandsList>div>h4{
+                font-size: 28px;
+            }
