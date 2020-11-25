@@ -14,7 +14,7 @@
 .brandsSearchContainer h3 {
     grid-column: 2/3;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
 }
 .brandsSearchContainer>.brandsSearch {
     grid-column: 3/4;
@@ -79,16 +79,35 @@
         flex-wrap: wrap;
         margin: 30px 50px;
         justify-content: space-between;
+        /* background-color: red; */
     }
         .brandsList>div{
+            width: 250px;
+            height: 250px;
+            margin: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            /* background-color: rebeccapurple; */
+            transition: 0.3s;
         }
             .brandsList>div>img{
-                width: 250px;
+                width: 180px;
+                /* background-color: yellow; */
             }
             .brandsList>div>h4{
                 font-size: 28px;
+                opacity: 0.8;
+                font-weight: 100;
+            }
+            .brandsList>div>img:hover{
+                cursor: pointer;
+                transform: scale(1.02);
+                background-color: rgba(153, 153, 153, 0.089);
+            }
+            .brandsList>div>h4:hover {
+                cursor: pointer;
+                opacity: 1;
+                font-weight: 400;
             }
