@@ -81,7 +81,7 @@
         justify-content: space-between;
         /* background-color: red; */
     }
-        .brandsList>div{
+        .brandsList>.brandBox{
             width: 250px;
             height: 250px;
             margin: 15px;
@@ -91,6 +91,16 @@
             justify-content: center;
             /* background-color: rebeccapurple; */
             transition: 0.3s;
+        }
+        .brandsList>.emptyText{
+            width: 100%;
+            font-size: 35px;
+            height: 250px;
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
             .brandsList>div>img{
                 width: 180px;
@@ -111,3 +121,4 @@
                 opacity: 1;
                 font-weight: 400;
             }
+            

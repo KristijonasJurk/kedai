@@ -62,3 +62,41 @@ function generateBrands(dataBrands) {
     }
 }
 generateBrands(dataBrands);
+
+function renderABC(dataABC, dataBrands) {
+    const letterBox = document.querySelectorAll('.letter');
+    letterBox.forEach(function (letter) {
+        letter.addEventListener('click', function () {
+            for (let i = 0; i <= dataBrands.length; i++) {
+                const firstLettter = dataBrands[i].name[0];
+                const brandBox = document.querySelectorAll('.brandBox');
+                if (letter.innerHTML == firstLettter) {
+                    for (let h = 0; h <= dataBrands.length; h++) {
+                        brandBox[h].style.display = 'none';
+                        brandBox[i].style.display = "flex";
+                    }
+                } else {
+                    brandBox[i].style.display = "none";
+                    if (i == 1) {
+                        generateEmptyText()
+                    }
+                }
+            }
+        })
+    })
+}
+renderABC(dataABC, dataBrands)
+
+function generateEmptyText() {
+    const div = document.createElement('div');
+    const text = document.createTextNode('Nothing to show :(');
+    const emptyText = document.querySelector('.emptyText');
+    if (emptyText) {
+        emptyText.remove()
+    }
+    div.setAttribute('class', 'emptyText');
+    div.style.display = 'flex';
+    div.appendChild(text);
+    document.querySelector('.brandsList').appendChild(div);
+    return;
+}
