@@ -81,11 +81,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin: 30px 50px;
-        justify-content: space-between;
+        justify-content: flex-start;
         /* background-color: red; */
     }
         .brandsList>.brandBox{
-            width: 250px;
+            width: 275px;
             height: 250px;
             margin: 15px;
             display: flex;

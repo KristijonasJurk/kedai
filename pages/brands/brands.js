@@ -89,13 +89,10 @@ function renderABC(dataABC, dataBrands) {
                 const brandBox = document.querySelectorAll('.brandBox');
                 const emptyText = document.querySelector('.emptyText');
                 if (letter.innerHTML == firstLettter) {
-                    // for (let h = 0; h <= dataBrands.length; h++) {
-                    // brandBox[h].style.display = 'none';
                     brandBox[i].style.display = "flex";
                     if (emptyText) {
                         emptyText.remove()
                     }
-                    // }
                 } else {
                     brandBox[i].style.display = "none";
                     if (i == 1) {
@@ -133,4 +130,13 @@ function refreshBrands() {
     div.appendChild(refresh);
     document.querySelector('.brandsSearch').style.border = '2px solid #999';
     document.querySelector('.brandsSearch').appendChild(div);
+    const brandBox = document.querySelectorAll('.brandBox');
+    div.addEventListener('click', function () {
+        const emptyText = document.querySelector('.emptyText');
+        emptyText.style.display = 'none';
+        for (let h = 0; h <= dataBrands.length; h++) {
+            brandBox[h].style.display = 'flex';
+        }
+
+    })
 }
