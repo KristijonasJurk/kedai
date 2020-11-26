@@ -44,6 +44,22 @@ const dataBrands = [
     {
         photo: '/img/brands/8.png',
         name: 'Converse'
+    },
+    {
+        photo: '/img/brands/9.png',
+        name: 'Yonex'
+    },
+    {
+        photo: '/img/brands/10.png',
+        name: 'Le Coq Sportif'
+    },
+    {
+        photo: '/img/brands/11.png',
+        name: 'Champion'
+    },
+    {
+        photo: '/img/brands/12.png',
+        name: 'Timberland'
     }
 ];
 
@@ -70,11 +86,15 @@ function renderABC(dataABC, dataBrands) {
             for (let i = 0; i <= dataBrands.length; i++) {
                 const firstLettter = dataBrands[i].name[0];
                 const brandBox = document.querySelectorAll('.brandBox');
+                const emptyText = document.querySelector('.emptyText');
                 if (letter.innerHTML == firstLettter) {
-                    for (let h = 0; h <= dataBrands.length; h++) {
-                        brandBox[h].style.display = 'none';
-                        brandBox[i].style.display = "flex";
+                    // for (let h = 0; h <= dataBrands.length; h++) {
+                    // brandBox[h].style.display = 'none';
+                    brandBox[i].style.display = "flex";
+                    if (emptyText) {
+                        emptyText.remove()
                     }
+                    // }
                 } else {
                     brandBox[i].style.display = "none";
                     if (i == 1) {
@@ -99,4 +119,22 @@ function generateEmptyText() {
     div.appendChild(text);
     document.querySelector('.brandsList').appendChild(div);
     return;
+}
+
+function brandsChoices() {
+    const selection = document.querySelector(".brandSelection").value;
+    if (selection == 'popular') {
+        popular(dataBrands)
+    }
+}
+function popular(dataBrands) {
+    const emptyText = document.querySelector('.emptyText');
+    const brandsList = document.querySelectorAll('.brandsList');
+    if (emptyText) {
+        emptyText.remove()
+    }
+    if (brandsList) {
+        brandsList.remove()
+    }
+    generateBrands(dataBrands)
 }
