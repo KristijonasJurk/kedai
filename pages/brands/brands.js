@@ -83,6 +83,7 @@ function renderABC(dataABC, dataBrands) {
     const letterBox = document.querySelectorAll('.letter');
     letterBox.forEach(function (letter) {
         letter.addEventListener('click', function () {
+            refreshBrands()
             for (let i = 0; i <= dataBrands.length; i++) {
                 const firstLettter = dataBrands[i].name[0];
                 const brandBox = document.querySelectorAll('.brandBox');
@@ -121,20 +122,15 @@ function generateEmptyText() {
     return;
 }
 
-function brandsChoices() {
-    const selection = document.querySelector(".brandSelection").value;
-    if (selection == 'popular') {
-        popular(dataBrands)
+function refreshBrands() {
+    const alreadyThere = document.querySelector('.brandSelection');
+    if (alreadyThere) {
+        alreadyThere.remove();
     }
-}
-function popular(dataBrands) {
-    const emptyText = document.querySelector('.emptyText');
-    const brandsList = document.querySelectorAll('.brandsList');
-    if (emptyText) {
-        emptyText.remove()
-    }
-    if (brandsList) {
-        brandsList.remove()
-    }
-    generateBrands(dataBrands)
+    const div = document.createElement('div');
+    const refresh = document.createTextNode('Refresh');
+    div.setAttribute('class', 'brandSelection');
+    div.appendChild(refresh);
+    document.querySelector('.brandsSearch').style.border = '2px solid #999';
+    document.querySelector('.brandsSearch').appendChild(div);
 }
