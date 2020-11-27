@@ -78,7 +78,7 @@ body {
             display: inline-block;
             float: right;
             width: 23%;
-            background-color: greenyellow;
+            /* background-color: greenyellow; */
             font-size: 20px;
             margin-top: 5px;
             line-height: 30px;
@@ -92,7 +92,7 @@ body {
                 text-decoration: none;
                 width: 50%;
                 font-size: 22px;
-                background-color: red;
+                /* background-color: red; */
             }
             .rightside a:hover {
                 color: #000;
