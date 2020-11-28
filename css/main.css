@@ -19,11 +19,11 @@ body {
         grid-column: 1/6;
         /* background-color: red; */
         color: black;
-        background-color: white;        
+        background-color: white;
     }
     .sticky {
         position: fixed;
-        top: 0;
+        top: 0px;
         width: 100%;
         z-index: 3;
     }
@@ -102,7 +102,8 @@ body {
                 display: inline-block;
                 font-size: 20px;
                 background-color: transparent;
-                border: 1px solid #999
+                border: 1px solid #999;
+                width: 200px;
             }
             .rightside > .searchExpand:hover {
                 border: 1px solid black;
@@ -613,7 +614,7 @@ body {
             grid-column: 1/4;
             grid-row: 3/4;
             display: grid;
-            grid-template-columns: 1fr 14fr 14fr 1fr;
+            grid-template-columns: 1fr 17fr 17fr 1fr;
             border-top: 3px double black;
             padding-left: 0px;
         }
@@ -699,6 +700,9 @@ body {
             left: 40%;
         }
         .rightside>.searchExpand, .rightside a {
+            display: none;
+        }
+        .rightside > input {
             display: none;
         }
         /* .rightside #search {

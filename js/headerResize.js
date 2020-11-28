@@ -7,7 +7,7 @@ function myFunction() {
     if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
     } else {
-        if (window.innerWidth < 1200) {
+        if (window.innerWidth < 1200 || sticky + 1 > window.pageYOffset) {
             header.classList.remove("sticky");
         }
     }
