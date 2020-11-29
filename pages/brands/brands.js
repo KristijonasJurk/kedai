@@ -60,6 +60,10 @@ const dataBrands = [
     {
         photo: '/img/brands/12.png',
         name: 'Timberland'
+    },
+    {
+        photo: '/img/brands/13.png',
+        name: 'Brooks'
     }
 ];
 
