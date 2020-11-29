@@ -14,55 +14,55 @@ generateABC(dataABC);
 
 const dataBrands = [
     {
-        photo: '/img/brands/1.png',
+        photo: '../../img/brands/1.png',
         name: 'Adidas'
     },
     {
-        photo: '/img/brands/2.png',
+        photo: '../../img/brands/2.png',
         name: 'Nike'
     },
     {
-        photo: '/img/brands/3.png',
+        photo: '../../img/brands/3.png',
         name: 'Asics'
     },
     {
-        photo: '/img/brands/4.png',
+        photo: '../../img/brands/4.png',
         name: 'Puma'
     },
     {
-        photo: '/img/brands/5.png',
+        photo: '../../img/brands/5.png',
         name: 'New Balance'
     },
     {
-        photo: '/img/brands/6.png',
+        photo: '../../img/brands/6.png',
         name: 'Jordan'
     },
     {
-        photo: '/img/brands/7.png',
+        photo: '../../img/brands/7.png',
         name: 'Vans'
     },
     {
-        photo: '/img/brands/8.png',
+        photo: '../../img/brands/8.png',
         name: 'Converse'
     },
     {
-        photo: '/img/brands/9.png',
+        photo: '../../img/brands/9.png',
         name: 'Yonex'
     },
     {
-        photo: '/img/brands/10.png',
+        photo: '../../img/brands/10.png',
         name: 'Le Coq Sportif'
     },
     {
-        photo: '/img/brands/11.png',
+        photo: '../../img/brands/11.png',
         name: 'Champion'
     },
     {
-        photo: '/img/brands/12.png',
+        photo: '../../img/brands/12.png',
         name: 'Timberland'
     },
     {
-        photo: '/img/brands/13.png',
+        photo: '../../img/brands/13.png',
         name: 'Brooks'
     }
 ];
