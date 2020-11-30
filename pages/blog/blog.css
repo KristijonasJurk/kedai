@@ -18,6 +18,100 @@
 }
 
 
+.blogBody {
+    margin-top: 30px;
+    grid-row: 2/3;
+}
+.blogList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px 50px;
+    justify-content: flex-start;
+    /* background-color: red; */
+}
+.blogBox {
+    width: 302px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* background-color: rebeccapurple; */
+    transition: 0.3s;
+    border: 1px solid black;
+    position: relative;
+}
+    .blogBox img {
+        width: 300px;
+    }
+    .blogBox h3 {
+        position: absolute;
+        top: 230px;
+        left: 0;
+        right: 0;
+        color: rgba(255, 255, 255, 0.836);
+        padding: 15px 30px;
+        font-size: 20px;
+        word-spacing: 1px;
+        line-height: 20px;
+        z-index: 1;
+        word-break: keep-all;
+        text-align: left;
+        font-weight: 200;
+    }
+    .blogBox h3::before {
+        background-color: #333;
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 52px;
+        z-index: -1;
+    }
+    .blogBox h3::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 52px;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent 0%, #333 100%);
+        z-index: -1;
+    }
+    .blogBox p {
+        margin: 20px 20px 10px 20px;
+        word-break: keep-all;
+        font-size: 18px;
+        line-height: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+    }
+    .blogBox p strong {
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .blogBoxFooter {
+        display: flex;
+        width: 80%;
+        margin: 5px 10% 0px 10%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .blogBoxFooter h4 {
+        font-size: 16px;
+        font-weight: 100;
+    }
+    .blogBoxFooter i {
+        line-height: 22px;
+        margin-right: 5px;
+    }
+
+
 
 
 
