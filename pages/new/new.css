@@ -84,6 +84,7 @@
     align-items: center;
     justify-content: center;
     max-width: 250px;
+    cursor: pointer;
 }
 .productPhoto {
     width: 250px;
