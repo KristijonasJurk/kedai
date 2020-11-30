@@ -21,6 +21,8 @@
 .blogBody {
     margin-top: 30px;
     grid-row: 2/3;
+    display: flex;
+    justify-content: center;
 }
 .blogList {
     display: flex;
@@ -28,6 +30,7 @@
     flex-wrap: wrap;
     margin: 30px 50px;
     justify-content: flex-start;
+    width: 1040px;
     /* background-color: red; */
 }
 .blogBox {
@@ -39,11 +42,16 @@
     justify-content: flex-start;
     /* background-color: rebeccapurple; */
     transition: 0.3s;
-    border: 1px solid black;
+    /* border: 1px solid transparent; */
+    /* box-shadow: 0px 0px 5px 0px rgb(220, 220, 220); */
     position: relative;
+    margin: 20px;
+    overflow: hidden;
+    cursor: pointer;
 }
     .blogBox img {
         width: 300px;
+        transition: 1s;
     }
     .blogBox h3 {
         position: absolute;
@@ -89,15 +97,17 @@
         line-height: 20px;
         padding-bottom: 10px;
         border-bottom: 2px solid black;
+        transition: 1s;
     }
     .blogBox p strong {
         font-size: 20px;
         font-weight: 900;
+        margin-right: 5px;
     }
     .blogBoxFooter {
         display: flex;
-        width: 80%;
-        margin: 5px 10% 0px 10%;
+        width: 90%;
+        margin: 5px 8% 0px 2%;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -109,6 +119,10 @@
     .blogBoxFooter i {
         line-height: 22px;
         margin-right: 5px;
+    }
+    .blogBoxFooter i:nth-of-type(2), .blogBoxFooter i:nth-of-type(1) {
+        color: transparent;
+        transition: 1s;
     }
 
 
