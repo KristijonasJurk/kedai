@@ -16,6 +16,7 @@
         text-align: center;
         font-size: 45px;
         letter-spacing: 10px;
+        word-break: keep-all;
     }
     .newHeaderRight > .newCategory1 {
         grid-column: 3/4;
@@ -65,7 +66,7 @@
     padding: 0px 0px 0px;
     /* background-color: gray; */
 }
-    .newProductsMain > .newProductsList {
+    .newProductsMain > .saleProductsList {
         /* background-color: red; */
         display: flex;
         flex-direction: row;
@@ -111,4 +112,30 @@
 .pageList li:nth-of-type(2) {
     margin: 0px 8px;
     cursor: inherit;
+}
+
+.productInfo4 {
+    display: flex;
+    justify-content: space-between;
+}
+.productInfo4 a:last-of-type {
+    display: flex;
+    align-self: center;
+    padding: 0px 5px;
+    line-height: 21px;
+    font-size: 17px;
+    color: white;
+    background-color: red;
+}
+.underline {
+    position: relative;
+    color: #999;
+}
+.underline::after {
+    border-bottom: 1px solid;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 51%;
+    width: 95%;
 }
