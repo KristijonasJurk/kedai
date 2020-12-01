@@ -10,10 +10,13 @@ button.addEventListener('click', function () {
         clear()
     }
     if (input.value.includes('@') == false) {
-        console.log('yra');
         input.style.border = "1px solid red";
         input.classList.add('redPlaceHolder');
         error.innerHTML = 'The email must contain a @ symbol';
+        clear()
+    }
+    else {
+        window.alert('Thank you ♥')
         clear()
     }
 });

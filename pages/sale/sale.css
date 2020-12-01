@@ -1,0 +1,114 @@
+.newMain {
+    grid-column: 2/3;
+    grid-template-rows: auto auto auto;
+}
+
+.newHeader {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px double black;
+}
+    .newHeader h3 {
+        grid-column: 2/3;
+        text-align: center;
+        font-size: 45px;
+        letter-spacing: 10px;
+    }
+    .newHeaderRight > .newCategory1 {
+        grid-column: 3/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 20px;
+        color: black;
+        transition: 0.3s;
+        border-radius: 3px;
+    }
+        .newCategory1 > label {
+            grid-column: 1/2;
+            justify-self: right;
+            width: 80px;
+        }
+        .newCategory1 > select{
+            grid-column: 2/3;
+            justify-self: center;
+            width: 150px;
+            font-size: 20px;
+            height: 28px;
+        }
+    .newHeaderRight > .newCategory2 {
+        grid-column: 3/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 20px;
+        color: black;
+        transition: 0.3s;
+        border-radius: 3px;
+    }
+        .newCategory2 > label {
+            grid-column: 1/2;
+            justify-self: right;
+            width: 80px;
+        }
+        .newCategory2 > select{
+            grid-column: 2/3;
+            justify-self: center;
+            width: 150px;
+            height: 28px;
+            font-size: 20px;
+        }
+.newProductsMain {
+    grid-row: 2/3;
+    margin-top: 30px;
+    padding: 0px 0px 0px;
+    /* background-color: gray; */
+}
+    .newProductsMain > .newProductsList {
+        /* background-color: red; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 30px 0px;
+        justify-content: flex-start;
+    }
+
+    /* product box */
+
+.productBox {
+    display: flex;
+    flex-direction: column;
+    margin:60px 10px 10px 60px;
+    /* background-color: green; */
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    cursor: pointer;
+}
+.productPhoto {
+    width: 250px;
+    height: 125px;
+}
+
+.newPages {
+    /* background-color: red; */
+    height: auto;
+}
+.pageList {
+    display: flex;
+    justify-content: center;
+}
+.pageList li {
+    margin: 2px 10px;
+    cursor: pointer;
+    color: #999;
+}
+.pageList li:hover:nth-of-type(1),.pageList li:hover:nth-of-type(3) {
+    color: black;
+    transition: 0.3s;
+}
+.pageList li:nth-of-type(2) {
+    margin: 0px 8px;
+    cursor: inherit;
+}
