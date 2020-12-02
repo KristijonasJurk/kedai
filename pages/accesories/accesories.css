@@ -1,0 +1,220 @@
+.accesoriesMain {
+    grid-column: 2/3;
+    grid-template-rows: auto auto;
+}
+.accesoriesHeader {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px double black;
+}
+.accesoriesHeader h3 {
+    grid-column: 2/3;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    word-break: keep-all;
+}
+.accesoriesHeader h4 {
+    grid-column: 2/3;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.8;
+    margin: 10px;
+    letter-spacing: 10px;
+}
+.accesoriesHeader h5 {
+    grid-column: 2/3;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 24px;
+    opacity: 0.8;
+    padding: 10px 0px;
+    border-top: 5px double black;
+    border-bottom: 5px double black;
+}
+.accesoriesBody {
+    grid-row: 2/3;
+    margin-top: 30px;
+}
+.accesoriesList {
+    height: 620px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "big small1 small2"
+    /* "big small1 small2" */
+    "letter letter letter";
+    justify-items: center;
+    align-items: center;
+}
+.accesoriesBig {
+    grid-area: big;
+    /* background-color: yellow; */
+    position: relative;
+}
+.accesoriesBig img {
+    width: 400px;
+    height: 600px;
+    opacity: 0.8;
+    filter: brightness(1) grayscale(1);
+    object-fit: cover;
+    margin: 10px;
+}
+.comingSoonBox {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+}
+.comingSoonBox h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    word-break: keep-all;
+}
+.comingSoonBox h1 {
+    word-break: keep-all;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+.accesoriesSmall1 {
+    grid-area: small1;
+    /* background-color: green; */
+    position: relative;
+}
+.accesoriesSmall1 img {
+    width: 400px;
+    height: 600px;
+    margin: 10px;
+    opacity: 0.8;
+    filter: brightness(1) grayscale(1);
+    object-fit: cover;
+}
+.accesoriesSmall2 {
+    grid-area: small2;
+    /* background-color: red; */
+    position: relative;
+}
+.accesoriesSmall2 img {
+    width: 400px;
+    height: 600px;
+    margin: 10px;
+    opacity: 0.8;
+    filter: brightness(1) grayscale(1);
+    object-fit: cover;
+}
+.newsletterMain {
+    grid-area: letter;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 3px double black;
+}
+.newsletterBody {
+    width: 800px;
+    text-align: center;
+}
+.newsletterBody h3 {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.newsletterBody h6 {
+    font-size: 14px;
+    color: #999;
+    opacity: 0.8;
+    font-weight: 200;
+    margin: 5px 0px 20px;
+}
+.newsletterBody input {
+    width: 380px;
+    height: 40px;
+    font-size: 20px;
+    color: #999;
+    font-weight: 100;
+    margin: 0px 0px 0px;
+    opacity: 0.8;
+}
+.newsletterBody input:hover {
+    opacity: 1;
+}
+.newsletterBody p {
+    font-size: 12px;
+    word-spacing: 2px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #999;
+    word-break: keep-all;
+}
+.newsletterBody button {
+    width: 400px;
+    height: 40px;
+    font-size: 22px;
+    background-color: black;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 10px;
+}
+.newsletterBody button:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+.redPlaceHolder::placeholder {
+        color: red;
+        opacity: 0.8; 
+}
+.emailError {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .accesoriesList {
+        height: 650px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "big big big"
+        "small1 small1 small1"
+        "small2 small2 small2"
+        "letter letter letter";
+        justify-items: center;
+        align-items: center;
+    }
+    .accesoriesBig img {
+        width: 100%;
+        height: 200px;
+        opacity: 0.8;
+        filter: brightness(1) grayscale(1);
+        object-fit: cover;
+        object-position: 85% 85%;
+    }
+    .accesoriesSmall1 img {
+        width: 100%;
+        height: 200px;
+        opacity: 0.8;
+        filter: brightness(1) grayscale(1);
+        object-fit: cover;
+    }
+    .accesoriesSmall2 img {
+        width: 100%;
+        height: 200px;
+        opacity: 0.8;
+        filter: brightness(1) grayscale(1);
+        object-fit: cover;
+    }
+    .comingSoonBox {
+        width: 600px;
+    }
+}
