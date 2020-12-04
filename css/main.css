@@ -177,14 +177,21 @@ body {
                 color: black;
                 cursor: pointer;
             }
-            .rightside > .box {
+            .rightside .boxA {
                 display: inline-block;
                 /* background-color: yellow; */
                 width: 50px;
                 height: 30px;
                 opacity: 0.5;
             }
-            .rightside > .box:hover {
+            .rightside .box {
+                display: inline-block;
+                /* background-color: yellow; */
+                width: 50px;
+                height: 30px;
+                opacity: 0.5;
+            }
+            .rightside .box:hover {
                 cursor: pointer;
                 transition: 0.3s;
                 opacity: 1;

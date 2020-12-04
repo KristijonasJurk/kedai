@@ -36,7 +36,7 @@ const dataBlog = [
     },
     {
         photo: '../../img/blog/blog6.png',
-        title: 'THE MYSTERY BEHIND THESE CHINESE REEBOOKS WILL LEAVE YOU SPEECHLESS',
+        title: 'THESE CHINESE REEBOOKS WILL LEAVE YOU SPEECHLESS',
         text: 'The article focuses on the lack of taste in todays fashion industry. We will analyze how this started, the state it is in now and how can we fix it...',
         hashtag: 'STYLE',
         date: '20 September 2020'
@@ -50,7 +50,7 @@ const dataBlog = [
     },
     {
         photo: '../../img/blog/blog8.png',
-        title: 'OUR WAREHOUSE IS RUNNING OUT OF SPACE FOR NEW PRODUCTS (GIVEAWAY)',
+        title: 'OUR WAREHOUSE IS RUNNING OUT OF SPACE (GIVEAWAY)',
         text: 'The article focuses on the lack of taste in todays fashion industry. We will analyze how this started, the state it is in now and how can we fix it...',
         hashtag: 'TRENDS',
         date: '12 June 2020'
