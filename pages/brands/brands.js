@@ -25,7 +25,13 @@ const dataBrands = [
     { photo: '../../img/brands/10.png', name: 'Le Coq Sportif' },
     { photo: '../../img/brands/11.png', name: 'Champion' },
     { photo: '../../img/brands/12.png', name: 'Timberland' },
-    { photo: '../../img/brands/13.png', name: 'Brooks' }
+    { photo: '../../img/brands/13.png', name: 'Brooks' },
+    { photo: '../../img/brands/14.png', name: 'Under Armour' },
+    { photo: '../../img/brands/15.png', name: 'HOKA' },
+    { photo: '../../img/brands/16.png', name: 'Inov8' },
+    { photo: '../../img/brands/17.png', name: 'ZARA' },
+    { photo: '../../img/brands/18.png', name: 'Salomon' },
+    { photo: '../../img/brands/19.png', name: 'Polar' }
 ];
 
 function generateBrands(dataBrands) {
@@ -98,7 +104,9 @@ function refreshBrands() {
     const brandBox = document.querySelectorAll('.brandBox');
     div.addEventListener('click', function () {
         const emptyText = document.querySelector('.emptyText');
-        emptyText.style.display = 'none';
+        if (emptyText) {
+            emptyText.style.display = 'none';
+        }
         for (let h = 0; h <= dataBrands.length; h++) {
             brandBox[h].style.display = 'flex';
         }

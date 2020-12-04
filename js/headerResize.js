@@ -1,3 +1,13 @@
+document.querySelector('.linksButton').addEventListener("click", function () {
+    const menu = document.querySelector("nav").style.left;
+
+    if (menu === '0px') {
+        document.querySelector("nav").style.left = `-500px`;
+    } else {
+        document.querySelector("nav").style.left = `0px`;
+    }
+});
+
 window.onscroll = function () { myFunction() };
 
 var header = document.querySelector("header");

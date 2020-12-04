@@ -1,12 +1,12 @@
-document.querySelector('.linksButton').addEventListener("click", function () {
-    const menu = document.querySelector("nav").style.left;
+// document.querySelector('.linksButton').addEventListener("click", function () {
+//     const menu = document.querySelector("nav").style.left;
 
-    if (menu === '0px') {
-        document.querySelector("nav").style.left = `-500px`;
-    } else {
-        document.querySelector("nav").style.left = `0px`;
-    }
-});
+//     if (menu === '0px') {
+//         document.querySelector("nav").style.left = `-500px`;
+//     } else {
+//         document.querySelector("nav").style.left = `0px`;
+//     }
+// });
 
 setTimeout(openAd1, 5000);
 function openAd1() {
