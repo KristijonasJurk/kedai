@@ -23,6 +23,13 @@ function myFunction() {
     }
 }
 
+const shoes = document.querySelector('.links a:nth-of-type(3)');
+shoes.addEventListener('mouseover', function () {
+
+})
+
+
+
 // const search = document.querySelector(".fa-search");
 // let searchIndex = 0;
 // search.addEventListener('click', function () {
