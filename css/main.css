@@ -260,19 +260,25 @@ body {
                 position: absolute;
                 background-color: #f9f9f9;
                 min-width: 160px;
+                margin-left: 20px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 z-index: 6;
             }
             .shoesOptionContainer a {
                 float: none;
-                color: black;
+                color: #999;
                 padding: 12px 16px;
                 text-decoration: none;
                 display: block;
                 text-align: left;
+                border-bottom: 2px solid transparent;
+                border-right: 2px solid transparent;
             }
             .shoesOptionContainer a:hover {
-                background-color: red;
+                color: black;
+                transition: 0.3s;
+                border-bottom: 2px solid #999;
+                border-right: 1px solid #999;
             }
             .shoesOptions:hover .shoesOptionContainer {
                 display: block;

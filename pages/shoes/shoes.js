@@ -207,3 +207,73 @@ function browseBy() {
         generateShoes(dataShoes)
     }
 }
+
+
+function shoeOptions(option) {
+    if (option === 'men') {
+        let onlyMen = [];
+        for (let i = 0; i < dataShoes.length; i++) {
+            if (dataShoes[i].men == true) {
+                onlyMen.push(dataShoes[i])
+            }
+        }
+        for (let i = 0; i < products.length; i++) {
+            document.querySelector('.productBox').remove();
+        }
+        generateShoes(onlyMen)
+    }
+    if (option == 'women') {
+        let onlyWomen = [];
+        for (let i = 0; i < dataShoes.length; i++) {
+            if (dataShoes[i].women == true) {
+                onlyWomen.push(dataShoes[i])
+            }
+        }
+        for (let i = 0; i < products.length; i++) {
+            document.querySelector('.productBox').remove();
+        }
+        generateShoes(onlyWomen)
+    }
+    if (option == 'running') {
+        let onlyRunning = [];
+        for (let i = 0; i < dataShoes.length; i++) {
+            if (dataShoes[i].running == true) {
+                onlyRunning.push(dataShoes[i])
+            }
+        }
+        for (let i = 0; i < products.length; i++) {
+            document.querySelector('.productBox').remove();
+        }
+        generateShoes(onlyRunning)
+    }
+    if (option == 'basketball') {
+        let onlyBasketball = [];
+        for (let i = 0; i < dataShoes.length; i++) {
+            if (dataShoes[i].basketball == true) {
+                onlyBasketball.push(dataShoes[i])
+            }
+        }
+        for (let i = 0; i < products.length; i++) {
+            document.querySelector('.productBox').remove();
+        }
+        generateShoes(onlyBasketball)
+    }
+    if (option == 'everyday') {
+        let onlyEveryday = [];
+        for (let i = 0; i < dataShoes.length; i++) {
+            if (dataShoes[i].everyday == true) {
+                onlyEveryday.push(dataShoes[i])
+            }
+        }
+        for (let i = 0; i < products.length; i++) {
+            document.querySelector('.productBox').remove();
+        }
+        generateShoes(onlyEveryday)
+    }
+    if (option == 'shoes') {
+        for (let i = 0; i < products.length; i++) {
+            document.querySelector('.productBox').remove();
+        }
+        generateShoes(dataShoes)
+    }
+}

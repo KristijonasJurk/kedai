@@ -33,7 +33,7 @@ function carousel() {
     myIndex++;
     if (myIndex > slides1.length) { myIndex = 1 }
     slides1[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 6000); // Change image every 5 seconds
+    setTimeout(carousel, 6000); // Change image every 6 seconds
 }
 
 // slide buttons
