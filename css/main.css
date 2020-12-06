@@ -129,6 +129,7 @@ body {
             letter-spacing: 10px;
             /* background-color: green; */
             line-height: 20px;
+            word-break: keep-all;
         }
         header>a:first-of-type{
             color: black;
