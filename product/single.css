@@ -1,0 +1,225 @@
+.singleMain {
+    grid-column: 2/3;
+    grid-template-rows: auto auto;
+}
+.singleHeader {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px double black;
+}
+.singleBody {
+    display: grid;
+    grid-row: 2/3;
+    margin: 30px 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+.productPhotos {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+.productSlide {
+    display: flex;
+    flex-direction: column;
+}
+.productSlide img {
+    width: 128px;
+    margin: 20px 0px;
+}
+.productPhotoBig img {
+    width: 720px;
+    margin: 30px 0px;
+}
+
+
+.productSelections {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.productTitle {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    margin: 0 10px;
+}
+.productTitle h5:first-of-type {
+    font-weight: 100;
+}
+.productTitle h5:last-of-type {
+    color: #999;
+    font-weight: 100;
+}
+.productPriceInfo {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    margin: 20px 10px;
+}
+.productPriceInfo h5 {
+    font-weight: 100;
+    font-size: 32px;
+}
+.productPriceInfo h6 {
+    font-weight: 100;
+    font-size: 16px;
+    color: #999;
+}
+.productColors {
+    display: flex;
+    margin: 20px 0px;
+}
+.productColors div {
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.productColors div:nth-of-type(1){
+    background-color: green;
+}
+.productColors div:nth-of-type(2){
+    background-color: blue;
+}
+.productColors div:nth-of-type(3){
+    background-color: red;
+}
+.productColors div:nth-of-type(4){
+    background-color: black;
+}
+.productColors div:nth-of-type(5){
+    background-color: white;
+}
+.productSizes {
+}
+.productSizesList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 20px 5px;
+    font-size: 16px;
+}
+.productSizesList li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5px;
+    width: 60px;
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.productSizesList li:hover {
+    background-color: black;
+    color: white;
+}
+.productSizesList li:last-of-type, .productSizesList li:nth-of-type(9), .productSizesList li:nth-of-type(8) {
+    border: 1px solid #999;
+    color: #999;
+    opacity: 0.5;
+    cursor: auto;
+}
+.productSizesList li:last-of-type:hover, .productSizesList li:nth-of-type(9):hover, .productSizesList li:nth-of-type(8):hover {
+    background-color: white;
+    color: #999;
+}
+.productAddToCart {
+    margin: 20px 10px;
+}
+.productAddToCart button {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.productAddToCart button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+
+
+
+.newsletterMain {
+    grid-area: letter;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 3px double black;
+}
+.newsletterBody {
+    width: 800px;
+    text-align: center;
+}
+.newsletterBody h3 {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.newsletterBody h6 {
+    font-size: 14px;
+    color: #999;
+    opacity: 0.8;
+    font-weight: 200;
+    margin: 5px 0px 20px;
+}
+.newsletterBody input {
+    width: 380px;
+    height: 40px;
+    font-size: 20px;
+    color: #999;
+    font-weight: 100;
+    margin: 0px 0px 0px;
+    opacity: 0.8;
+}
+.newsletterBody input:hover {
+    opacity: 1;
+}
+.newsletterBody p {
+    font-size: 12px;
+    word-spacing: 2px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #999;
+    word-break: keep-all;
+}
+.newsletterBody button {
+    width: 400px;
+    height: 40px;
+    font-size: 22px;
+    background-color: black;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 10px;
+}
+.newsletterBody button:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+.redPlaceHolder::placeholder {
+        color: red;
+        opacity: 0.8; 
+}
+.emailError {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.8;
+}
