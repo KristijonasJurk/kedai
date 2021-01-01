@@ -6,6 +6,9 @@ vertical-align: top;
 box-sizing: border-box;
 word-break: break-all;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     display: grid;
