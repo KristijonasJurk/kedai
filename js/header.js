@@ -1,13 +1,3 @@
-// document.querySelector('.linksButton').addEventListener("click", function () {
-//     const menu = document.querySelector("nav").style.left;
-
-//     if (menu === '0px') {
-//         document.querySelector("nav").style.left = `-500px`;
-//     } else {
-//         document.querySelector("nav").style.left = `0px`;
-//     }
-// });
-
 setTimeout(openAd1, 5000);
 function openAd1() {
     const ad1 = document.querySelector('.adContainer');
@@ -62,14 +52,15 @@ function ad1minWidth() {
 
 function closeAd1() {
     const ad1 = document.querySelector('.adContainer');
-    ad1.style.width = '0%';
+    // ad1.style.width = '0%';
+    ad1.style.transform = 'translateX(-1000px)';
     ad1.style.transition = '2s';
     const ad1Text = document.querySelectorAll('.adMessageContainer p');
     for (let i = 0; i < ad1Text.length; i++) {
         ad1Text[i].style.color = 'transparent';
         ad1Text[i].style.transition = '0.1s';
     }
-    setTimeout(removeAd1, 1000);
+    setTimeout(removeAd1, 2000);
 }
 function removeAd1() {
     document.querySelector('.adContainer').style.display = 'none';
