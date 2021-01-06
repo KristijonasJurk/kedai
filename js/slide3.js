@@ -155,3 +155,26 @@ function activeClass() {
     }
 }
 activeClass()
+
+function moveProgressBar() {
+    var i
+    launch = 0;
+    if (launch == 0) {
+        launch = 1;
+        var elem1 = document.querySelectorAll(".slide3bar")[0];
+        var elem2 = document.querySelectorAll(".slide3bar")[1];
+        var width = 0.1;
+        var id = setInterval(frame, 1);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+                launch = 0;
+            } else {
+                width += 0.1;
+                elem1.style.width = width + "%";
+            }
+        }
+    }
+}
+moveProgressBar()
+
