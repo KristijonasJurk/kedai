@@ -162,24 +162,34 @@ function moveProgressBar(launch) {
     // launch = 1;
     const elem1 = document.querySelectorAll(".slide3bar")[0];
     const elem2 = document.querySelectorAll(".slide3bar")[1];
+    const elem3 = document.querySelectorAll(".slide3bar")[2];
+    const elem4 = document.querySelectorAll(".slide3bar")[3];
+    const slide = document.querySelectorAll('.slide3slide');
     let width = 0.1;
-    const id = setInterval(frame, 2);
+    const id = setInterval(frame, 6);
     function frame() {
         if (width >= 100) {
             clearInterval(id);
             if (launch == 0) {
                 launch = 1;
+                slide[0].style.transform = 'translateX(-1520px)';
+                slide[1].style.transform = 'translateX(-1520px)';
             } else {
                 launch = 0;
                 elem2.style.width = 0 + "%";
+                elem4.style.width = 0 + "%";
+                slide[0].style.transform = 'translateX(0px)';
+                slide[1].style.transform = 'translateX(0px)';
             }
             moveProgressBar(launch);
         } else {
             width += 0.1;
             if (launch == 0) {
                 elem1.style.width = width + "%";
+                elem3.style.width = width + "%";
             } else {
                 elem2.style.width = width + "%";
+                elem4.style.width = width + "%";
             }
         }
     }

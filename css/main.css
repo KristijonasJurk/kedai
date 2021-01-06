@@ -514,7 +514,7 @@ body {
                 margin-top: 30px;
                 font-size: 25px;
                 display: flex;
-                /* overflow: hidden; */
+                overflow: hidden;
             }
             .slide3 .maintext {
                 margin-bottom: 30px;
@@ -522,6 +522,8 @@ body {
             .slide3 .slide3slide {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                transition: 1s;
+                transform: translateX(0px);
             }
             .slide3 .slide3left {
                 grid-column: 1/2;
