@@ -154,6 +154,7 @@ function activeClass() {
         })
     }
 }
+// TODO gal kazkaip eitu kad atsinaujintu vis ta funkcija ir atsinaujintu ir window.innerwidth
 activeClass()
 
 function moveProgressBar(launch) {
@@ -165,6 +166,8 @@ function moveProgressBar(launch) {
     const elem3 = document.querySelectorAll(".slide3bar")[2];
     const elem4 = document.querySelectorAll(".slide3bar")[3];
     const slide = document.querySelectorAll('.slide3slide');
+    let imgWidth = document.querySelector('.slide3photo').offsetWidth;
+    let translate = (parseInt(imgWidth) * 2);
     let width = 0.1;
     const id = setInterval(frame, 6);
     function frame() {
@@ -172,8 +175,8 @@ function moveProgressBar(launch) {
             clearInterval(id);
             if (launch == 0) {
                 launch = 1;
-                slide[0].style.transform = 'translateX(-1520px)';
-                slide[1].style.transform = 'translateX(-1520px)';
+                slide[0].style.transform = `translateX(-${translate}px)`;
+                slide[1].style.transform = `translateX(-${translate}px)`;
             } else {
                 launch = 0;
                 elem2.style.width = 0 + "%";

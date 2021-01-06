@@ -511,13 +511,14 @@ body {
 
             .slide3 {
                 grid-column: 1/4;
-                margin-top: 30px;
+                margin: 30px 0;
                 font-size: 25px;
                 display: flex;
                 overflow: hidden;
             }
-            .slide3 .maintext {
+            .slide3title {
                 margin-bottom: 30px;
+                grid-column: 2/3;
             }
             .slide3 .slide3slide {
                 display: grid;
@@ -559,7 +560,7 @@ body {
             .slide3 .slide3right {
                 grid-column: 2/3;
                 padding-left: 30px;
-                width: 760px;               /* TODO Responsive */
+                width: 740px;               /* TODO Responsive */
                 /* background-color: red; */
             }
             .slide3 .slide3right p {
@@ -1032,6 +1033,13 @@ body {
             min-width: 635px;
             height: 50px;
         } */
+        
+        .slide3 .slide3right {
+            width: 600px;
+        }
+        .slide3 .slide3photo {
+            width: 600px;
+        }
     }
     
     @media only screen and (max-width: 900px) {
