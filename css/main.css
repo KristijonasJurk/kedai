@@ -525,9 +525,33 @@ body {
                 grid-column: 1/2;
                 /* background-color: green; */
             }
+            .slide3 .slide3left a {
+                position: relative;
+            }
             .slide3 .slide3left img {
                 width: 740px;
             }
+
+            .slide3 .slide3nav {
+                position: absolute;
+                width: 48%;
+                background-color: white;
+                z-index: 2;
+            }
+            .slide3 .slide3nav .slide3bar {
+                width: 3px;
+                height: 4px;
+                background-color: black;
+            }
+            .slide3 .slide3nav:first-of-type {
+                top: 15px;
+                left: 6px;
+            }
+            .slide3 .slide3nav:last-of-type {
+                top: 15px;
+                right: 6px;
+            }
+
             .slide3 .slide3right {
                 grid-column: 2/3;
                 padding-left: 30px;
