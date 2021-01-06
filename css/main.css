@@ -509,10 +509,57 @@ body {
 
 
 
+            .slide3 {
+                grid-column: 1/4;
+                margin-top: 30px;
+                font-size: 25px;
+            }
+            .slide3 .maintext {
+                margin-bottom: 30px;
+            }
+            .slide3 .slide3slide {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .slide3 .slide3left {
+                grid-column: 1/2;
+                /* background-color: green; */
+            }
+            .slide3 .slide3left img {
+                width: 740px;
+            }
+            .slide3 .slide3right {
+                grid-column: 2/3;
+                padding-left: 30px;
+                /* background-color: red; */
+            }
+            .slide3 .slide3right p {
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+                color: #999;
+                margin: 10px 0;
+            }
+            .slide3 .slide3right h2 {
+                font-size: 60px;
+                letter-spacing: 5px;
+                font-weight: 100;
+                margin: 20px 0;
+            }
+            .slide3 .slide3right button {
+                font-size: 1rem;
+                letter-spacing: 1px;
+                color: white;
+                font-weight: 100;
+                background-color: #000;
+                width: 140px;
+                height: 36px;
+                margin: 10px 0;
+            }
 
 
 
-            
+
+            /* TODO rewrite everything in SCSS */
         .lightboxBox {
             grid-column: 2/3;
             position: relative;
