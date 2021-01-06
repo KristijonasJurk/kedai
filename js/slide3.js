@@ -156,25 +156,33 @@ function activeClass() {
 }
 activeClass()
 
-function moveProgressBar() {
-    var i
-    launch = 0;
-    if (launch == 0) {
-        launch = 1;
-        var elem1 = document.querySelectorAll(".slide3bar")[0];
-        var elem2 = document.querySelectorAll(".slide3bar")[1];
-        var width = 0.1;
-        var id = setInterval(frame, 1);
-        function frame() {
-            if (width >= 100) {
-                clearInterval(id);
-                launch = 0;
+function moveProgressBar(launch) {
+    // let change = 0;
+    // if (launch == 0) {
+    // launch = 1;
+    const elem1 = document.querySelectorAll(".slide3bar")[0];
+    const elem2 = document.querySelectorAll(".slide3bar")[1];
+    let width = 0.1;
+    const id = setInterval(frame, 2);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+            if (launch == 0) {
+                launch = 1;
             } else {
-                width += 0.1;
+                launch = 0;
+                elem2.style.width = 0 + "%";
+            }
+            moveProgressBar(launch);
+        } else {
+            width += 0.1;
+            if (launch == 0) {
                 elem1.style.width = width + "%";
+            } else {
+                elem2.style.width = width + "%";
             }
         }
     }
 }
-moveProgressBar()
+moveProgressBar(0)
 

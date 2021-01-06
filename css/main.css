@@ -541,7 +541,7 @@ body {
                 z-index: 2;
             }
             .slide3 .slide3nav .slide3bar {
-                width: 1%;
+                width: 0%;
                 height: 4px;
                 background-color: black;
             }
