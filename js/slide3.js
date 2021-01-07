@@ -205,9 +205,74 @@ function chooseClothes() {
     const h2s = document.querySelectorAll('.chooseClothesName');
     h2s.forEach(function (h2) {
         h2.addEventListener('mouseover', () => {
-            const cousin = h2.parentNode.previousElementSibling;
-            cousin.style.backgroundColor = 'black';
+            changeColors(h2, as);
+        })
+        h2.addEventListener('mouseleave', () => {
+            changeColorsBack(h2, as);
+        })
+    })
+    as.forEach(function (a) {
+        a.addEventListener('mouseover', () => {
+            changeColors(a, spans);
+        })
+        a.addEventListener('mouseleave', () => {
+            changeColorsBack(a, spans);
+        })
+    })
+    spans.forEach(function (span) {
+        span.addEventListener('mouseover', () => {
+            changeColors(span, as);
+        })
+        span.addEventListener('mouseleave', () => {
+            changeColorsBack(span, as);
         })
     })
 }
 chooseClothes();
+
+function changeColors(one, two) {
+    if (one.nodeName == 'H2') {
+        const cousin = one.parentNode.previousElementSibling;
+        cousin.style.backgroundColor = 'black';
+        cousin.style.color = 'white';
+        if (cousin.innerHTML == 1) {
+            two[0].style.backgroundColor = 'black';
+            two[0].style.color = 'white';
+        } else if (cousin.innerHTML == 2) {
+            two[1].style.backgroundColor = 'black';
+            two[1].style.color = 'white';
+        }
+    }
+    if (one.nodeName == 'A' || one.nodeName == 'SPAN') {
+        if (one.innerHTML == 1) {
+            two[0].style.backgroundColor = 'black';
+            two[0].style.color = 'white';
+        } else if (one.innerHTML == 2) {
+            two[1].style.backgroundColor = 'black';
+            two[1].style.color = 'white';
+        }
+    }
+}
+function changeColorsBack(one, two) {
+    if (one.nodeName == 'H2') {
+        const cousin = one.parentNode.previousElementSibling;
+        cousin.style.backgroundColor = 'white';
+        cousin.style.color = 'black';
+        if (cousin.innerHTML == 1) {
+            two[0].style.backgroundColor = 'white';
+            two[0].style.color = 'black';
+        } else if (cousin.innerHTML == 2) {
+            two[1].style.backgroundColor = 'white';
+            two[1].style.color = 'black';
+        }
+    }
+    if (one.nodeName == 'A' || one.nodeName == 'SPAN') {
+        if (one.innerHTML == 1) {
+            two[0].style.backgroundColor = 'white';
+            two[0].style.color = 'black';
+        } else if (one.innerHTML == 2) {
+            two[1].style.backgroundColor = 'white';
+            two[1].style.color = 'black';
+        }
+    }
+}
