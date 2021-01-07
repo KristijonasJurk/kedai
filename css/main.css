@@ -587,6 +587,26 @@ body {
             }
 
 
+            .chooseClothes {
+                grid-column: 1/4;
+                margin: 30px 0;
+                font-size: 25px;
+                display: flex;
+                overflow: hidden;
+            }
+            .chooseClothesLeft {
+
+            }
+
+
+
+            .chooseClothesRight {
+                
+            }
+
+
+
+
 
 
             /* TODO rewrite everything in SCSS */
