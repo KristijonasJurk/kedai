@@ -281,18 +281,22 @@ function generateClothes(data) {
     chooseClothesPhotoLink.setAttribute('class', 'chooseClothesPhotoLink');
     chooseClothesPhotoLink1.setAttribute('class', 'chooseClothesPhotoLink');
 
+    const chooseClothesNumber = document.createElement('span');
+    const chooseClothesNumber1 = document.createElement('span');
+    const chooseClothesNumberText = document.createTextNode('1');
+    const chooseClothesNumberText1 = document.createTextNode('2');
+
+    chooseClothesNumber.appendChild(chooseClothesNumberText);
+    chooseClothesNumber1.appendChild(chooseClothesNumberText1);
     for (i = 0; i < data.length; i++) {
         const chooseClothesProduct = document.createElement('div');
-        const chooseClothesNumber = document.createElement('span');
         const chooseClothesLink = document.createElement('a');
         const chooseClothesName = document.createElement('h2');
         const br = document.createElement('br');
 
-        const chooseClothesNumberText = document.createTextNode('1');
         const chooseClothesNameText1 = document.createTextNode(data[i].h21);
         const chooseClothesNameText = document.createTextNode(data[i].h22);
         chooseClothesPhoto.src = "./img/clothes/sweater3.jpg";
-        chooseClothesNumber.appendChild(chooseClothesNumberText);
         chooseClothesName.appendChild(chooseClothesNameText1);
         chooseClothesName.appendChild(br);
         chooseClothesName.appendChild(chooseClothesNameText);
@@ -300,12 +304,17 @@ function generateClothes(data) {
         chooseClothesLeft.setAttribute('class', 'chooseClothesLeft');
         chooseClothesProduct.setAttribute('class', 'chooseClothesProduct');
         chooseClothesNumber.setAttribute('class', 'chooseClothesNumber');
+        chooseClothesNumber1.setAttribute('class', 'chooseClothesNumber');
         chooseClothesLink.setAttribute('class', 'chooseClothesLink');
         chooseClothesName.setAttribute('class', 'chooseClothesName');
 
         div.appendChild(chooseClothesLeft);
         chooseClothesLeft.appendChild(chooseClothesProduct);
-        chooseClothesProduct.appendChild(chooseClothesNumber);
+        if (i == 0) {
+            chooseClothesProduct.appendChild(chooseClothesNumber);
+        } if (i == 1) {
+            chooseClothesProduct.appendChild(chooseClothesNumber1);
+        }
         chooseClothesProduct.appendChild(chooseClothesLink);
         chooseClothesLink.appendChild(chooseClothesName);
     }
