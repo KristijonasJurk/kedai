@@ -623,6 +623,7 @@ body {
                 font-weight: 100;
                 margin: 20px 0;
                 word-break: keep-all;
+                cursor: pointer;
             }
             .chooseClothesRight {
 
@@ -647,6 +648,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                cursor: pointer;
             }
             .chooseClothesRight figure a:first-of-type {
                 bottom: 56%;

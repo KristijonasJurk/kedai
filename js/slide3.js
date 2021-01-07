@@ -339,7 +339,7 @@ function moveProgressBar(launch) {
     let imgWidth = document.querySelector('.slide3photo').offsetWidth;
     let translate = (parseInt(imgWidth) * 2);
     let width = 0.1;
-    const id = setInterval(frame, 1);
+    const id = setInterval(frame, 6);
     function frame() {
         if (width >= 100) {
             clearInterval(id);
