@@ -270,6 +270,7 @@ function generateClothes(data) {
     const chooseClothesPhotoLink = document.createElement('a');
     const chooseClothesPhotoLink1 = document.createElement('a');
 
+    const chooseClothesLeft = document.createElement('section');
     const chooseClothesPhotoLinkText = document.createTextNode('1');
     const chooseClothesPhotoLinkText1 = document.createTextNode('2');
     chooseClothesPhotoLink.appendChild(chooseClothesPhotoLinkText);
@@ -281,7 +282,6 @@ function generateClothes(data) {
     chooseClothesPhotoLink1.setAttribute('class', 'chooseClothesPhotoLink');
 
     for (i = 0; i < data.length; i++) {
-        const chooseClothesLeft = document.createElement('section');
         const chooseClothesProduct = document.createElement('div');
         const chooseClothesNumber = document.createElement('span');
         const chooseClothesLink = document.createElement('a');
