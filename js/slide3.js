@@ -232,6 +232,63 @@ function generateSlide3(data) {
 }
 generateSlide3(slide3data)
 
+const clothesdata = [
+    { h21: 'Noma T.D.', h22: 'Silk Checker Shirt' },
+    { h21: 'KAPITAL', h22: '12oz Feather Denim 3rd Jacket' }
+];
+function generateSlide3(data) {
+    const div = document.querySelector('.slide3');
+    for (i = 0; i < data.length; i++) {
+        const slide3slide = document.createElement('div');
+        const slide3left = document.createElement('div');
+        const slide3photoLink = document.createElement('a');
+        const slide3photo = document.createElement('img');
+        const slide3nav = document.createElement('div');
+        const slide3nav1 = document.createElement('div');
+        const slide3bar = document.createElement('div');
+        const slide3bar1 = document.createElement('div');
+        const slide3right = document.createElement('div');
+        const slide3tag = document.createElement('p');
+        const slide3name = document.createElement('h2');
+        const shopNow = document.createElement('button');
+
+        const slide3nameText = document.createTextNode(data[i].h2);
+        const slide3tagText = document.createTextNode('COLLECTIONS');
+        const shopNowText = document.createTextNode('SHOP NOW');
+        slide3photo.src = data[i].photo;
+        slide3name.appendChild(slide3nameText);
+        slide3tag.appendChild(slide3tagText);
+        shopNow.appendChild(shopNowText);
+
+        slide3slide.setAttribute('class', 'slide3slide');
+        slide3left.setAttribute('class', 'slide3left');
+        slide3photoLink.setAttribute('class', 'slide3photoLink');
+        slide3photo.setAttribute('class', 'slide3photo');
+        slide3nav.setAttribute('class', 'slide3nav');
+        slide3nav1.setAttribute('class', 'slide3nav');
+        slide3bar.setAttribute('class', 'slide3bar');
+        slide3bar1.setAttribute('class', 'slide3bar');
+        slide3right.setAttribute('class', 'slide3right');
+        slide3tag.setAttribute('class', 'slide3tag');
+        slide3name.setAttribute('class', 'slide3name');
+        shopNow.setAttribute('class', 'shopNow');
+
+        div.appendChild(slide3slide);
+        slide3slide.appendChild(slide3left);
+        slide3slide.appendChild(slide3right);
+        slide3left.appendChild(slide3photoLink);
+        slide3right.appendChild(slide3tag);
+        slide3right.appendChild(slide3name);
+        slide3right.appendChild(shopNow);
+        slide3photoLink.appendChild(slide3photo);
+        slide3photoLink.appendChild(slide3nav);
+        slide3photoLink.appendChild(slide3nav1);
+        slide3nav.appendChild(slide3bar);
+        slide3nav1.appendChild(slide3bar1);
+    }
+}
+generateSlide3(slide3data)
+
 
 function moveProgressBar(launch) {
     // let change = 0;
