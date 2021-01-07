@@ -511,7 +511,7 @@ body {
 
             .slide3 {
                 grid-column: 1/4;
-                margin: 30px 0;
+                margin: 30px 0 0;
                 font-size: 25px;
                 display: flex;
                 overflow: hidden;
@@ -589,20 +589,79 @@ body {
 
             .chooseClothes {
                 grid-column: 1/4;
-                margin: 30px 0;
+                margin: 0px 0;
                 font-size: 25px;
-                display: flex;
-                overflow: hidden;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
             }
             .chooseClothesLeft {
-
+                display: flex;
+                flex-direction: column;
             }
-
-
-
+            .chooseClothesProduct {
+                display: flex;
+                align-items: baseline;
+            }
+            .chooseClothesProduct span {
+                font-size: 16px;
+                margin: 30px;
+                width: 22px;
+                height: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .chooseClothesProduct .chooseClothesLink {
+                text-decoration: none;
+            }
+            .chooseClothesProduct .chooseClothesLink h2 {
+                color: #000;
+                font-size: 50px;
+                letter-spacing: 2px;
+                font-weight: 100;
+                margin: 20px 0;
+                word-break: keep-all;
+            }
             .chooseClothesRight {
-                
+
             }
+            .chooseClothesRight figure {
+                float: right;
+                position: relative;
+            }
+            .chooseClothesRight figure img {
+                width: 715px;
+            }
+            .chooseClothesRight figure a {
+                text-decoration: none;
+                font-size: 16px;
+                color: black;
+                background-color: #fff;
+                position: absolute;
+                bottom: 0%;
+                left: 50%;
+                width: 22px;
+                height: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .chooseClothesRight figure a:first-of-type {
+                bottom: 56%;
+                left: 42.5%;
+            }
+            .chooseClothesRight figure a:last-of-type {
+                bottom: 36%;
+                left: 52%;
+            }
+            .chooseClothesRight figure a:hover, .chooseClothesProduct span:hover {
+                color: #fff;
+                background-color: black;
+            }
+            
+
+
+
 
 
 
