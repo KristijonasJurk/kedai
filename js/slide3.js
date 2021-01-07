@@ -236,21 +236,20 @@ const clothesdata = [
     { h21: 'Noma T.D.', h22: 'Silk Checker Shirt' },
     { h21: 'KAPITAL', h22: '12oz Feather Denim 3rd Jacket' }
 ];
-function generateSlide3(data) {
+function generateClothes(data) {
     const div = document.querySelector('.slide3');
     for (i = 0; i < data.length; i++) {
-        const slide3slide = document.createElement('div');
-        const slide3left = document.createElement('div');
-        const slide3photoLink = document.createElement('a');
-        const slide3photo = document.createElement('img');
-        const slide3nav = document.createElement('div');
-        const slide3nav1 = document.createElement('div');
-        const slide3bar = document.createElement('div');
-        const slide3bar1 = document.createElement('div');
-        const slide3right = document.createElement('div');
-        const slide3tag = document.createElement('p');
-        const slide3name = document.createElement('h2');
-        const shopNow = document.createElement('button');
+        const chooseClothesLeft = document.createElement('div');
+        const chooseClothesProduct = document.createElement('div');
+        const chooseClothesNumber = document.createElement('a');
+        const chooseClothesLink = document.createElement('img');
+        const chooseClothesName = document.createElement('h2');
+        const br = document.createElement('br');
+        const chooseClothesRight = document.createElement('section');
+        const figure = document.createElement('figure');
+        const chooseClothesPhoto = document.createElement('img');
+        const chooseClothesPhotoLink = document.createElement('a');
+        const chooseClothesPhotoLink1 = document.createElement('a');
 
         const slide3nameText = document.createTextNode(data[i].h2);
         const slide3tagText = document.createTextNode('COLLECTIONS');
@@ -287,7 +286,7 @@ function generateSlide3(data) {
         slide3nav1.appendChild(slide3bar1);
     }
 }
-generateSlide3(slide3data)
+generateClothes(clothesdata)
 
 
 function moveProgressBar(launch) {
