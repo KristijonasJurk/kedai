@@ -247,9 +247,13 @@ function changeColors(one, two) {
         if (one.innerHTML == 1) {
             two[0].style.backgroundColor = 'black';
             two[0].style.color = 'white';
+            one.style.backgroundColor = 'black';
+            one.style.color = 'white';
         } else if (one.innerHTML == 2) {
             two[1].style.backgroundColor = 'black';
             two[1].style.color = 'white';
+            one.style.backgroundColor = 'black';
+            one.style.color = 'white';
         }
     }
 }
@@ -270,9 +274,13 @@ function changeColorsBack(one, two) {
         if (one.innerHTML == 1) {
             two[0].style.backgroundColor = 'white';
             two[0].style.color = 'black';
+            one.style.backgroundColor = 'white';
+            one.style.color = 'black';
         } else if (one.innerHTML == 2) {
             two[1].style.backgroundColor = 'white';
             two[1].style.color = 'black';
+            one.style.backgroundColor = 'white';
+            one.style.color = 'black';
         }
     }
 }
