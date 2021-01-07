@@ -157,6 +157,33 @@ function activeClass() {
 // TODO gal kazkaip eitu kad atsinaujintu vis ta funkcija ir atsinaujintu ir window.innerwidth
 activeClass()
 
+const slide3data = [
+    { photo: "./img/clothes/sweater2.jpg", h2: 'Noma T.D.' },
+    { photo: "./img/clothes/sweater3.jpg", h2: 'Kapital' }
+];
+function generateSlide3(data) {
+    for (i = 0; i < data.length; i++) {
+        const slide3slide = document.createElement('div');
+        const slide3left = document.createElement('div');
+        const slide3photoLink = document.createElement('a');
+        const slide3photo = document.createElement('img');
+        const slide3nav = document.createElement('div');
+        const slide3bar = document.createElement('div');
+        const slide3right = document.createElement('div');
+        const slide3tag = document.createElement('p');
+        const slide3name = document.createElement('h2');
+        const shopNow = document.createElement('button');
+
+        const slide3nameText = document.createTextNode(data[i].h2);
+        const slide3tagText = document.createTextNode('COLLECTIONS');
+        const shopNowText = document.createTextNode('SHOP NOW');
+        slide3photo.src = data[i].photo;
+
+    }
+}
+generateSlide3(slide3data)
+
+
 function moveProgressBar(launch) {
     // let change = 0;
     // if (launch == 0) {
