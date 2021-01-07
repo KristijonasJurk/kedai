@@ -199,3 +199,15 @@ function moveProgressBar(launch) {
 }
 moveProgressBar(0)
 
+function chooseClothes() {
+    const spans = document.querySelectorAll('.chooseClothesNumber');
+    const as = document.querySelectorAll('.chooseClothesPhotoLink');
+    const h2s = document.querySelectorAll('.chooseClothesName');
+    h2s.forEach(function (h2) {
+        h2.addEventListener('mouseover', () => {
+            const cousin = h2.parentNode.previousElementSibling;
+            cousin.style.backgroundColor = 'black';
+        })
+    })
+}
+chooseClothes();
