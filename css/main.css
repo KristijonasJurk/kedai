@@ -1116,8 +1116,14 @@ body {
         .slide3 .slide3right {
             width: 600px;
         }
-        .slide3 .slide3photo {
+        .slide3 .slide3left img {
             width: 600px;
+        }
+        .chooseClothesRight figure img {
+            width: 550px;
+        }
+        .chooseClothesProduct .chooseClothesLink h2 {
+            font-size: 35px;
         }
     }
     
@@ -1204,6 +1210,18 @@ body {
             height: 60px;
             min-width: 475px;
         } */
+        .slide3 .slide3right {
+            width: 435px;
+        }
+        .slide3 .slide3left img {
+            width: 435px;
+        }
+        .chooseClothesRight figure img {
+            width: 400px;
+        }
+        .chooseClothesProduct .chooseClothesLink h2 {
+            font-size: 30px;
+        }
     }
     
     @media only screen and (max-width: 770px) {
@@ -1274,6 +1292,15 @@ body {
         /* .adContainer {
             height: 60px;
         } */
+        .slide3 .slide3right {
+            width: 375px;
+        }
+        .slide3 .slide3left img {
+            width: 375px;
+        }
+        .chooseClothesRight figure img {
+            width: 340px;
+        }
     }
     @media only screen and (max-width: 600px) {
         .slide1 {
@@ -1374,8 +1401,37 @@ body {
             min-width: 240px;
             height: 100px;
         } */
+        .slide3 .slide3right {
+            width: 288px;
+        }
+        .slide3 .slide3left img {
+            width: 288px;
+        }
+        .chooseClothesRight figure img {
+            width: 250px;
+        }
+        .chooseClothesProduct .chooseClothesLink h2 {
+            font-size: 25px;
+        }
+        .chooseClothesNumber {  /* span */
+            font-size: 16px;
+            margin: 30px 10px;
+        }
     }
-
+    @media only screen and (max-width: 500px) {
+        .slide3 .slide3right {
+            width: 220px;
+        }
+        .slide3 .slide3left img {
+            width: 220px;
+        }
+        .chooseClothesRight figure img {
+            width: 240px;
+        }
+        .chooseClothesProduct .chooseClothesLink h2 {
+            font-size: 25px;
+        }
+    }
 
 
     
