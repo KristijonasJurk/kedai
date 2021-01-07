@@ -594,8 +594,10 @@ body {
                 font-size: 25px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
             }
             .chooseClothesLeft {
+                grid-column: 1/2;
                 display: flex;
                 flex-direction: column;
             }
@@ -624,7 +626,7 @@ body {
                 word-break: keep-all;
             }
             .chooseClothesRight {
-
+                grid-column: 1/3;
             }
             .chooseClothesRight figure {
                 float: right;

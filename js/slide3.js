@@ -232,59 +232,88 @@ function generateSlide3(data) {
 }
 generateSlide3(slide3data)
 
+// choose clothes html example
+{/* <section class="chooseClothesLeft">
+                <div class="chooseClothesProduct">
+                    <span class="chooseClothesNumber">1</span>
+                    <a href="" class="chooseClothesLink">
+                        <h2 class="chooseClothesName">NOMA T.D.<br>
+                            Silk Checker Shirt</h2>
+                    </a>
+                </div>
+                <div class="chooseClothesProduct">
+                    <span class="chooseClothesNumber">2</span>
+                    <a href="" class="chooseClothesLink">
+                        <h2 class="chooseClothesName">KAPITAL<br>
+                            12oz Feather Denim 3rd Jacket</h2>
+                    </a>
+                </div>
+            </section>
+            <section class="chooseClothesRight">
+                <figure>
+                    <img src="./img/clothes/sweater3.jpg" alt="sweater" class="chooseClothesPhoto">
+                    <a href="" class="chooseClothesPhotoLink">1</a>
+                    <a href="" class="chooseClothesPhotoLink">2</a>
+                </figure>
+            </section> */}
+
 const clothesdata = [
     { h21: 'Noma T.D.', h22: 'Silk Checker Shirt' },
     { h21: 'KAPITAL', h22: '12oz Feather Denim 3rd Jacket' }
 ];
 function generateClothes(data) {
-    const div = document.querySelector('.slide3');
+    const div = document.querySelector('.chooseClothes');
+
+    const chooseClothesRight = document.createElement('section');
+    const figure = document.createElement('figure');
+    const chooseClothesPhoto = document.createElement('img');
+    const chooseClothesPhotoLink = document.createElement('a');
+    const chooseClothesPhotoLink1 = document.createElement('a');
+
+    const chooseClothesPhotoLinkText = document.createTextNode('1');
+    const chooseClothesPhotoLinkText1 = document.createTextNode('2');
+    chooseClothesPhotoLink.appendChild(chooseClothesPhotoLinkText);
+    chooseClothesPhotoLink1.appendChild(chooseClothesPhotoLinkText1);
+
+    chooseClothesRight.setAttribute('class', 'chooseClothesRight');
+    chooseClothesPhoto.setAttribute('class', 'chooseClothesPhoto');
+    chooseClothesPhotoLink.setAttribute('class', 'chooseClothesPhotoLink');
+    chooseClothesPhotoLink1.setAttribute('class', 'chooseClothesPhotoLink');
+
     for (i = 0; i < data.length; i++) {
-        const chooseClothesLeft = document.createElement('div');
+        const chooseClothesLeft = document.createElement('section');
         const chooseClothesProduct = document.createElement('div');
-        const chooseClothesNumber = document.createElement('a');
-        const chooseClothesLink = document.createElement('img');
+        const chooseClothesNumber = document.createElement('span');
+        const chooseClothesLink = document.createElement('a');
         const chooseClothesName = document.createElement('h2');
         const br = document.createElement('br');
-        const chooseClothesRight = document.createElement('section');
-        const figure = document.createElement('figure');
-        const chooseClothesPhoto = document.createElement('img');
-        const chooseClothesPhotoLink = document.createElement('a');
-        const chooseClothesPhotoLink1 = document.createElement('a');
 
-        const slide3nameText = document.createTextNode(data[i].h2);
-        const slide3tagText = document.createTextNode('COLLECTIONS');
-        const shopNowText = document.createTextNode('SHOP NOW');
-        slide3photo.src = data[i].photo;
-        slide3name.appendChild(slide3nameText);
-        slide3tag.appendChild(slide3tagText);
-        shopNow.appendChild(shopNowText);
+        const chooseClothesNumberText = document.createTextNode('1');
+        const chooseClothesNameText1 = document.createTextNode(data[i].h21);
+        const chooseClothesNameText = document.createTextNode(data[i].h22);
+        chooseClothesPhoto.src = "./img/clothes/sweater3.jpg";
+        chooseClothesNumber.appendChild(chooseClothesNumberText);
+        chooseClothesName.appendChild(chooseClothesNameText1);
+        chooseClothesName.appendChild(br);
+        chooseClothesName.appendChild(chooseClothesNameText);
 
-        slide3slide.setAttribute('class', 'slide3slide');
-        slide3left.setAttribute('class', 'slide3left');
-        slide3photoLink.setAttribute('class', 'slide3photoLink');
-        slide3photo.setAttribute('class', 'slide3photo');
-        slide3nav.setAttribute('class', 'slide3nav');
-        slide3nav1.setAttribute('class', 'slide3nav');
-        slide3bar.setAttribute('class', 'slide3bar');
-        slide3bar1.setAttribute('class', 'slide3bar');
-        slide3right.setAttribute('class', 'slide3right');
-        slide3tag.setAttribute('class', 'slide3tag');
-        slide3name.setAttribute('class', 'slide3name');
-        shopNow.setAttribute('class', 'shopNow');
+        chooseClothesLeft.setAttribute('class', 'chooseClothesLeft');
+        chooseClothesProduct.setAttribute('class', 'chooseClothesProduct');
+        chooseClothesNumber.setAttribute('class', 'chooseClothesNumber');
+        chooseClothesLink.setAttribute('class', 'chooseClothesLink');
+        chooseClothesName.setAttribute('class', 'chooseClothesName');
 
-        div.appendChild(slide3slide);
-        slide3slide.appendChild(slide3left);
-        slide3slide.appendChild(slide3right);
-        slide3left.appendChild(slide3photoLink);
-        slide3right.appendChild(slide3tag);
-        slide3right.appendChild(slide3name);
-        slide3right.appendChild(shopNow);
-        slide3photoLink.appendChild(slide3photo);
-        slide3photoLink.appendChild(slide3nav);
-        slide3photoLink.appendChild(slide3nav1);
-        slide3nav.appendChild(slide3bar);
-        slide3nav1.appendChild(slide3bar1);
+        div.appendChild(chooseClothesLeft);
+        chooseClothesLeft.appendChild(chooseClothesProduct);
+        chooseClothesProduct.appendChild(chooseClothesNumber);
+        chooseClothesProduct.appendChild(chooseClothesLink);
+        chooseClothesLink.appendChild(chooseClothesName);
     }
+    div.appendChild(chooseClothesRight);
+    chooseClothesRight.appendChild(figure);
+    figure.appendChild(chooseClothesPhoto);
+    figure.appendChild(chooseClothesPhotoLink);
+    figure.appendChild(chooseClothesPhotoLink1);
 }
 generateClothes(clothesdata)
 
