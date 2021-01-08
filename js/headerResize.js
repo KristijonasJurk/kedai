@@ -166,37 +166,16 @@ function generateFooter3(data) {
     const brandlist = document.createElement('div');
     const h3 = document.createElement('h3');
     const brands = document.createElement('adiv');
-    for (i = 0; i < data3.length; i++) {
+    const h3text = document.createTextNode('BRANDS AND CATEGORIES');
+    h3.appendChild(h3text);
+    for (i = 0; i < data.length; i++) {
         const a = document.createElement('a');
-
-        const h3text = document.createTextNode(data[i].h3);
-        const a1text = document.createTextNode(data[i].a1);
-        const a2text = document.createTextNode(data[i].a2);
-        const a3text = document.createTextNode(data[i].a3);
-
-        form1.setAttribute('class', 'form1');
-        a1.setAttribute('class', 'hyperlink');
-        a2.setAttribute('class', 'hyperlink');
-        a3.setAttribute('class', 'hyperlink');
-        if (i == 0) {
-            aboutHelpContacts.setAttribute('class', 'about');
-        } else if (i == 1) {
-            aboutHelpContacts.setAttribute('class', 'help');
-        } else if (i == 2) {
-            aboutHelpContacts.setAttribute('class', 'contacts');
-        }
-        h3.appendChild(h3text);
-        a1.appendChild(a1text);
-        a2.appendChild(a2text);
-        a3.appendChild(a2text);
-        a3.appendChild(a3text);
-
-        footer.appendChild(form1);
-        form1.appendChild(aboutHelpContacts);
-        aboutHelpContacts.appendChild(h3);
-        aboutHelpContacts.appendChild(a1);
-        aboutHelpContacts.appendChild(a2);
-        aboutHelpContacts.appendChild(a3);
+        const atext = document.createTextNode(data[i]);
+        a.setAttribute('class', 'hyperlink');
+        a.href = "./pages/brands/brands.html";
+        a.appendChild(atext);
+        brands.appendChild(a);
     }
+
 }
 generateFooter3(data3);
