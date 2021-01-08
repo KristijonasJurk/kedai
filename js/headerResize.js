@@ -28,20 +28,9 @@ shoes.addEventListener('mouseover', function () {
 
 })
 
-
-
-// const search = document.querySelector(".fa-search");
-// let searchIndex = 0;
-// search.addEventListener('click', function () {
-//     searchIndex++;
-//     if (searchIndex % 2 == 0) {
-//         document.querySelector(".rightside input").style.display = "inline-block";
-//         document.querySelector(".rightside").style.width = "200px";
-//     } else {
-//         document.querySelector(".rightside input").style.display = "none";
-//         // document.querySelector(".rightside").style.width = "auto";
-//     }
-// })
-
+function generateFooter() {
+    const h1 = document.createElement('h1');
+}
+generateFooter();
 
 

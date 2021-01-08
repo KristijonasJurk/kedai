@@ -70,7 +70,24 @@ const dataBlog = [
     //     date: '5 May 2020'
     // }
 ];
-
+// <!-- example of how the setup looks -->
+// <!-- <div class="blogBox">
+//     <img src="../../img/blog/blog1.png" alt="">
+//     <h3>Tag us @drmartensofficial if you want to be featured in our gallery</h3>
+//     <p>
+//         <strong>#NIKE</strong>
+//         Tag us @drmartensofficial if you want to be featured in our gallery, Tag us
+//         @drmartensofficial if you want to be featured in our gallery, Tag us @drmartensofficial if
+//         you want to be featured in our gallery
+//     </p>
+//     <div class="blogBoxFooter">
+//         <h4><i class="fa fa-clock-o" aria-hidden="true"></i>28. November 2020</h4>
+//         <div class="blogBoxSocials">
+//             <i class="fa fa-twitter" aria-hidden="true"></i>
+//             <i class="fa fa-facebook-square" aria-hidden="true"></i>
+//         </div>
+//     </div>
+// </div> -->
 function generateBlog(data) {
     for (let i = 0; i < data.length; i++) {
         //create all elements
