@@ -38,6 +38,7 @@ const dataShoes = [
 
 function generateShoes(data) {
     // create elements
+    const main = document.querySelector('.shoesProductsList');
     for (let i = 0; i < data.length; i++) {
         const div = document.createElement('div');
         const div11 = document.createElement('div');
@@ -78,7 +79,7 @@ function generateShoes(data) {
         div11.appendChild(div4);
         div.appendChild(img);
         div.appendChild(div11);
-        document.querySelector('.shoesProductsList').appendChild(div);
+        main.appendChild(div);
     }
 }
 generateShoes(dataShoes);
