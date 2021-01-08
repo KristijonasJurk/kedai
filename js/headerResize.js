@@ -83,6 +83,7 @@ const data2 = [
 function generateFooter2(data2) {
     // second section
     const form2 = document.createElement('section');
+    form2.setAttribute('class', 'form2');
     for (i = 0; i < data2.length; i++) {
         if (i == 0) {
             const payment = document.createElement('div');
@@ -124,7 +125,7 @@ function generateFooter2(data2) {
             img2.setAttribute('class', `${data2[i].img2class}`);
             img1.src = data2[i].img1;
             img2.src = data2[i].img2;
-            const h32t = document.createTextNode(data[i].h3);
+            const h32t = document.createTextNode(data2[i].h3);
 
             h32.appendChild(h32t);
             shipping.appendChild(h32);
@@ -141,7 +142,7 @@ function generateFooter2(data2) {
             const a23 = document.createElement('a');
             const a33 = document.createElement('a');
 
-            const h33t = document.createTextNode(data[i].h3);
+            const h33t = document.createTextNode(data2[i].h3);
             a13.href = data2[i].s1link;
             a23.href = data2[i].s2link;
             a33.href = data2[i].s3link;
@@ -167,9 +168,12 @@ const data3 = ['NIKE', 'adidas', 'New Balance', 'Puma', 'Reebook', 'Jordan', 'Va
 function generateFooter3(data) {
     // thrid section
     const form3 = document.createElement('section');
+    form3.setAttribute('class', 'form3');
     const brandlist = document.createElement('div');
+    brandlist.setAttribute('class', 'brandlist');
     const h3 = document.createElement('h3');
-    const brands = document.createElement('adiv');
+    const brands = document.createElement('div');
+    brands.setAttribute('class', 'brands');
     const h3text = document.createTextNode('BRANDS AND CATEGORIES');
     h3.appendChild(h3text);
     for (i = 0; i < data.length; i++) {
@@ -187,3 +191,74 @@ function generateFooter3(data) {
     footer.appendChild(form3);
 }
 generateFooter3(data3);
+
+// footer html example
+
+// <!-- <section class="form1">
+// <div class="about">
+//     <h3>ABOUT KEDAI</h3>
+//     <a class="hyperlink" href="#">How we got started?</a>
+//     <a class="hyperlink" href="#">Our partners</a>
+//     <a class="hyperlink" href="#">Personnel</a>
+// </div>
+// <div class="help">
+//     <h3>HELP</h3>
+//     <a class="hyperlink" href="#">Returns</a>
+//     <a class="hyperlink" href="#">Shipping to non-EU countries</a>
+//     <a class="hyperlink" href="#">Career</a>
+// </div>
+// <div class="contacts">
+//     <h3>CONTACTS</h3>
+//     <a class="hyperlink" href="#">Shops</a>
+//     <a class="hyperlink" href="#">FAQ</a>
+//     <a class="hyperlink" href="#">Tours</a>
+// </div>
+// </section> -->
+
+// <!-- 
+// <section class="form2">
+// <div class="payment">
+//     <h3>PAYMENTS</h3>
+//     <a class="fa fa-cc-visa" href="#"></a>
+//     <a class="fa fa-cc-mastercard" href="#"></a>
+//     <a class="fa fa-paypal" href="#"></a>
+//     <a class="fa fa-btc" href="#"></a>
+//     <a class="fa fa-cc-amex" href="#"></a>
+// </div>
+// <div class="shipping">
+//     <h3>SHIPPING</h3>
+//     <a href="#">
+//         <img class="dhl" src="./img/dhl-logo.png" alt="dhl-logo">
+//     </a>
+//     <a href="#">
+//         <img class="ups" src="./img/ups-logo.png" alt="ups-logo">
+//     </a>
+// </div>
+// <div class="socials">
+//     <h3>FOLLOW US</h3>
+//     <a class="fa fa-facebook-square" href="https://www.facebook.com/kristijonas.jurksas"></a>
+//     <a class="fa fa-instagram" href="https://www.instagram.com/kristijonasjurk/"></a>
+//     <a class="fa fa-github" href="https://github.com/KristijonasJurk"></a>
+// </div>
+// </section> -->
+
+// <!-- 
+// <section class="form3">
+// <div class="brandlist">
+//     <h3>BRANDS AND CATEGORIES</h3>
+//     <div class="brands">
+//         <a class="hyperlink" href="./pages/brands/brands.html">NIKE</a>
+//         <a class="hyperlink" href="./pages/brands/brands.html">adidas</a>
+//         <a class="hyperlink" href="./pages/brands/brands.html">New Balance</a>
+//         <a class="hyperlink" href="./pages/brands/brands.html">Puma</a>
+//         <a class="hyperlink" href="./pages/brands/brands.html">Reebook</a>
+//         <a class="hyperlink" href="./pages/brands/brands.html">Jordan</a>
+//         <a class="hyperlink" href="./pages/brands/brands.html">Vans</a>
+//         <a class="hyperlink" href="./pages/brands/brands.html">Asics</a>
+//         <a class="hyperlink" href="./pages/brands/brands.html">Converse</a>
+//         <a class="hyperlink" href="./pages/brands/brands.html">Li-Ning</a>
+//         <a class="hyperlink" href="./pages/brands/brands.html">Sale</a>
+//         <a class="hyperlink" href="./pages/brands/brands.html">Accessories</a>
+//     </div>
+// </div>
+// </section> -->
