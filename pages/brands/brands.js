@@ -55,7 +55,7 @@ function renderABC(dataABC, dataBrands) {
     letterBox.forEach(function (letter) {
         letter.addEventListener('click', function () {
             refreshBrands()
-            for (let i = 0; i <= dataBrands.length; i++) {
+            for (let i = 0; i < dataBrands.length; i++) {
                 const firstLettter = dataBrands[i].name[0];
                 const brandBox = document.querySelectorAll('.brandBox');
                 const emptyText = document.querySelector('.emptyText');
