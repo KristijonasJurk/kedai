@@ -78,7 +78,7 @@ generateFooter1(data1);
 const data2 = [
     { h3: 'PAYMENTS', a1: 'fa fa-cc-visa', a2: 'fa fa-cc-mastercard', a3: 'fa fa-paypal', a4: 'fa fa-btc', a5: 'fa fa-cc-amex' },
     { h3: 'SHIPPING', img1: './img/dhl-logo.png', img2: './img/ups-logo.png', img1class: 'dhl', img2class: 'ups' },
-    { h3: 'FOLLOW US', s1: 'facebook-square', s2: 'instagram', s3: 'github', s1link: 'https://www.facebook.com/kristijonas.jurksas', s2link: 'https://www.instagram.com/kristijonasjurk/', s3link: 'https://github.com/KristijonasJurk' }
+    { h3: 'FOLLOW US', s1: 'fa fa-facebook-square', s2: 'fa fa-instagram', s3: 'fa fa-github', s1link: 'https://www.facebook.com/kristijonas.jurksas', s2link: 'https://www.instagram.com/kristijonasjurk/', s3link: 'https://github.com/KristijonasJurk' }
 ];
 function generateFooter2(data2) {
     // second section
@@ -133,47 +133,70 @@ function generateFooter2(data2) {
         } else if (i == 2) {
             const socials = document.createElement('div');
             const h33 = document.createElement('h3');
-            const a1 = document.createElement('a');
-            const a2 = document.createElement('a');
-            const a3 = document.createElement('a');
+            const a13 = document.createElement('a');
+            const a23 = document.createElement('a');
+            const a33 = document.createElement('a');
+
+            const h33t = document.createTextNode(data[i].h3);
+            img2.href = data2[i].s1link;
+            img2.href = data2[i].s2link;
+            img2.href = data2[i].s3link;
+            a13.setAttribute('class', `${data2[i].s1}`);
+            a23.setAttribute('class', `${data2[i].s2}`);
+            a33.setAttribute('class', `${data2[i].s3}`);
+            socials.setAttribute('class', `socials`);
+
+            h33.appendChild(h33t);
+            socials.appendChild(h33);
+            socials.appendChild(a13);
+            socials.appendChild(a23);
+            socials.appendChild(a33);
         }
-
-
-
-        // const aboutHelpContacts = document.createElement('div');
-        // const h3 = document.createElement('h3');
-        // const a1 = document.createElement('a');
-        // const a2 = document.createElement('a');
-        // const a3 = document.createElement('a');
-
-        // const h3text = document.createTextNode(data[i].h3);
-        // const a1text = document.createTextNode(data[i].a1);
-        // const a2text = document.createTextNode(data[i].a2);
-        // const a3text = document.createTextNode(data[i].a3);
-
-        // form1.setAttribute('class', 'form1');
-        // a1.setAttribute('class', 'hyperlink');
-        // a2.setAttribute('class', 'hyperlink');
-        // a3.setAttribute('class', 'hyperlink');
-        // if (i == 0) {
-        //     aboutHelpContacts.setAttribute('class', 'about');
-        // } else if (i == 1) {
-        //     aboutHelpContacts.setAttribute('class', 'help');
-        // } else if (i == 2) {
-        //     aboutHelpContacts.setAttribute('class', 'contacts');
-        // }
-        // h3.appendChild(h3text);
-        // a1.appendChild(a1text);
-        // a2.appendChild(a2text);
-        // a3.appendChild(a2text);
-        // a3.appendChild(a3text);
-
-        // footer.appendChild(form1);
-        // form1.appendChild(aboutHelpContacts);
-        // aboutHelpContacts.appendChild(h3);
-        // aboutHelpContacts.appendChild(a1);
-        // aboutHelpContacts.appendChild(a2);
-        // aboutHelpContacts.appendChild(a3);
+        form2.appendChild(payment);
+        form2.appendChild(shipping);
+        form2.appendChild(socials);
     }
 }
 generateFooter2(data2);
+
+const data3 = ['NIKE', 'adidas', 'New Balance', 'Puma', 'Reebook', 'Jordan', 'Vans', 'Asics', 'Converse', 'Li-Ning', 'Sale', 'Accessories'];
+function generateFooter3(data) {
+    // thrid section
+    const form3 = document.createElement('section');
+    const brandlist = document.createElement('div');
+    const h3 = document.createElement('h3');
+    const brands = document.createElement('adiv');
+    for (i = 0; i < data3.length; i++) {
+        const a = document.createElement('a');
+
+        const h3text = document.createTextNode(data[i].h3);
+        const a1text = document.createTextNode(data[i].a1);
+        const a2text = document.createTextNode(data[i].a2);
+        const a3text = document.createTextNode(data[i].a3);
+
+        form1.setAttribute('class', 'form1');
+        a1.setAttribute('class', 'hyperlink');
+        a2.setAttribute('class', 'hyperlink');
+        a3.setAttribute('class', 'hyperlink');
+        if (i == 0) {
+            aboutHelpContacts.setAttribute('class', 'about');
+        } else if (i == 1) {
+            aboutHelpContacts.setAttribute('class', 'help');
+        } else if (i == 2) {
+            aboutHelpContacts.setAttribute('class', 'contacts');
+        }
+        h3.appendChild(h3text);
+        a1.appendChild(a1text);
+        a2.appendChild(a2text);
+        a3.appendChild(a2text);
+        a3.appendChild(a3text);
+
+        footer.appendChild(form1);
+        form1.appendChild(aboutHelpContacts);
+        aboutHelpContacts.appendChild(h3);
+        aboutHelpContacts.appendChild(a1);
+        aboutHelpContacts.appendChild(a2);
+        aboutHelpContacts.appendChild(a3);
+    }
+}
+generateFooter3(data3);
