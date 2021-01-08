@@ -74,10 +74,12 @@ function generateFooter1(data1) {
     footer.appendChild(form1);
 }
 generateFooter1(data1);
-
+var path = window.location.pathname;
+var page = path.split("/").pop();
+console.log(page);
 const data2 = [
     { h3: 'PAYMENTS', a1: 'fa fa-cc-visa', a2: 'fa fa-cc-mastercard', a3: 'fa fa-paypal', a4: 'fa fa-btc', a5: 'fa fa-cc-amex' },
-    { h3: 'SHIPPING', img1: './img/dhl-logo.png', img2: './img/ups-logo.png', img1class: 'dhl', img2class: 'ups' },
+    { h3: 'SHIPPING', img1: '../../img/dhl-logo.png', img2: '../../img/ups-logo.png', img1class: 'dhl', img2class: 'ups' },
     { h3: 'FOLLOW US', s1: 'fa fa-facebook-square', s2: 'fa fa-instagram', s3: 'fa fa-github', s1link: 'https://www.facebook.com/kristijonas.jurksas', s2link: 'https://www.instagram.com/kristijonasjurk/', s3link: 'https://github.com/KristijonasJurk' }
 ];
 function generateFooter2(data2) {
