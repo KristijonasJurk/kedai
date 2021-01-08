@@ -43,10 +43,10 @@ function generateFooter1(data1) {
         const a2 = document.createElement('a');
         const a3 = document.createElement('a');
 
-        const h3text = document.createTextNode(data[i].h3);
-        const a1text = document.createTextNode(data[i].a1);
-        const a2text = document.createTextNode(data[i].a2);
-        const a3text = document.createTextNode(data[i].a3);
+        const h3text = document.createTextNode(data1[i].h3);
+        const a1text = document.createTextNode(data1[i].a1);
+        const a2text = document.createTextNode(data1[i].a2);
+        const a3text = document.createTextNode(data1[i].a3);
 
         form1.setAttribute('class', 'form1');
         a1.setAttribute('class', 'hyperlink');
@@ -62,7 +62,6 @@ function generateFooter1(data1) {
         h3.appendChild(h3text);
         a1.appendChild(a1text);
         a2.appendChild(a2text);
-        a3.appendChild(a2text);
         a3.appendChild(a3text);
 
         footer.appendChild(form1);
@@ -72,6 +71,7 @@ function generateFooter1(data1) {
         aboutHelpContacts.appendChild(a2);
         aboutHelpContacts.appendChild(a3);
     }
+    footer.appendChild(form1);
 }
 generateFooter1(data1);
 
@@ -109,6 +109,8 @@ function generateFooter2(data2) {
             payment.appendChild(a3);
             payment.appendChild(a4);
             payment.appendChild(a5);
+
+            form2.appendChild(payment);
         } else if (i == 1) {
             const shipping = document.createElement('div');
             const h32 = document.createElement('h3');
@@ -130,6 +132,8 @@ function generateFooter2(data2) {
             shipping.appendChild(a22);
             a11.appendChild(img1);
             a22.appendChild(img2);
+
+            form2.appendChild(shipping);
         } else if (i == 2) {
             const socials = document.createElement('div');
             const h33 = document.createElement('h3');
@@ -138,9 +142,9 @@ function generateFooter2(data2) {
             const a33 = document.createElement('a');
 
             const h33t = document.createTextNode(data[i].h3);
-            img2.href = data2[i].s1link;
-            img2.href = data2[i].s2link;
-            img2.href = data2[i].s3link;
+            a13.href = data2[i].s1link;
+            a23.href = data2[i].s2link;
+            a33.href = data2[i].s3link;
             a13.setAttribute('class', `${data2[i].s1}`);
             a23.setAttribute('class', `${data2[i].s2}`);
             a33.setAttribute('class', `${data2[i].s3}`);
@@ -151,11 +155,11 @@ function generateFooter2(data2) {
             socials.appendChild(a13);
             socials.appendChild(a23);
             socials.appendChild(a33);
+
+            form2.appendChild(socials);
         }
-        form2.appendChild(payment);
-        form2.appendChild(shipping);
-        form2.appendChild(socials);
     }
+    footer.appendChild(form2);
 }
 generateFooter2(data2);
 
@@ -176,6 +180,10 @@ function generateFooter3(data) {
         a.appendChild(atext);
         brands.appendChild(a);
     }
+    form3.appendChild(brandlist);
+    brandlist.appendChild(h3);
+    brandlist.appendChild(brands);
 
+    footer.appendChild(form3);
 }
 generateFooter3(data3);
