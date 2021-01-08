@@ -27,6 +27,12 @@ const shoes = document.querySelector('.links a:nth-of-type(3)');
 shoes.addEventListener('mouseover', function () {
 
 })
+
+
+
+var path = window.location.pathname;
+var page = path.split("/").pop();
+console.log(page);
 const footer = document.querySelector('footer');
 const data1 = [
     { h3: 'ABOUT KEDAI', a1: 'How we got started?', a2: 'Our partners', a3: 'Personnel' },
@@ -74,9 +80,6 @@ function generateFooter1(data1) {
     footer.appendChild(form1);
 }
 generateFooter1(data1);
-var path = window.location.pathname;
-var page = path.split("/").pop();
-console.log(page);
 const data2 = [
     { h3: 'PAYMENTS', a1: 'fa fa-cc-visa', a2: 'fa fa-cc-mastercard', a3: 'fa fa-paypal', a4: 'fa fa-btc', a5: 'fa fa-cc-amex' },
     { h3: 'SHIPPING', img1: '../../img/dhl-logo.png', img2: '../../img/ups-logo.png', img1class: 'dhl', img2class: 'ups' },

@@ -12,23 +12,7 @@ const slide2data = [
 ];
 
 // example of smallslide html
-{/* <div class="smallSlide">
-                        <img class="smallPhoto" src="./img/shoes/11.png" alt="small shoe photo">
-                        <div class="productInfoContainer">
-                            <div class="productInfo1">
-                                <a href="#">NEW</a>
-                            </div>
-                            <div class="productInfo2">
-                                <a href="#">Puma</a>
-                            </div>
-                            <div class="productInfo3">
-                                <a href="#">RS-X</a>
-                            </div>
-                            <div class="productInfo4">
-                                <a href="#">120,00 €</a>
-                            </div>
-                        </div>
-                    </div> */}
+
 
 function generateSlide2(data) {
     const div = document.querySelector('.slide2area');
