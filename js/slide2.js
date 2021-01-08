@@ -1,5 +1,9 @@
 const data = [10, 11, 12, 13, 14, 15, 16, 17];
-
+// slide2nav html example
+{/* <div class="slidecontainer">
+                    <p>Default range slider:</p>
+                    <input type="range" min="1" max="100" value="50">
+                </div> */}
 function slide2(data) {
     let totalItems = data.length;
     // const widthItem = (document.querySelectorAll('.smallSlide')[0].offsetWidth) * totalItems * 3;
@@ -19,3 +23,16 @@ function slide2(data) {
 }
 slide2(data);
 // TODO less HTML more JS
+
+const slide2data = [
+    { brand: 'VANS', name: 'Old Skool', price: '130.00' },
+    { brand: 'Puma', name: 'RS-X', price: '120.00' },
+    { brand: 'Converse', name: 'All-star', price: '70.00' },
+    { brand: 'New Balance', name: '1200', price: '100.00' },
+    { brand: 'NIKE', name: 'Air Max Triax 96', price: '95.00' },
+    { brand: 'NIKE', name: 'Air Max Black&White 96', price: '100.00' },
+    { brand: 'Asics', name: 'GT-1000 9', price: '130.00' },
+    { brand: 'NIKE', name: 'Air Max TeknoV', price: '130.00' },
+    { brand: 'Reebook', name: 'InstaPump Fury', price: '135.00' }
+];
+
