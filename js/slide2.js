@@ -68,11 +68,6 @@ generateSlide2(slide2data);
 
 
 const data = [10, 11, 12, 13, 14, 15, 16, 17];
-// slide2nav html example
-{/* <div class="slidecontainer">
-                    <p>Default range slider:</p>
-                    <input type="range" min="1" max="100" value="50">
-                </div> */}
 
 function slide2(data) {
     let totalItems = data.length;

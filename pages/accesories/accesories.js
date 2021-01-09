@@ -22,14 +22,6 @@ const data = [
     { h3: 'Retro film cameras', photo: '../../img/accesories/camera.jpeg' },
     { h3: 'Vintage bucket hats', photo: '../../img/accesories/hat.jpeg' }
 ]
-// example of acessoriesSmall html
-{/* <div class="accesoriesSmall2">
-                        <img src="../../img/accesories/hat.jpeg" alt="soonPhoto">
-                        <div class="comingSoonBox">
-                            <h3>Vintage bucket hats</h3>
-                            <h1>COMING SOON</h1>
-                        </div>
-                    </div> */}
 
 function generateAccesories(data) {
     const div = document.querySelector('.accesoriesList');

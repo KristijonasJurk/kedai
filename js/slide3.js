@@ -156,25 +156,6 @@ function activeClass() {
 }
 // TODO gal kazkaip eitu kad atsinaujintu vis ta funkcija ir atsinaujintu ir window.innerwidth
 activeClass()
-// example of generateSlide3
-{/* <div class="slide3slide">
-                <div class="slide3left">
-                    <a href="" class="slide3photoLink">
-                        <img src="./img/clothes/sweater1.jpg" alt="" class="slide3photo">
-                        <div class="slide3nav">
-                            <div class="slide3bar"></div>
-                        </div>
-                        <div class="slide3nav">
-                            <div class="slide3bar"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide3right">
-                    <p class="slide3tag">COLLECTIONS</p>
-                    <h2 class="slide3name">Kapital</h2>
-                    <button class="shopNow">SHOP NOW</button>
-                </div>
-            </div> */}
 const slide3data = [
     { photo: "./img/clothes/sweater1.jpg", h2: 'Noma T.D.' },
     { photo: "./img/clothes/sweater2.jpg", h2: 'Kapital' }
@@ -231,31 +212,6 @@ function generateSlide3(data) {
     }
 }
 generateSlide3(slide3data)
-
-// choose clothes html example
-{/* <section class="chooseClothesLeft">
-                <div class="chooseClothesProduct">
-                    <span class="chooseClothesNumber">1</span>
-                    <a href="" class="chooseClothesLink">
-                        <h2 class="chooseClothesName">NOMA T.D.<br>
-                            Silk Checker Shirt</h2>
-                    </a>
-                </div>
-                <div class="chooseClothesProduct">
-                    <span class="chooseClothesNumber">2</span>
-                    <a href="" class="chooseClothesLink">
-                        <h2 class="chooseClothesName">KAPITAL<br>
-                            12oz Feather Denim 3rd Jacket</h2>
-                    </a>
-                </div>
-            </section>
-            <section class="chooseClothesRight">
-                <figure>
-                    <img src="./img/clothes/sweater3.jpg" alt="sweater" class="chooseClothesPhoto">
-                    <a href="" class="chooseClothesPhotoLink">1</a>
-                    <a href="" class="chooseClothesPhotoLink">2</a>
-                </figure>
-            </section> */}
 
 const clothesdata = [
     { h21: 'Noma T.D.', h22: 'Silk Checker Shirt' },
