@@ -253,6 +253,22 @@
     }
 }
 @media only screen and (max-width: 700px) {
+    .accesoriesHeader {
+        grid-template-columns: 100px 300px 100px;
+    }
+    .accesoriesHeader h3 {
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+    .accesoriesHeader h4 {
+        font-size: 16px;
+        letter-spacing: 8px;
+    }
+    .accesoriesHeader h5 {
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+
     .accesoriesList {
         margin: 0 10px;
     }
@@ -281,6 +297,9 @@
     }
 }
 @media only screen and (max-width: 550px) {
+    .accesoriesHeader {
+        grid-template-columns: 35px 250px 35px;
+    }
     .accesoriesList {
         margin: 0 0px;
         align-items: flex-start;

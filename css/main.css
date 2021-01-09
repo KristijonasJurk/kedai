@@ -1267,6 +1267,10 @@ body {
             padding-bottom: 40px;
             padding-left: 40px;
             border-top: 3px double black;
+            margin-top: 175px;
+        }
+        .form3 {
+            margin-top: 250px;
         }
         .payment {
             grid-column: 1/2;
