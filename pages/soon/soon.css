@@ -45,7 +45,7 @@
     position: relative;
 }
 .soonBig img {
-    width: 1400px;
+    width: 91vw;
     height: 100%;
     object-fit: cover;
     opacity: 0.8;
@@ -75,7 +75,7 @@
     position: relative;
 }
 .soonSmall1 img {
-    width: 690px;
+    width: 45vw;
     object-fit: cover;
     margin: 10px;
     opacity: 0.8;
@@ -87,7 +87,7 @@
     position: relative;
 }
 .soonSmall2 img {
-    width: 690px;
+    width: 45vw;
     object-fit: cover;
     margin: 10px;
     opacity: 0.8;
@@ -159,4 +159,40 @@
     margin-top: 5px;
     font-size: 14px;
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 1050px) {
+    .soonBig img {
+        width: 91vw;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+        filter: brightness(1) grayscale(1);
+    }
+    .soonSmall1 img {
+        width: 45vw;
+        object-fit: cover;
+        margin: 10px;
+        opacity: 0.8;
+        filter: brightness(1) grayscale(1);
+    }
+    .soonSmall2 img {
+        width: 45vw;
+        object-fit: cover;
+        margin: 10px;
+        opacity: 0.8;
+        filter: brightness(1) grayscale(1);
+    }
+    .soonList {
+        height: 1600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "big big"
+        "small1 small2"
+        "letter letter";
+        justify-items: center;
+        align-items: center;
+    }
 }
