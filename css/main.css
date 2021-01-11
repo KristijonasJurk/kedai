@@ -22,13 +22,15 @@ body {
         grid-column: 1/6;
         /* background-color: red; */
         color: black;
-        background-color: transparent;
+        background-color: white;
         position: fixed;
         top: 0px;
         width: 100%;
         z-index: 3;
     }
     .sticky {
+        opacity: 0.8;
+        transition: all 1s ease-in-out;
     }
     
     /* ADS */
@@ -342,7 +344,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 20fr 1fr;
         /* background-color: blueviolet; */
-        transition: 1s linear;
+        transition: 0.8s linear;
         position: relative;
     }
         .slide1 {

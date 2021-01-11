@@ -29,9 +29,9 @@ shoes.addEventListener('mouseover', function () {
 })
 function headerSticky() {
     const mainbody = document.querySelector('.mainbody');
-    mainbody.style.margin = 
+    mainbody.style.margin = `${header.offsetHeight}px 0 0 0`;
 }
-
+headerSticky();
 
 
 var path = window.location.pathname;
