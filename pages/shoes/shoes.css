@@ -16,6 +16,7 @@
         text-align: center;
         font-size: 45px;
         letter-spacing: 10px;
+        word-break: keep-all;
     }
     .shoesHeaderRight > .shoesCategory1 {
         grid-column: 3/4;

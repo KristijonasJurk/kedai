@@ -365,5 +365,48 @@
     }
     .newsletterBody {
         width: 300px;
+        text-align: center;
+    }
+    .newsletterBody h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-break: keep-all;
+    }
+    .newsletterBody h6 {
+        font-size: 12px;
+    }
+    .newsletterBody input {
+        width: 50vw;
+        height: 38px;
+        font-size: 18px;
+    }
+    .newsletterBody button {
+        width: 50vw;
+        height: 36px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .newsletterBody {
+        width: 250px;
+        text-align: center;
+    }
+    .newsletterBody h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-break: keep-all;
+    }
+    .newsletterBody h6 {
+        font-size: 12px;
+    }
+    .newsletterBody input {
+        width: 180px;
+        height: 38px;
+        font-size: 18px;
+    }
+    .newsletterBody button {
+        width: 180px;
+        height: 36px;
+        font-size: 20px;
     }
 }
