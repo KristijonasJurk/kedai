@@ -28,7 +28,7 @@
     margin-top: 30px;
 }
 .soonList {
-    height: 1600px;
+    height: 103vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -63,6 +63,7 @@
 .comingSoonBox h3 {
     font-size: 30px;
     letter-spacing: 5px;
+    word-break: keep-all;
 }
 .comingSoonBox h1 {
     word-break: keep-all;
@@ -75,7 +76,7 @@
     position: relative;
 }
 .soonSmall1 img {
-    width: 45vw;
+    width: 44.8vw;
     object-fit: cover;
     margin: 10px;
     opacity: 0.8;
@@ -87,7 +88,7 @@
     position: relative;
 }
 .soonSmall2 img {
-    width: 45vw;
+    width: 44.8vw;
     object-fit: cover;
     margin: 10px;
     opacity: 0.8;
@@ -161,38 +162,77 @@
     opacity: 0.8;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 850px) {
     .soonBig img {
         width: 91vw;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.8;
-        filter: brightness(1) grayscale(1);
     }
     .soonSmall1 img {
-        width: 45vw;
-        object-fit: cover;
-        margin: 10px;
-        opacity: 0.8;
-        filter: brightness(1) grayscale(1);
+        width: 44vw;
     }
     .soonSmall2 img {
-        width: 45vw;
-        object-fit: cover;
-        margin: 10px;
-        opacity: 0.8;
-        filter: brightness(1) grayscale(1);
+        width: 44vw;
     }
     .soonList {
-        height: 1600px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "big big"
-        "small1 small2"
-        "letter letter";
-        justify-items: center;
-        align-items: center;
+        height: 103vw;
+    }
+    .comingSoonBox h3 {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .comingSoonBox h1 {
+        word-break: keep-all;
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+    .newsletterBody {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .newsletterBody {
+        width: 300px;
+        text-align: center;
+    }
+    .newsletterBody h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-break: keep-all;
+    }
+    .newsletterBody h6 {
+        font-size: 12px;
+    }
+    .newsletterBody input {
+        width: 50vw;
+        height: 38px;
+        font-size: 18px;
+    }
+    .newsletterBody button {
+        width: 50vw;
+        height: 36px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .newsletterBody {
+        width: 300px;
+        text-align: center;
+    }
+    .newsletterBody h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-break: keep-all;
+    }
+    .newsletterBody h6 {
+        font-size: 12px;
+    }
+    .newsletterBody input {
+        width: 50vw;
+        height: 38px;
+        font-size: 18px;
+    }
+    .newsletterBody button {
+        width: 50vw;
+        height: 36px;
+        font-size: 20px;
     }
 }
