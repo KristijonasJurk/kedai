@@ -76,7 +76,8 @@
     }
 
     /* product box */
-
+.productBox {
+}
 .productBox {
     display: flex;
     flex-direction: column;

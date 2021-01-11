@@ -186,6 +186,7 @@ body {
             .rightside .boxA {
                 display: inline-block;
                 /* background-color: yellow; */
+                margin: 0 0 0 10px;
                 width: 50px;
                 height: 30px;
                 opacity: 0.5;
@@ -462,6 +463,9 @@ body {
             }
             .smallPhoto:hover {
                 transform: scale(1.1);
+            }
+            .productBoxLink {
+                text-decoration: none;
             }
             .productInfoContainer {
                 display: flex;

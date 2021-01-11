@@ -47,6 +47,7 @@ function generateShoes(data) {
         const div3 = document.createElement('div');
         const div4 = document.createElement('div');
         const img = document.createElement('img');
+        const a = document.createElement('a');
         const a1 = document.createElement('a');
         const a2 = document.createElement('a');
         const a3 = document.createElement('a');
@@ -62,11 +63,14 @@ function generateShoes(data) {
         div2.setAttribute('class', 'productInfo2');
         div3.setAttribute('class', 'productInfo3');
         div4.setAttribute('class', 'productInfo4');
+        a.setAttribute('class', 'productBoxLink');
+        a.appendChild(div);
         a1.appendChild(text1);
         a2.appendChild(text2);
         a3.appendChild(text3);
         a4.appendChild(text4);
         a4.appendChild(textPrice);
+        a.href = '../../product/single.html';
         img.src = data[i].photo;
         img.setAttribute('class', 'productPhoto');
         div1.appendChild(a1);
@@ -79,7 +83,7 @@ function generateShoes(data) {
         div11.appendChild(div4);
         div.appendChild(img);
         div.appendChild(div11);
-        main.appendChild(div);
+        main.appendChild(a);
     }
 }
 generateShoes(dataShoes);
