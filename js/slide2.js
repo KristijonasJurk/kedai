@@ -32,7 +32,7 @@ function generateSlide2(data) {
 
         smallPhoto.src = data[i].photo;
         const text1 = document.createTextNode('NEW');
-        smallSlideLink.href = '../../product/single.html';
+        smallSlideLink.href = '../product/single.html';
         const text2 = document.createTextNode(data[i].brand);
         const text3 = document.createTextNode(data[i].name);
         const text4 = document.createTextNode(data[i].price);

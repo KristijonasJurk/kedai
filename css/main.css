@@ -440,6 +440,7 @@ body {
             }
             .productBoxLink {
                 text-decoration: none;
+                color: black;
             }
             .productInfoContainer {
                 display: flex;

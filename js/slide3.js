@@ -164,6 +164,7 @@ function generateSlide3(data) {
     const div = document.querySelector('.slide3');
     for (i = 0; i < data.length; i++) {
         const slide3slide = document.createElement('div');
+        const slide3slideLink = document.createElement('a');
         const slide3left = document.createElement('div');
         const slide3photoLink = document.createElement('a');
         const slide3photo = document.createElement('img');
@@ -180,10 +181,12 @@ function generateSlide3(data) {
         const slide3tagText = document.createTextNode('COLLECTIONS');
         const shopNowText = document.createTextNode('SHOP NOW');
         slide3photo.src = data[i].photo;
+        slide3slideLink.href = '../pages/blog/blog.html';
         slide3name.appendChild(slide3nameText);
         slide3tag.appendChild(slide3tagText);
         shopNow.appendChild(shopNowText);
 
+        slide3slideLink.setAttribute('class', 'productBoxLink');
         slide3slide.setAttribute('class', 'slide3slide');
         slide3left.setAttribute('class', 'slide3left');
         slide3photoLink.setAttribute('class', 'slide3photoLink');
@@ -197,7 +200,8 @@ function generateSlide3(data) {
         slide3name.setAttribute('class', 'slide3name');
         shopNow.setAttribute('class', 'shopNow');
 
-        div.appendChild(slide3slide);
+        slide3slideLink.appendChild(slide3slide);
+        div.appendChild(slide3slideLink);
         slide3slide.appendChild(slide3left);
         slide3slide.appendChild(slide3right);
         slide3left.appendChild(slide3photoLink);
