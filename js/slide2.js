@@ -18,6 +18,7 @@ function generateSlide2(data) {
     const div = document.querySelector('.slide2area');
     for (let i = 0; i < data.length; i++) {
         const smallSlide = document.createElement('div');
+        const smallSlideLink = document.createElement('a');
         const smallPhoto = document.createElement('img');
         const productInfoContainer = document.createElement('div');
         const productInfo1 = document.createElement('div');
@@ -31,6 +32,7 @@ function generateSlide2(data) {
 
         smallPhoto.src = data[i].photo;
         const text1 = document.createTextNode('NEW');
+        smallSlideLink.href = '../../product/single.html';
         const text2 = document.createTextNode(data[i].brand);
         const text3 = document.createTextNode(data[i].name);
         const text4 = document.createTextNode(data[i].price);
@@ -42,14 +44,16 @@ function generateSlide2(data) {
         productInfo2.setAttribute('class', 'productInfo2');
         productInfo3.setAttribute('class', 'productInfo3');
         productInfo4.setAttribute('class', 'productInfo4');
+        smallSlideLink.setAttribute('class', 'productBoxLink');
 
+        smallSlideLink.appendChild(smallSlide);
         productInfo1a.appendChild(text1);
         productInfo2a.appendChild(text2);
         productInfo3a.appendChild(text3);
         productInfo4a.appendChild(text4);
         productInfo4a.appendChild(textPrice);
 
-        div.appendChild(smallSlide);
+        div.appendChild(smallSlideLink);
         smallSlide.appendChild(smallPhoto);
         smallSlide.appendChild(productInfoContainer);
         productInfoContainer.appendChild(productInfo1);
