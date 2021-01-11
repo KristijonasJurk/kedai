@@ -26,6 +26,7 @@ function generateNew(data) {
         const div3 = document.createElement('div');
         const div4 = document.createElement('div');
         const img = document.createElement('img');
+        const a = document.createElement('a');
         const a1 = document.createElement('a');
         const a2 = document.createElement('a');
         const a3 = document.createElement('a');
@@ -44,6 +45,8 @@ function generateNew(data) {
         div2.setAttribute('class', 'productInfo2');
         div3.setAttribute('class', 'productInfo3');
         div4.setAttribute('class', 'productInfo4');
+        a.setAttribute('class', 'productBoxLink');
+        a.appendChild(div);
         a4.setAttribute('class', 'initialPrice');
         a5.setAttribute('class', 'withDiscount');
         a1.appendChild(text1);
@@ -53,6 +56,7 @@ function generateNew(data) {
         a4.appendChild(textPrice);
         a5.appendChild(text5);
         a5.appendChild(pricePercent);
+        a.href = '../../product/single.html';
         img.src = data[i].photo;
         img.setAttribute('class', 'productPhoto');
         div1.appendChild(a1);
@@ -66,7 +70,7 @@ function generateNew(data) {
         div4.appendChild(a5);
         div.appendChild(img);
         div.appendChild(div11);
-        document.querySelector('.saleProductsList').appendChild(div);
+        document.querySelector('.saleProductsList').appendChild(a);
     }
 }
 generateNew(dataSale);
