@@ -228,16 +228,13 @@
         align-items: center;
     }
     .accesoriesBig img {
-        width: 650px;
-        height: 200px;
+        width: 90vw;
     }
     .accesoriesSmall1 img {
-        width: 650px;
-        height: 200px;
+        width: 90vw;
     }
     .accesoriesSmall2 img {
-        width: 650px;
-        height: 200px;
+        width: 90vw;
     }
     .comingSoonBox {
         width: 600px;
@@ -250,6 +247,9 @@
     .comingSoonBox h1 {
         font-size: 48px;
         letter-spacing: 12px;
+    }
+    .newsletterBody {
+        width: 500px;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -268,21 +268,8 @@
         letter-spacing: 3px;
         font-size: 20px;
     }
-
     .accesoriesList {
         margin: 0 10px;
-    }
-    .accesoriesBig img {
-        width: 500px;
-        height: 200px;
-    }
-    .accesoriesSmall1 img {
-        width: 500px;
-        height: 200px;
-    }
-    .accesoriesSmall2 img {
-        width: 500px;
-        height: 200px;
     }
     .comingSoonBox {
         width: 600px;
@@ -304,18 +291,6 @@
         margin: 0 0px;
         align-items: flex-start;
     }
-    .accesoriesBig img {
-        width: 380px;
-        height: 180px;
-    }
-    .accesoriesSmall1 img {
-        width: 380px;
-        height: 180px;
-    }
-    .accesoriesSmall2 img {
-        width: 380px;
-        height: 180px;
-    }
     .comingSoonBox {
         width: 350px;
     }
@@ -326,5 +301,51 @@
     .comingSoonBox h1 {
         font-size: 36px;
         letter-spacing: 9px;
+    }
+    .newsletterBody {
+        width: 300px;
+        text-align: center;
+    }
+    .newsletterBody h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-break: keep-all;
+    }
+    .newsletterBody h6 {
+        font-size: 12px;
+    }
+    .newsletterBody input {
+        width: 50vw;
+        height: 38px;
+        font-size: 18px;
+    }
+    .newsletterBody button {
+        width: 50vw;
+        height: 36px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .newsletterBody {
+        width: 250px;
+        text-align: center;
+    }
+    .newsletterBody h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-break: keep-all;
+    }
+    .newsletterBody h6 {
+        font-size: 12px;
+    }
+    .newsletterBody input {
+        width: 180px;
+        height: 38px;
+        font-size: 18px;
+    }
+    .newsletterBody button {
+        width: 180px;
+        height: 36px;
+        font-size: 20px;
     }
 }
