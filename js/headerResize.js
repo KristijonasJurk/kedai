@@ -27,6 +27,10 @@ const shoes = document.querySelector('.links a:nth-of-type(3)');
 shoes.addEventListener('mouseover', function () {
 
 })
+function headerSticky() {
+    const mainbody = document.querySelector('.mainbody');
+    mainbody.style.margin = 
+}
 
 
 

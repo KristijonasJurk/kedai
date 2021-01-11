@@ -22,9 +22,15 @@ body {
         grid-column: 1/6;
         /* background-color: red; */
         color: black;
-        background-color: white;
+        background-color: transparent;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 3;
     }
-
+    .sticky {
+    }
+    
     /* ADS */
     .adContainer {
         background-color: rgb(54, 54, 54);
@@ -85,12 +91,6 @@ body {
 
 
 
-    .sticky {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        z-index: 3;
-    }
     .resize {
         
     }
