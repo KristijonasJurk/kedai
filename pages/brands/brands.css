@@ -16,6 +16,7 @@
     text-align: center;
     font-size: 45px;
     letter-spacing: 5px;
+    word-break: keep-all;
 }
 
     .brandsSearchContainer>.brandsSearch {
@@ -52,7 +53,8 @@
     .brandsABCcontainer>.brandsABClist {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        flex-wrap: wrap;
     }
         .brandsABCcontainer>.brandsABClist>div {
             border: 1px solid #999;
@@ -64,6 +66,7 @@
             align-items: center;
             justify-content: center;
             transition: 0.3s;
+            margin: 3px;
         }
         .brandsABCcontainer>.brandsABClist>div:hover {
             color: black;
@@ -82,7 +85,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin: 30px 50px;
-        justify-content: flex-start;
+        justify-content: center;
         /* background-color: red; */
     }
         .brandsList>.brandBox{
@@ -125,4 +128,7 @@
                 opacity: 1;
                 font-weight: 400;
             }
-            
+@media only screen and (max-width: 500px) {
+
+
+}
