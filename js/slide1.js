@@ -5,17 +5,17 @@ function generateSlide1(data) {
         const bigSlideLink = document.createElement('a');
         const bigSlide = document.createElement('div');
         bigSlide.setAttribute('class', 'bigSlide');
-        // bigSlide.setAttribute('class', `bigSlide${data[i]}`);
 
         const bigPhoto = document.createElement('img');
         bigSlide.setAttribute('alt', 'big shoe photo');
         bigPhoto.setAttribute('class', 'bigPhoto');
         bigPhoto.src = `./img/shoes/${data[i]}.png`;
+        bigSlideLink.href = '../pages/shoes/shoes.html'
 
-        // bigSlideLink.appendChild(bigSlide);
+        bigSlideLink.appendChild(bigSlide);
         bigSlide.appendChild(bigPhoto);
 
-        slide1.appendChild(bigSlide);
+        slide1.appendChild(bigSlideLink);
     }
 }
 generateSlide1(slide1data);
@@ -25,9 +25,26 @@ const left1 = document.querySelector('.fa-angle-left');
 const right1 = document.querySelector('.fa-angle-right');
 let index = 1;
 
-// left and right arrow key buttons
+// automatic slide
+var myIndex = 0;
+var timeOut;
+carousel();
+function carousel() {
+    let i;
+    // var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides1.length; i++) {
+        slides1[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > slides1.length) { myIndex = 1 }
+    slides1[myIndex - 1].style.display = "block";
+    timeOut = setTimeout(carousel, 6000); // Change image every 6 seconds
+}
 
+// left and right arrow key buttons
 function plusSlides1(n) {
+    clearTimeout(timeOut); // offset the carousel
+    carousel();  // start the carousel again from 0 sec, to avoid slide skiping
     showSlides(index += n);
 }
 function showSlides(n) {
@@ -43,20 +60,6 @@ function showSlides(n) {
     slides1[index - 1].style.display = "block";
 }
 
-// automatic slide
-var myIndex = 0;
-carousel();
-function carousel() {
-    let i;
-    // var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides1.length; i++) {
-        slides1[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > slides1.length) { myIndex = 1 }
-    slides1[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 6000); // Change image every 6 seconds
-}
 
 // slide buttons
 
@@ -67,6 +70,8 @@ function slide1() {
     }
     for (let i = 0; i < totalItems; i++) {
         document.querySelectorAll('.slide1nav .fa-minus')[i].addEventListener('click', function () {
+            clearTimeout(timeOut); // offset the carousel
+            carousel();  // start the carousel again from 0 sec, to avoid slide skiping
             for (let j = 0; i < totalItems; j++) {
                 slides1[j].style.display = "none";
                 slides1[i].style.display = "block";
