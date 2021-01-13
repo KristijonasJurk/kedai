@@ -8,8 +8,8 @@ const dataBlog = [
     },
     {
         photo: '../../img/blog/blog2.png',
-        title: 'EVERYTHING YOU NEED TO KNOW ABOUT THE LATEST ASICS',
-        text: 'The article focuses on the lack of taste in todays fashion industry. We will analyze how this started, the state it is in now and how can we fix it...',
+        title: 'EVERYTHING YOU NEED TO KNOW ABOUT THE LATEST PUMAS',
+        text: 'Since the end of the year 2020, which was quite a year for Puma, we can gaze on some of their latest additions to the collection. The company...',
         hashtag: 'FASHION',
         date: '20 November 2020'
     },
