@@ -1,20 +1,21 @@
 const dataSale = [
-    { photo: "../../img/shoes/50.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 130, percent: 30, basketball: true, men: true },
-    { photo: "../../img/shoes/51.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 120, percent: 20, everyday: true, men: true },
-    { photo: "../../img/shoes/52.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 110, percent: 5, everyday: true, men: true },
-    { photo: "../../img/shoes/53.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 90, percent: 50, basketball: true, men: true },
-    { photo: "../../img/shoes/54.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 300, percent: 30, everyday: true, men: true },
-    { photo: "../../img/shoes/55.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 230, percent: 20, everyday: true, women: true },
-    { photo: "../../img/shoes/56.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 210, percent: 5, running: true, women: true },
-    { photo: "../../img/shoes/57.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 90, percent: 10, basketball: true, women: true },
-    { photo: "../../img/shoes/58.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 65, percent: 5, everyday: true, women: true },
-    { photo: "../../img/shoes/59.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 200, percent: 10, everyday: true, women: true },
-    { photo: "../../img/shoes/more-shoes/20.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 155, percent: 20, everyday: true, men: true },
-    { photo: "../../img/shoes/more-shoes/21.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 95, percent: 30, everyday: true, women: true },
-    { photo: "../../img/shoes/more-shoes/22.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 58, percent: 50, everyday: true, women: true },
-    { photo: "../../img/shoes/more-shoes/24.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 120, percent: 40, everyday: true, men: true },
-    { photo: "../../img/shoes/more-shoes/27.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 151, percent: 10, everyday: true, men: true },
-    { photo: "../../img/shoes/more-shoes/28.png", label: "SALE", brand: "adidas Originals", name: "Air Max 96", price: 105, percent: 50, running: true, men: true }
+    { photo: "../../img/shoes/50.png", label: "SALE", brand: "Converse", name: "All-star Brown", price: 130, percent: 30, basketball: true, men: true },
+    { photo: "../../img/shoes/51.png", label: "SALE", brand: "NIKE", name: "Cortez 4k", price: 120, percent: 20, everyday: true, men: true },
+    { photo: "../../img/shoes/52.png", label: "SALE", brand: "adidas", name: "Yeezy Y3", price: 110, percent: 5, everyday: true, men: true },
+    { photo: "../../img/shoes/53.png", label: "SALE", brand: "adidas", name: "Tubular Camo F6", price: 90, percent: 50, basketball: true, men: true },
+    { photo: "../../img/shoes/54.png", label: "SALE", brand: "NIKE", name: "Jetzt", price: 300, percent: 30, everyday: true, men: true },
+    { photo: "../../img/shoes/55.png", label: "SALE", brand: "Puma", name: "Insta-Pump Furry", price: 230, percent: 20, everyday: true, women: true },
+    { photo: "../../img/shoes/56.png", label: "SALE", brand: "Puma", name: "Lift Air Smr", price: 210, percent: 5, running: true, women: true },
+    { photo: "../../img/shoes/57.png", label: "SALE", brand: "Converse", name: "All-stars", price: 90, percent: 10, basketball: true, women: true },
+    { photo: "../../img/shoes/58.png", label: "SALE", brand: "Li-ling", name: "Wade x2", price: 65, percent: 5, everyday: true, women: true },
+    { photo: "../../img/shoes/59.png", label: "SALE", brand: "NIKE", name: "Miranda", price: 200, percent: 10, everyday: true, women: true },
+    { photo: "../../img/shoes/more-shoes/20.png", label: "SALE", brand: "NIKE", name: "Air Max 99 White", price: 155, percent: 20, basketball: true, women: true },
+    { photo: "../../img/shoes/more-shoes/21.png", label: "SALE", brand: "NIKE", name: "Air Max 99 Classic", price: 95, percent: 30, basketball: true, women: true },
+    { photo: "../../img/shoes/more-shoes/22.png", label: "SALE", brand: "NIKE", name: "Air Max Cruise", price: 58, percent: 50, basketball: true, women: true },
+    { photo: "../../img/shoes/more-shoes/24.png", label: "SALE", brand: "NIKE", name: "Air Max", price: 120, percent: 40, running: true, women: true },
+    { photo: "../../img/shoes/more-shoes/27.png", label: "SALE", brand: "NIKE", name: "Air Max 96 B&W", price: 151, percent: 10, everyday: true, men: true },
+    { photo: "../../img/shoes/more-shoes/28.png", label: "SALE", brand: "NIKE", name: "Air Max 98 Aktiv", price: 105, percent: 50, running: true, men: true },
+
 ];
 
 function generateNew(data) {
