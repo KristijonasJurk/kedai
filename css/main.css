@@ -4,12 +4,10 @@ margin: 0;
 padding: 0;
 vertical-align: top;
 box-sizing: border-box;
-word-break: break-all;
 }
 html {
     scroll-behavior: smooth;
 }
-
 /*  Snoflake background Merry Christmas */
 /* ❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄ */
 .snowflake {
@@ -30,7 +28,7 @@ html {
   }
   .demo a{
     font-family: 'Raleway', sans-serif;
-  color: #000;		
+    color: #000;		
   }
   /* ❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄❄ */
 body {
@@ -62,7 +60,6 @@ body {
         color: rgb(250, 248, 245);
         letter-spacing: 2px;
         cursor: pointer;
-        font-family: inherit;
         font-size: 14px;
         position: fixed;
         box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.3);
@@ -191,13 +188,11 @@ body {
             .rightside > .searchExpand {
                 display: inline-block;
                 font-size: 20px;
-                background-color: transparent;
                 border: 1px solid #999;
                 width: 200px;
             }
             .rightside > .searchExpand:hover {
                 border: 1px solid black;
-                background-color: white;
             }
             .rightside .fa {
                 color: #999;
@@ -509,7 +504,6 @@ body {
             }
             .slide3 .slide3left {
                 grid-column: 1/2;
-                /* background-color: green; */
             }
             .slide3 .slide3left a {
                 position: relative;
@@ -541,8 +535,7 @@ body {
             .slide3 .slide3right {
                 grid-column: 2/3;
                 padding-left: 30px;
-                width: 740px;               /* TODO Responsive */
-                /* background-color: red; */
+                width: 740px; 
             }
             .slide3 .slide3right p {
                 font-size: 1.3rem;
@@ -642,134 +635,8 @@ body {
                 background-color: black;
             }
             
-
-
-
-
-
-
-
-
-
             /* TODO rewrite everything in SCSS */
-        .lightboxBox {
-            grid-column: 2/3;
-            position: relative;
-            height: auto;
-            width: 100%;
-            height: 1500px;
-            margin: auto;
-            padding: 40px 0px;
-            margin-top: 100px;
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-gap: 2vh;
-            grid-auto-flow:dense;
-        }
-            .lightbox {
-                height: 100%;
-                width: 100%;
-                overflow: hidden;
-                position: relative;
-            }
-            .lightboxButton {
-                position: absolute;
-                z-index: 1;
-                bottom: 10%;
-                left: 36.5%
-            }
-            .lightboxButton a {
-                padding: .375rem 2rem;
-                line-height: 1.375rem;
-                min-height: 2.5rem;
-                border: 2px solid rgba(0,0,0,0);
-                background-color: #fff;
-                color: #000;
-                border-radius: 5px;
-                font-size: 20px;
-                font-weight: lighter;
-                text-decoration: none;
-                opacity: 0.8;
-            }
-
-            .lightboxButton a:hover {
-                background-color: transparent;
-                color: white;
-                border: 3px solid white;
-                transition: 0.3s;
-                opacity: 1;
-            }
-            .lightbox5 .lightboxButton {
-                left: 30%;
-            }
-            .lightbox6 .lightboxButton {
-                left: 43%;
-            }
-            .lightbox10 .lightboxButton {
-                left: 38%;
-            }
-            .lightbox1{
-                grid-column-start: span 1;
-                grid-row-start: span 2;
-            }
-            .lightbox6 {
-                grid-column-start: span 2;
-            }
-            .lightbox10{
-                grid-column-start: span 1;
-                grid-row-start: span 2;
-            }
-            .lightbox img:hover{
-                /* filter: brightness(0.8) grayscale(0);
-                transform: scale(1.02); */
-            }
-            .lightbox img {
-                filter: brightness(1) grayscale(0);
-                transition: 0.5s;
-                cursor: pointer;
-            }
-            .lightbox1 img, .lightbox2 img, .lightbox3 img, .lightbox5 img, .lightbox6 img, .lightbox7 img, .lightbox8 img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
-            .lightbox2 img, .lightbox10 img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                object-position: bottom;
-            }
-            .lightbox9 img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                object-position: 0px -170px;
-            }
-            .lightboxText {
-                position: absolute;
-                height: auto;
-                width: 100%;
-                left: 50%;
-                top: -70px;
-                transform: translateX(-50%);
-                text-align: center;
-                font-size: 35px;
-                letter-spacing: 5px;
-                background-color:rgba(0, 0, 0, 0.1);
-                border-left: 5px solid gray;
-                border-right: 5px solid gray;
-            }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+          
             footer {
                 grid-column: 2/3;
                 margin-top: 30px;
