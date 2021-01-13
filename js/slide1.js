@@ -25,7 +25,7 @@ function showSlides(n) {
 var myIndex = 0;
 carousel();
 function carousel() {
-    var i;
+    let i;
     // var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides1.length; i++) {
         slides1[i].style.display = "none";
