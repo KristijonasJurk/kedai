@@ -9,35 +9,35 @@ const dataBlog = [
     {
         photo: '../../img/blog/blog2.png',
         title: 'EVERYTHING YOU NEED TO KNOW ABOUT THE LATEST PUMAS',
-        text: 'Since the end of the year 2020, which was quite a year for Puma, we can gaze on some of their latest additions to the collection. The company...',
+        text: 'Since the end of the year 2020, which was quite a year for Puma, we can gaze on some of their latest additions to the collection. The...',
         hashtag: 'FASHION',
         date: '20 November 2020'
     },
     {
         photo: '../../img/blog/blog3.png',
-        title: 'MEET OUR NEW STUDIO JANITOR BRANDON ROY',
-        text: 'The article focuses on the lack of taste in todays fashion industry. We will analyze how this started, the state it is in now and how can we fix it...',
+        title: 'MEET OUR NEW STUDIO JANITOR BRANDON',
+        text: 'Brandon Roy has been assistant janitor for 5 years at KEDAI. He was awarded employee of the week 2 times in that period and recently the chief...',
         hashtag: 'STYLE',
         date: '9 November 2020'
     },
     {
         photo: '../../img/blog/blog4.png',
         title: 'LACOSTE IS BACK ON TRACK, READ ALL ABOUT IT',
-        text: 'The article focuses on the lack of taste in todays fashion industry. We will analyze how this started, the state it is in now and how can we fix it...',
+        text: 'Hey, be honest, you had probably already forgotten, that Lacoste existed, right? Well touche (as they say in French), Lacoste has recently dropped...',
         hashtag: 'LACOSTE',
         date: '2 November 2020'
     },
     {
         photo: '../../img/blog/blog5.png',
         title: 'OUR NEW ALL-WHITE COLLECTION IS BRINGING IT HOT',
-        text: 'The article focuses on the lack of taste in todays fashion industry. We will analyze how this started, the state it is in now and how can we fix it...',
+        text: 'Last week at the office we though it would be funny to pay these instagram models to dress up in our merch and have a photoshoot. What...',
         hashtag: 'COMMUNITY',
         date: '29 September 2020'
     },
     {
         photo: '../../img/blog/blog6.png',
         title: 'THESE CHINESE REEBOOKS WILL LEAVE YOU SPEECHLESS',
-        text: 'The article focuses on the lack of taste in todays fashion industry. We will analyze how this started, the state it is in now and how can we fix it...',
+        text: 'Reebooks are often reffered to be as the Baseball of brands. But once in a while someone hits a homerun and makes a highlight you can not take...',
         hashtag: 'STYLE',
         date: '20 September 2020'
     },
