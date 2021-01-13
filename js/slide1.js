@@ -1,3 +1,25 @@
+const slide1data = [1, 3, 9, 5, 6, 4, 8, 7];
+function generateSlide1(data) {
+    const slide1 = document.querySelector('.slide1');
+    for (let i = 0; i < data.length; i++) {
+        const bigSlideLink = document.createElement('a');
+        const bigSlide = document.createElement('div');
+        bigSlide.setAttribute('class', 'bigSlide');
+        // bigSlide.setAttribute('class', `bigSlide${data[i]}`);
+
+        const bigPhoto = document.createElement('img');
+        bigSlide.setAttribute('alt', 'big shoe photo');
+        bigPhoto.setAttribute('class', 'bigPhoto');
+        bigPhoto.src = `./img/shoes/${data[i]}.png`;
+
+        // bigSlideLink.appendChild(bigSlide);
+        bigSlide.appendChild(bigPhoto);
+
+        slide1.appendChild(bigSlide);
+    }
+}
+generateSlide1(slide1data);
+
 const slides1 = document.querySelectorAll('.bigSlide');
 const left1 = document.querySelector('.fa-angle-left');
 const right1 = document.querySelector('.fa-angle-right');
