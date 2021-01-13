@@ -2,7 +2,7 @@ const dataBlog = [
     {
         photo: '../../img/blog/blog1.png',
         title: 'CHECK OUT OUR NEW FASHION DESIGN',
-        text: 'The article focuses on the lack of taste in todays fashion industry. We will analyze how this started, the state it is in now and how can we fix it...',
+        text: 'The article focuses on the lack of taste in todays fashion industry. At Kedai we see fashion as more than garment. It is more about the characte, message...',
         hashtag: 'NIKE',
         date: '28 November 2020'
     },
@@ -44,21 +44,21 @@ const dataBlog = [
     {
         photo: '../../img/blog/blog7.png',
         title: 'OLD-SCHOOL SNEEKERS ARE 23% MORE LIKELY TO GET YOU HIRED',
-        text: 'The article focuses on the lack of taste in todays fashion industry. We will analyze how this started, the state it is in now and how can we fix it...',
+        text: 'New research at Oxford university shows, that in 2020 people with old-school sneakers were 15% more likely to impress on a job interview...',
         hashtag: 'SNEAKERS',
         date: '3 September 2020'
     },
     {
         photo: '../../img/blog/blog8.png',
         title: 'OUR WAREHOUSE IS RUNNING OUT OF SPACE (GIVEAWAY)',
-        text: 'The article focuses on the lack of taste in todays fashion industry. We will analyze how this started, the state it is in now and how can we fix it...',
+        text: 'If you ever find yourself near Bolder, Colorado, drive by our warehouse and pick up a new pair of sneekers for up to 50% off the original price. It could...',
         hashtag: 'TRENDS',
         date: '12 June 2020'
     },
     {
         photo: '../../img/blog/blog9.png',
         title: 'SUBWAY STORIES: THESE BEST FRIENDS MEET IN THE SUBWAY',
-        text: 'The article focuses on the lack of taste in todays fashion industry. We will analyze how this started, the state it is in now and how can we fix it...',
+        text: 'In our hectic pace of life, it could be a pain in the back-end to find new friends. Research show that if you are kicking the new Nike Air Max 96...',
         hashtag: 'STREETS',
         date: '21 May 2020'
     }

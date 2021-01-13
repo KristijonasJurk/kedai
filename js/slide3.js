@@ -268,6 +268,7 @@ function generateClothes(data) {
         chooseClothesLink.setAttribute('class', 'chooseClothesLink');
         chooseClothesName.setAttribute('class', 'chooseClothesName');
 
+        chooseClothesLink.href = '../pages/soon/soon.html';
         div.appendChild(chooseClothesLeft);
         chooseClothesLeft.appendChild(chooseClothesProduct);
         if (i == 0) {
