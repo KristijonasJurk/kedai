@@ -1,3 +1,67 @@
+const nikeSlidedata = [
+    { title: 'Nike Air Max Triax 96', moto: 'Bring power to your steps', photo: "./img/shoes/more-shoes/25.png", background: 'linear-gradient(90deg, rgba(167,67,77,1) 26%, rgba(0,0,0,1) 99%)' },
+    { title: 'Nike Air Max 96', moto: 'Designed with perfection', photo: "./img/shoes/more-shoes/26.png", background: 'background: linear-gradient(90deg, rgba(223,171,33,1) 11%, rgba(44,55,85,1) 72%)' },
+    { title: 'Nike M2K Tekno Retro', moto: 'Comfort in every step', photo: "./img/shoes/more-shoes/23.png", background: 'background: linear-gradient(90deg, rgba(86,140,104,1) 41%, rgba(107,114,132,1) 78%)' }
+];
+
+function generateNikeSlide(data) {
+    const slider = document.querySelector('.slider');
+    for (i = 0; i < data.length; i++) {
+        const slide3slide = document.createElement('div');
+        const slide3slideLink = document.createElement('a');
+        const slide3left = document.createElement('div');
+        const slide3photoLink = document.createElement('a');
+        const slide3photo = document.createElement('img');
+        const slide3nav = document.createElement('div');
+        const slide3nav1 = document.createElement('div');
+        const slide3bar = document.createElement('div');
+        const slide3bar1 = document.createElement('div');
+        const slide3right = document.createElement('div');
+        const slide3tag = document.createElement('p');
+        const slide3name = document.createElement('h2');
+        const shopNow = document.createElement('button');
+
+        const slide3nameText = document.createTextNode(data[i].h2);
+        const slide3tagText = document.createTextNode('COLLECTIONS');
+        const shopNowText = document.createTextNode('SHOP NOW');
+        slide3photo.src = data[i].photo;
+        slide3slideLink.href = '../pages/blog/blog.html';
+        slide3name.appendChild(slide3nameText);
+        slide3tag.appendChild(slide3tagText);
+        shopNow.appendChild(shopNowText);
+
+        slide3slideLink.setAttribute('class', 'productBoxLink');
+        slide3slide.setAttribute('class', 'slide3slide');
+        slide3left.setAttribute('class', 'slide3left');
+        slide3photoLink.setAttribute('class', 'slide3photoLink');
+        slide3photo.setAttribute('class', 'slide3photo');
+        slide3nav.setAttribute('class', 'slide3nav');
+        slide3nav1.setAttribute('class', 'slide3nav');
+        slide3bar.setAttribute('class', 'slide3bar');
+        slide3bar1.setAttribute('class', 'slide3bar');
+        slide3right.setAttribute('class', 'slide3right');
+        slide3tag.setAttribute('class', 'slide3tag');
+        slide3name.setAttribute('class', 'slide3name');
+        shopNow.setAttribute('class', 'shopNow');
+
+        slide3slideLink.appendChild(slide3slide);
+        div.appendChild(slide3slideLink);
+        slide3slide.appendChild(slide3left);
+        slide3slide.appendChild(slide3right);
+        slide3left.appendChild(slide3photoLink);
+        slide3right.appendChild(slide3tag);
+        slide3right.appendChild(slide3name);
+        slide3right.appendChild(shopNow);
+        slide3photoLink.appendChild(slide3photo);
+        slide3photoLink.appendChild(slide3nav);
+        slide3photoLink.appendChild(slide3nav1);
+        slide3nav.appendChild(slide3bar);
+        slide3nav1.appendChild(slide3bar1);
+    }
+}
+generateNikeSlide(nikeSlidedata)
+
+
 // movement animation to happen
 const card = document.querySelectorAll('.card');
 const container = document.querySelectorAll('.sneakerContainer');

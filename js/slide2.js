@@ -87,4 +87,3 @@ function slide2(data) {
     }
 }
 slide2(data);
-// TODO less HTML more JS
