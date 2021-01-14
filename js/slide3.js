@@ -1,7 +1,7 @@
 const nikeSlidedata = [
-    { title: 'Nike Air Max Triax 96', moto: 'Bring power to your steps', photo: "./img/shoes/more-shoes/25.png", background: 'linear-gradient(90deg, rgba(167,67,77,1) 26%, rgba(0,0,0,1) 99%)' },
-    { title: 'Nike Air Max 96', moto: 'Designed with perfection', photo: "./img/shoes/more-shoes/26.png", background: 'background: linear-gradient(90deg, rgba(223,171,33,1) 11%, rgba(44,55,85,1) 72%)' },
-    { title: 'Nike M2K Tekno Retro', moto: 'Comfort in every step', photo: "./img/shoes/more-shoes/23.png", background: 'background: linear-gradient(90deg, rgba(86,140,104,1) 41%, rgba(107,114,132,1) 78%)' }
+    { title: 'Nike Air Max Triax 96', moto: 'Bring power to your steps', photo: "./img/shoes/more-shoes/25.png", background: 'linear-gradient(90deg, rgba(167,67,77,1) 26%, rgba(0,0,0,1) 99%)', button: '#A7434D' },
+    { title: 'Nike Air Max 96', moto: 'Designed with perfection', photo: "./img/shoes/more-shoes/26.png", background: 'background: linear-gradient(90deg, rgba(223,171,33,1) 11%, rgba(44,55,85,1) 72%)', button: ':rgba(223,171,33,1)' },
+    { title: 'Nike M2K Tekno Retro', moto: 'Comfort in every step', photo: "./img/shoes/more-shoes/23.png", background: 'background: linear-gradient(90deg, rgba(86,140,104,1) 41%, rgba(107,114,132,1) 78%)', button: '#568c68' }
 ];
 
 function generateNikeSlide(data) {
@@ -29,9 +29,26 @@ function generateNikeSlide(data) {
         const sneakerBuyNow = document.createElement('div');
         sneakerBuyNow.setAttribute('class', 'sneakerBuyNow');
         const buttonBuyNow = document.createElement('button');
-        for (i = 0; i < 4; i++) {
-
+        const buttonData = [38, 40, 42, 44];
+        for (j = 0; j < buttonData.length; j++) {
+            const button = document.createElement('button');
+            const size = document.createTextNode(buttonData[j])
+            button.appendChild(size);
         }
+        circle.style.background = `${data[j].background}`;
+        img.src = data[i].photo;
+        img.setAttribute('alt', 'sneaker');
+        const sneakerTitleText = data[i].title;
+        sneakerTitle.appendChild(sneakerTitleText);
+        h3Text = data[i].moto;
+        h3.appendChild(h3Text);
+        buttonBuyNowText.createTextNode('BUY NOW');
+        buttonBuyNow.appendChild(buttonBuyNowText);
+        buttonBuyNow.style.background = `${data[i].button}`;
+
+
+
+
         const slide3nameText = document.createTextNode(data[i].h2);
         const slide3tagText = document.createTextNode('COLLECTIONS');
         const shopNowText = document.createTextNode('SHOP NOW');
