@@ -7,20 +7,31 @@ const nikeSlidedata = [
 function generateNikeSlide(data) {
     const slider = document.querySelector('.slider');
     for (i = 0; i < data.length; i++) {
-        const slide3slide = document.createElement('div');
-        const slide3slideLink = document.createElement('a');
-        const slide3left = document.createElement('div');
-        const slide3photoLink = document.createElement('a');
-        const slide3photo = document.createElement('img');
-        const slide3nav = document.createElement('div');
-        const slide3nav1 = document.createElement('div');
-        const slide3bar = document.createElement('div');
-        const slide3bar1 = document.createElement('div');
-        const slide3right = document.createElement('div');
-        const slide3tag = document.createElement('p');
-        const slide3name = document.createElement('h2');
-        const shopNow = document.createElement('button');
 
+        const sneakerContainer = document.createElement('div');
+        sneakerContainer.setAttribute('class', 'sneakerContainer');
+        const productBoxLink = document.createElement('a');
+        productBoxLink.setAttribute('class', 'productBoxLink');
+        const card = document.createElement('div');
+        card.setAttribute('class', 'card');
+        const sneaker = document.createElement('div');
+        sneaker.setAttribute('class', 'sneaker');
+        const circle = document.createElement('div');
+        circle.setAttribute('class', 'circle');
+        const img = document.createElement('img');
+        const sneakerInfo = document.createElement('div');
+        sneakerInfo.setAttribute('class', 'sneakerInfo');
+        const sneakerTitle = document.createElement('h1');
+        sneakerTitle.setAttribute('class', 'sneakerTitle');
+        const h3 = document.createElement('h3');
+        const sneakerSizes = document.createElement('div');
+        sneakerSizes.setAttribute('class', 'sneakerSizes');
+        const sneakerBuyNow = document.createElement('div');
+        sneakerBuyNow.setAttribute('class', 'sneakerBuyNow');
+        const buttonBuyNow = document.createElement('button');
+        for (i = 0; i < 4; i++) {
+
+        }
         const slide3nameText = document.createTextNode(data[i].h2);
         const slide3tagText = document.createTextNode('COLLECTIONS');
         const shopNowText = document.createTextNode('SHOP NOW');
