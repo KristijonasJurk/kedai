@@ -92,7 +92,7 @@
 .circle {
     width: 12rem;
     height: 12rem;
-    background: linear-gradient(90deg, rgba(167,67,77,1) 26%, rgba(0,0,0,1) 99%);
+    /* background: linear-gradient(90deg, rgba(167,67,77,1) 26%, rgba(0,0,0,1) 99%); */
     position: absolute;
     border-radius: 50%;
     z-index: 1;
@@ -140,7 +140,7 @@
 .sneakerBuyNow button {
     width: 80%;
     padding: 0.8rem 0rem;
-    background: #A7434D;
+    /* background: #A7434D; */
     border-radius: none;
     color: white;
     cursor: pointer;
