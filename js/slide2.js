@@ -1,14 +1,14 @@
 
 const slide2data = [
-    { brand: 'VANS', name: 'Old Skool', price: '130.00', photo: './img/shoes/10.png' },
-    { brand: 'Puma', name: 'RS-X', price: '120.00', photo: './img/shoes/11.png' },
-    { brand: 'Converse', name: 'All-star', price: '70.00', photo: './img/shoes/12.png' },
-    { brand: 'New Balance', name: '1200', price: '100.00', photo: './img/shoes/13.png' },
-    { brand: 'NIKE', name: 'Air Max Triax 96', price: '95.00', photo: './img/shoes/14.png' },
-    { brand: 'NIKE', name: 'Air Max Black&White 96', price: '100.00', photo: './img/shoes/15.png' },
-    { brand: 'Asics', name: 'GT-1000 9', price: '130.00', photo: './img/shoes/16.png' },
-    { brand: 'NIKE', name: 'Air Max TeknoV', price: '130.00', photo: './img/shoes/17.png' },
-    { brand: 'Reebook', name: 'InstaPump Fury', price: '135.00', photo: './img/shoes/18.png' }
+    { brand: 'VANS', name: 'Old Skool', price: '130', photo: './img/shoes/10.png' },
+    { brand: 'Puma', name: 'RS-X', price: '120', photo: './img/shoes/11.png' },
+    { brand: 'Converse', name: 'All-star', price: '70', photo: './img/shoes/12.png' },
+    { brand: 'New Balance', name: '1200', price: '100', photo: './img/shoes/13.png' },
+    { brand: 'NIKE', name: 'Air Max Triax 96', price: '95', photo: './img/shoes/14.png' },
+    { brand: 'NIKE', name: 'Air Max Black&White 96', price: '100', photo: './img/shoes/15.png' },
+    { brand: 'Asics', name: 'GT-1000 9', price: '130', photo: './img/shoes/16.png' },
+    { brand: 'NIKE', name: 'Air Max TeknoV', price: '130', photo: './img/shoes/17.png' },
+    { brand: 'Reebook', name: 'InstaPump Fury', price: '135', photo: './img/shoes/18.png' }
 ];
 
 // example of smallslide html
