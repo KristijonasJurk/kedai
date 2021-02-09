@@ -3,4 +3,4 @@
 Site published at - http://kristijonokedai.com/
 
 ## `REACT VERSION COMING SOON` 
-#### `stay tuned...`
+#### stay tuned...
