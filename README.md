@@ -7,4 +7,4 @@ Site published at - https://kristijonasjurk.github.io/kedai/
 https://kristijonasjurk.github.io/React_Kedai/
 
 
-#### Thanks for stopping by
+#### Thanks for stopping by :wave:
